@@ -26,7 +26,7 @@ button {
   align-items: center;
   height: 2.5rem;
   padding: 0 20px;
-  background-color: var(--color-blue);
+  background-color: var(--swimm-blue);
   position: relative;
   color: white;
   border: none;
@@ -44,8 +44,8 @@ button:not([disabled]) {
 
 button.secondary:not([disabled]) {
   background: transparent;
-  border: 1px var(--color-main) solid;
-  color: var(--color-main);
+  border: 1px var(--deep-sea) solid;
+  color: var(--deep-sea);
 }
 
 button:hover:not([disabled]):not(.secondary),

@@ -1,0 +1,36 @@
+@import url("../assets/fonts/muli/style.css");
+@import url("../assets/fonts/roboto/style.css");
+
+:root {
+    --fontfamily-main: Muli, sans-serif;
+    --fontfamily-secondary: "Roboto Mono", monospace;
+
+    /* Having the `html` font size set to 16px means rem = comment size */
+    --fontsize-xxs: 0.625rem; /* 10px */
+    --fontsize-xs: 0.875rem; /* 14px */
+    --fontsize-s: 1rem; /* 16px */
+    --fontsize-sm: 1.125rem; /* 18px */
+    --fontsize-m: 1.25rem; /* 20px */
+    --fontsize-ml: 1.5rem; /* 24px */
+    --fontsize-l: 2rem; /* 32px */
+    --fontsize-xl: 2.5rem; /* 40px */
+    --fontsize-xxl: 3rem; /* 48px */
+    --fontsize-xxxl: 3.5rem; /* 56px */
+
+    --system-headline: 1.75rem; /* 28px */
+    --system-subtitle: 1.125rem; /* 18px */
+    --system-body: 0.875rem; /* 14px */
+
+    --headline1: 2rem; /* 32px */
+    --headline2: 1.5rem; /* 24px */
+    --headline3: 1.3125rem; /* 21px */
+    --subtitle-L: 0.875rem; /* 14px */
+    --subtitle-S: 0.75rem; /* 12px */
+    --body-L: 1rem; /* 16px */
+    --body-S: 0.875rem; /* 14px */
+    --body-XS: 0.75rem; /* 12px */
+}
+
+html {
+    font-size: 16px;
+}

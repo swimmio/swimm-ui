@@ -1,0 +1,42 @@
+:root {
+    /* Primary */
+    --clear-white: #ffffff;
+    --feet-in-the-water: #e5ecff;
+    --swimm-blue: #0968ff;
+    --quick-dive: #053c86;
+    --deep-sea: #0c2739;
+
+    /* Neutral */
+    --wash-me: #f4f5f7;
+    --fifty-shades: #c1c7d0;
+    --high-tide: #6a6b6c;
+
+    /* Accent */
+    --fake-caffe-sheva: #b5fee6;
+    --high-violet: #c558f5;
+    --wave-jammer: #b6248a;
+
+    /* Semantic */
+    --success-green: #2ea44f;
+    --warning-yellow: #ffd33d;
+    --oh-no-red: #cb2431;
+
+    /* Gradients */
+    --blue-violet-from: #b958f0;
+    --blue-violet-to: #0c68ff;
+    --blue-violet: radial-gradient(
+        81.39% 140.38% at 83.61% -16.79%,
+        var(--blue-violet-from) 30.43%,
+        var(--blue-violet-to) 81.53%
+    );
+
+    --gradient-from: #b3ffe6;
+    --gradient-middle: #b2ffe5;
+    --gradient-to: #e4edff;
+    --gradient: radial-gradient(
+        76.75% 76.75% at 70% 23.25%,
+        var(--gradient-from) 0%,
+        var(--gradient-middle) 0.01%,
+        var(--gradient-to) 100%
+    );
+}
