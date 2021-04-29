@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
     <Button msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-import Button from "./components/Button.vue";
+import Button from "./components/Button/Button.vue";
 
 export default {
   name: "App",
