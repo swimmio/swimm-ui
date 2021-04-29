@@ -1,5 +1,5 @@
-@import url("../assets/fonts/muli/style.css");
-@import url("../assets/fonts/roboto/style.css");
+@import url("assets/fonts/muli/style.css");
+@import url("assets/fonts/roboto/style.css");
 
 :root {
     --fontfamily-main: Muli, sans-serif;
