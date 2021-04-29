@@ -10,3 +10,12 @@
     --code-line-height: 23px;
     --line-number-min-width: 50px;
 }
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}

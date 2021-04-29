@@ -40,3 +40,7 @@
         var(--gradient-to) 100%
     );
 }
+
+body {
+    color: var(--deep-sea);
+}
