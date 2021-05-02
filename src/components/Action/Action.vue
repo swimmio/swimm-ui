@@ -68,6 +68,7 @@ export default {
         this.size,
         this.variant,
         {
+          disabled: this.disabled,
           loading: this.loading,
           secondary: this.secondary,
           link: this.type === TYPES.LINK,
@@ -136,8 +137,14 @@ export default {
   transform: scale(0.95);
 }
 
+.button.disabled,
 .button:disabled {
   color: var(--fifty-shades);
+  background: var(--wash-me);
+}
+
+.button.secondary:disabled {
+  background: transparent;
 }
 
 .button.small {
