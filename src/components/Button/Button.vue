@@ -63,7 +63,6 @@ export default {
   },
   computed: {
     classes() {
-      console.log(this.kind);
       return [
         "button",
         this.size,
