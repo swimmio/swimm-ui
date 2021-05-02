@@ -18,8 +18,16 @@
 
     /* Semantic */
     --success-green: #2ea44f;
+    --success-green-300: #2ea44f4d;
+    --success-green-100: #2ea44f1a;
+
     --warning-yellow: #ffd33d;
+    --warning-yellow-300: #ffd33d4d;
+    --warning-yellow-100: #ffd33d1a;
+
     --oh-no-red: #cb2431;
+    --oh-no-red-300: #cb24314d;
+    --oh-no-red-100: #cb24311a;
 
     /* Gradients */
     --blue-violet-from: #b958f0;
