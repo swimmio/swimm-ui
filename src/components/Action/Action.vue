@@ -111,13 +111,13 @@ export default {
 
 .button.secondary {
   color: var(--deep-sea);
-  background: var(--clear-white);
+  background: transparent;
   border-color: var(--deep-sea);
 }
 
 .button.secondary:not([disabled]):hover {
   color: var(--high-tide);
-  background: var(--clear-white);
+  background: var(--clear-white-100);
   border-color: var(--high-tide);
 }
 
