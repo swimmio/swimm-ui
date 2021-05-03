@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Icon from "@/components/Icon/Icon";
+import Icon from "../Icon/Icon";
 
 export const SIZES = { BIG: "big", SMALL: "small" };
 export const VARIANTS = { DANGER: "danger", SUCCESS: "success" };
@@ -157,10 +157,6 @@ export default {
 .button:disabled {
   color: var(--fifty-shades);
   background: var(--wash-me);
-}
-
-.button.secondary:disabled {
-  background: transparent;
 }
 
 .button.small {
