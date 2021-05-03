@@ -3,6 +3,7 @@
     <div class="row">
       <Action class="dummy-button">Primary Default</Action>
       <Action class="dummy-button"></Action>
+      <Action class="dummy-button" trailingIcon="arrow-right">Primary with</Action>
       <Action class="dummy-button" :disabled="true">Primary Disabled</Action>
     </div>
     <div class="row">

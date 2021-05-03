@@ -1,10 +1,17 @@
 <template>
   <componet :is="type" :class="classes" :disabled="disabled || loading">
     <slot>Button text</slot>
+    <Icon
+      v-if="trailingIcon"
+      :name="trailingIcon"
+      class="trailing-icon no-padding"
+    />
   </componet>
 </template>
 
 <script>
+import Icon from "@/components/Icon/Icon";
+
 export const SIZES = { BIG: "big", SMALL: "small" };
 export const VARIANTS = { DANGER: "danger", SUCCESS: "success" };
 export const TYPES = { BUTTON: "button", LINK: "a" };
@@ -13,6 +20,7 @@ export const TYPES = { BUTTON: "button", LINK: "a" };
  * Button
  */
 export default {
+  components: { Icon },
   props: {
     /**
      * The size of the button. Defaults to big.
@@ -57,6 +65,14 @@ export default {
      * @values danger, success
      */
     variant: {
+      type: String,
+      default: null,
+    },
+    /**
+     * Appended icon
+     * @values Any icon from Fontaweswimm library
+     */
+    trailingIcon: {
       type: String,
       default: null,
     },
@@ -186,5 +202,9 @@ export default {
 
 .button.loading.small {
   padding: 0;
+}
+
+.trailing-icon {
+  margin-left: 10px;
 }
 </style>
