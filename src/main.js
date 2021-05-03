@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import 'fontaweswimm/src/fonts/fontaweswimm/style.css';
 
 Vue.config.productionTip = false
 
