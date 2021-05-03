@@ -24,6 +24,7 @@
 
     --warning-yellow: #ffd33d;
     --warning-yellow-300: #ffd33d4d;
+    --warning-yellow-200: #ffd33d33;
     --warning-yellow-100: #ffd33d1a;
 
     --oh-no-red: #cb2431;
@@ -52,4 +53,16 @@
 
 body {
     color: var(--deep-sea);
+}
+
+.box-shadow-small {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.box-shadow-medium {
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box-shadow-big {
+    box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.12), 0px 5px 22px rgba(0, 0, 0, 0.16), 0px 7px 8px rgba(0, 0, 0, 0.2);
 }
