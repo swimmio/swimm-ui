@@ -1,23 +1,36 @@
 :root {
-    /* Primary */
+    /*** Primary ***/
     --clear-white: #ffffff;
+    --clear-white-750: #ffffffbf;
+    --clear-white-650: #ffffffa6;
     --clear-white-100: #ffffff1a;
+
     --feet-in-the-water: #e5ecff;
+    --feet-in-the-water-500: #e5ecff80;
+
     --swimm-blue: #0968ff;
+    --swimm-blue-100: #0968ff1a;
+
     --quick-dive: #053c86;
+
     --deep-sea: #0c2739;
 
-    /* Neutral */
+    /*** Neutral ***/
     --wash-me: #f4f5f7;
+
     --fifty-shades: #c1c7d0;
+
     --high-tide: #6a6b6c;
 
-    /* Accent */
+    /*** Accent ***/
     --fake-caffe-sheva: #b5fee6;
+    --fake-caffe-sheva-500: #b5fee680;
+
     --high-violet: #c558f5;
+
     --wave-jammer: #b6248a;
 
-    /* Semantic */
+    /*** Semantic ***/
     --success-green: #2ea44f;
     --success-green-300: #2ea44f4d;
     --success-green-100: #2ea44f1a;
@@ -29,9 +42,10 @@
 
     --oh-no-red: #cb2431;
     --oh-no-red-300: #cb24314d;
+    --oh-no-red-200: #cb243133;
     --oh-no-red-100: #cb24311a;
 
-    /* Gradients */
+    /*** Gradients ***/
     --blue-violet-from: #b958f0;
     --blue-violet-to: #0c68ff;
     --blue-violet: radial-gradient(
