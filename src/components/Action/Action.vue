@@ -1,5 +1,10 @@
 <template>
-  <componet :is="type" :class="classes" :disabled="disabled || loading">
+  <componet
+    :is="type"
+    :type="buttonType"
+    :class="classes"
+    :disabled="disabled || loading"
+  >
     <slot>Button text</slot>
     <Icon
       v-if="trailingIcon"
@@ -75,6 +80,10 @@ export default {
     trailingIcon: {
       type: String,
       default: null,
+    },
+    buttonType: {
+      type: String,
+      default: "submit",
     },
   },
   computed: {
