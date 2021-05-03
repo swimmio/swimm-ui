@@ -5,7 +5,7 @@ const req = require.context('../components/', true, /\.(vue)$/i);
 const fileIgnores = ['./Icon/Icon.vue']
 
 const filterIgnores = (file) => {
-    return fileIgnores.indexOf(file) !== -1;
+    return fileIgnores.indexOf(file) === -1;
 }
 
 req.keys().filter(filterIgnores).forEach((fileName) => {
