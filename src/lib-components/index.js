@@ -2,10 +2,9 @@ import Vue from 'vue';
 
 const req = require.context('../components/', true, /\.(vue)$/i);
 
-const fileIgnores = ['../components/Icon.vue']
+const fileIgnores = ['./Icon/Icon.vue']
 
 const filterIgnores = (file) => {
-    console.log('File Imported : ', file);
     return fileIgnores.indexOf(file) !== -1;
 }
 
