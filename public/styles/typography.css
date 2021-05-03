@@ -38,3 +38,58 @@ html {
 body {
     font-family: var(--fontfamily-main);
 }
+
+.system-headline {
+    font-size: var(--system-headline);
+    line-height: 2.5rem; /* 40px */
+}
+
+.system-subtitle {
+    font-size: var(--system-subtitle);
+    line-height: 2rem; /* 32px */
+}
+
+.system-body {
+    font-size: var(--system-body);
+    line-height: 1.5rem; /* 24px */
+}
+
+.headline1 {
+    font-size: var(--headline1);
+    line-height: 3rem; /* 48px */
+}
+
+.headline2 {
+    font-size: var(--headline2);
+    line-height: 2.5rem; /* 40px */
+}
+
+.headline3 {
+    font-size: var(--headline3);
+    line-height: 2rem; /* 32px */
+}
+
+.subtitle-L {
+    font-size: var(--subtitle-L);
+    line-height: 1.5rem; /* 24px */
+}
+
+.subtitle-S {
+    font-size: var(--subtitle-S);
+    line-height: 1.5rem; /* 24px */
+}
+
+.body-L {
+    font-size: var(--body-L);
+    line-height: 1.5rem; /* 24px */
+}
+
+.body-S {
+    font-size: var(--body-S);
+    line-height: 1rem; /* 16px */
+}
+
+.body-XS {
+    font-size: var(--body-XS);
+    line-height: 1rem; /* 16px */
+}
