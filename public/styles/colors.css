@@ -38,25 +38,25 @@
     /*** Semantic ***/
     --success-green: #2ea44f;
     --success-green-300: #2ea44f4d;
-    --success-green-100: #2ea44f1a;
+    --success-green-100: #ebf6ee;
 
     --warning-yellow: #ffd33d;
     --warning-yellow-300: #ffd33d4d;
     --warning-yellow-200: #ffd33d33;
-    --warning-yellow-100: #ffd33d1a;
+    --warning-yellow-100: #fffcee;
 
     --oh-no-red: #cb2431;
     --oh-no-red-300: #cb24314d;
     --oh-no-red-200: #cb243133;
-    --oh-no-red-100: #cb24311a;
+    --oh-no-red-100: #fae9ec;
 
     /*** Gradients ***/
-    --blue-violet-from: #b958f0;
-    --blue-violet-to: #0c68ff;
-    --blue-violet: radial-gradient(
+    --blue-high-from: #b958f0;
+    --blue-high-to: #0c68ff;
+    --blue-high: radial-gradient(
         81.39% 140.38% at 83.61% -16.79%,
-        var(--blue-violet-from) 30.43%,
-        var(--blue-violet-to) 81.53%
+        var(--blue-high-from) 30.43%,
+        var(--blue-high-to) 81.53%
     );
 
     --gradient-from: #b3ffe6;
