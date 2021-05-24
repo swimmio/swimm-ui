@@ -4,7 +4,7 @@
     "content": [
         {
             "type": "text",
-            "text": "Using our components library in another Vue project is done by importing [[sym:./src/lib-components/index.js(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] into the other projects `main.js` file\n\n```\nimport 'swimm-ui/src/lib-components';\n```\n\nAs we'll see below -[[sym:./src/lib-components/index.js(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] is adding the request components library to the Vue project importing it by itself"
+            "text": "Using our components library in another Vue project is done by importing [[sym:./src/lib-components/index.js(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] into the other projects `main.js` file\n\n`import 'swimm-ui/src/lib-components';`\n\nAs we'll see below -[[sym:./src/lib-components/index.js(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] is adding the request components library to the Vue project importing it by itself"
         },
         {
             "type": "snippet",
