@@ -4,7 +4,7 @@
     "content": [
         {
             "type": "text",
-            "text": "Using our components library in another Vue project is done by importing [[sym:./src/lib-components/index.js(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] into the other projects `main.js` file\n\n`import 'swimm-ui/src/lib-components';`\n\nAs we'll see below -[[sym:./src/lib-components/index.js(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] is adding the request components library to the Vue project importing it by itself"
+            "text": "Using our components library in another Vue project is done by importing [[sym:./src/lib-components/index.ts(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] into the other projects `main.js` file\n\n`import 'swimm-ui/src/lib-components';`\n\nAs we'll see below -[[sym:./src/lib-components/index.ts(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] is adding the request components library to the Vue project importing it by itself"
         },
         {
             "type": "snippet",
@@ -13,11 +13,11 @@
                 " ",
                 "*const req = require.context('../components/', true, /\\.(vue)$/i);",
                 " ",
-                " const fileIgnores = ['./Icon/Icon.vue']",
+                " const fileIgnores: string[] = ['./Icon/Icon.vue'];",
                 " "
             ],
             "firstLineNumber": 1,
-            "path": "src/lib-components/index.js",
+            "path": "src/lib-components/index.ts",
             "comments": [
                 "Find all files inside the `../components/` folder"
             ]
@@ -28,13 +28,13 @@
                 " ",
                 " const req = require.context('../components/', true, /\\.(vue)$/i);",
                 " ",
-                "*const fileIgnores = ['./Icon/Icon.vue']",
+                "*const fileIgnores: string[] = ['./Icon/Icon.vue'];",
                 " ",
-                " const filterIgnores = (file) => {",
+                " const filterIgnores = (file: string) => {",
                 "     return fileIgnores.indexOf(file) === -1;"
             ],
             "firstLineNumber": 2,
-            "path": "src/lib-components/index.js",
+            "path": "src/lib-components/index.ts",
             "comments": [
                 "Filter the ignored files (files that won't be exposed to vue)"
             ]
@@ -42,8 +42,8 @@
         {
             "type": "snippet",
             "lines": [
-                "     const componentConfig = req(fileName);",
-                "     const componentName = fileName.match(/\\w+/)[0];",
+                "     const nameMatches = fileName.match(/\\w+/);",
+                "     const componentName = nameMatches !== null ? nameMatches[0] : '';",
                 "     // Register component globally",
                 "*    Vue.component(",
                 "*        componentName,",
@@ -52,11 +52,10 @@
                 "*        // otherwise fall back to module's root.",
                 "*        componentConfig.default || componentConfig",
                 "*    );",
-                " });",
-                " "
+                " });"
             ],
-            "firstLineNumber": 13,
-            "path": "src/lib-components/index.js",
+            "firstLineNumber": 14,
+            "path": "src/lib-components/index.ts",
             "comments": [
                 "Exposing the selected component (iterator) to Vue using `Vue.component` function"
             ]
@@ -65,15 +64,15 @@
     "symbols": {
         "1ca51801-54e7-42e5-bc6c-443ee2c96b24": {
             "type": "path",
-            "text": "src/lib-components/index.js",
-            "path": "src/lib-components/index.js"
+            "text": "src/lib-components/index.ts",
+            "path": "src/lib-components/index.ts"
         }
     },
     "file_version": "2.0.1",
     "meta": {
-        "app_version": "0.4.4-2",
+        "app_version": "0.4.6-0",
         "file_blobs": {
-            "src/lib-components/index.js": "df945d7512ab45e86e72c9906ec564daefd5e059"
+            "src/lib-components/index.ts": "b0a23022f7bd04ef470f22a860140d47d5824004"
         }
     }
 }
