@@ -14,8 +14,9 @@
   </componet>
 </template>
 
-<script>
-import Icon from "../Icon/Icon";
+<script lang="ts">
+import Icon from "../Icon/Icon.vue";
+import { Component, Vue, Prop } from "vue-property-decorator";
 
 export const SIZES = { BIG: "big", SMALL: "small" };
 export const VARIANTS = { DANGER: "danger", SUCCESS: "success" };
@@ -24,84 +25,69 @@ export const TYPES = { BUTTON: "button", LINK: "a" };
 /**
  * Button
  */
-export default {
+@Component({
   components: { Icon },
-  props: {
-    /**
-     * The size of the button. Defaults to big.
-     * @values big, small
-     */
-    size: {
-      type: String,
-      default: SIZES.BIG,
-    },
-    /**
-     * Flag for secondary button style
-     * @type {boolean}
-     */
-    secondary: { default: false, type: Boolean },
-    /**
-     * Flag for is button is loading
-     * @type {boolean}
-     */
-    loading: { default: false, type: Boolean },
-    /**
-     * Flag for is button is disabled
-     * @type {boolean}
-     */
-    disabled: { default: false, type: Boolean },
-    /**
-     * The html element used for the button.
-     * @values button, link
-     */
-    type: {
-      type: String,
-      default: TYPES.BUTTON,
-    },
-    /**
-     * When setting the button’s type to a link (), use this option to give a href.
-     */
-    href: {
-      type: String,
-      default: null,
-    },
-    /**
-     * Variant options
-     * @values danger, success
-     */
-    variant: {
-      type: String,
-      default: null,
-    },
-    /**
-     * Appended icon
-     * @values Any icon from Fontaweswimm library
-     */
-    trailingIcon: {
-      type: String,
-      default: null,
-    },
-    buttonType: {
-      type: String,
-      default: "submit",
-    },
-  },
-  computed: {
-    classes() {
-      return [
-        "button",
-        this.size,
-        this.variant,
-        {
-          disabled: this.disabled,
-          loading: this.loading,
-          secondary: this.secondary,
-          link: this.type === TYPES.LINK,
-        },
-      ];
-    },
-  },
-};
+})
+export default class Action extends Vue {
+  /**
+   * The size of the button. Defaults to big.
+   * @values big, small
+   */
+  @Prop({ type: String, default: SIZES.BIG }) readonly size: string;
+  /**
+   * Flag for secondary button style
+   * @type {boolean}
+   */
+  @Prop({ type: Boolean, default: false }) readonly secondary: boolean;
+  /**
+   * Flag for is button is loading
+   * @type {boolean}
+   */
+  @Prop({ type: Boolean, default: false }) readonly loading: boolean;
+  /**
+   * Flag for is button is disabled
+   * @type {boolean}
+   */
+  @Prop({ type: Boolean, default: false }) readonly disabled: boolean;
+  /**
+   * The html element used for the button.
+   * @values button, link
+   */
+  @Prop({ type: String, default: TYPES.BUTTON }) readonly type: string;
+  /**
+   * When setting the button’s type to a link (), use this option to give a href.
+   */
+  @Prop({ type: String, default: null }) readonly href: string;
+  /**
+   * Variant options
+   * @values danger, success
+   */
+  @Prop({ type: String, default: null }) readonly variant: string;
+  /**
+   * Appended icon
+   * @values Any icon from Fontaweswimm library
+   */
+  @Prop({ type: String, default: null }) readonly trailingIcon: string;
+  /**
+   * Button type
+   * @values type attr of the button tag
+   */
+  @Prop({ type: String, default: "submit" }) readonly buttonType: string;
+
+  get classes() {
+    return [
+      "button",
+      this.size,
+      this.variant,
+      {
+        disabled: this.disabled,
+        loading: this.loading,
+        secondary: this.secondary,
+        link: this.type === TYPES.LINK,
+      },
+    ];
+  }
+}
 </script>
 
 <style scoped>

@@ -6,22 +6,23 @@
   ></i>
 </template>
 
-<script>
-export default {
-  props: {
-    name: { type: String, required: true },
-    tooltip: { type: String, default: null },
-    noPadding: { type: Boolean, required: false, default: false },
-  },
-  computed: {
-    computedIconNameClass() {
-      return `icon-${this.name}`;
-    },
-    computedNoPaddingClass() {
-      return { "no-padding": this.noPadding };
-    },
-  },
-};
+<script lang="ts">
+import { Component, Vue, Prop } from "vue-property-decorator";
+
+@Component
+export default class Icon extends Vue {
+  @Prop({ type: String, required: true }) readonly name: string;
+  @Prop({ type: String, default: null }) readonly tooltip: string;
+  @Prop({ type: Boolean, required: false, default: false })
+  readonly noPadding: string;
+
+  get computedIconNameClass() {
+    return `icon-${this.name}`;
+  }
+  get computedNoPaddingClass() {
+    return { "no-padding": this.noPadding };
+  }
+}
 </script>
 <style scoped>
 .no-padding {
