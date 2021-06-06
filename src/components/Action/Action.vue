@@ -4,6 +4,7 @@
     :type="buttonType"
     :class="classes"
     :disabled="disabled || loading"
+    :href="href"
   >
     <slot>Button text</slot>
     <Icon
@@ -107,6 +108,7 @@ export default {
 <style scoped>
 .button {
   position: relative;
+  text-decoration: none;
   border: 1px solid transparent;
   border-radius: 100px;
   display: inline-flex;
@@ -211,5 +213,10 @@ export default {
 
 .trailing-icon {
   margin-left: 10px;
+}
+
+.button:focus,
+.link:focus {
+  box-shadow: 0px 3px 8px 5px rgba(12, 39, 57, 0.2);
 }
 </style>

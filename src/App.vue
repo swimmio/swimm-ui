@@ -13,7 +13,9 @@
       >
     </div>
     <div class="row">
-      <Action class="dummy-button" :type="TYPES.LINK">Link Default</Action>
+      <Action class="dummy-button" :type="TYPES.LINK" href="https://swimm.io"
+        >Link Default</Action
+      >
       <Action class="dummy-button" :type="TYPES.LINK" :disabled="true"
         >Link Disabled</Action
       >
@@ -57,7 +59,11 @@
       >
     </div>
     <div class="row">
-      <Action class="dummy-button" :size="SIZES.SMALL" :type="TYPES.LINK"
+      <Action
+        class="dummy-button"
+        :size="SIZES.SMALL"
+        :type="TYPES.LINK"
+        href="https://swimm.io"
         >Link Default</Action
       >
       <Action
