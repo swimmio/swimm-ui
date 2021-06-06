@@ -128,6 +128,7 @@ export default {
   cursor: pointer;
 }
 
+.button:not([disabled]):focus,
 .button:not([disabled]):hover {
   background: linear-gradient(
       0deg,
@@ -143,6 +144,7 @@ export default {
   border-color: var(--deep-sea);
 }
 
+.button.secondary:not([disabled]):focus,
 .button.secondary:not([disabled]):hover {
   color: var(--high-tide);
   background: var(--clear-white-100);
@@ -156,6 +158,7 @@ export default {
   color: var(--high-tide);
 }
 
+.button.link:not([disabled]):focus,
 .button.link:not([disabled]):hover {
   background: var(--fifty-shades);
 }
@@ -181,6 +184,7 @@ export default {
   color: var(--oh-no-red);
 }
 
+.button.danger:not([disabled]):focus,
 .button.danger:not([disabled]):hover {
   background: var(--oh-no-red-300);
   border-color: transparent;
@@ -193,6 +197,7 @@ export default {
   color: var(--success-green);
 }
 
+.button.success:not([disabled]):focus,
 .button.success:not([disabled]):hover {
   background: var(--success-green-300);
   border-color: transparent;
@@ -213,10 +218,5 @@ export default {
 
 .trailing-icon {
   margin-left: 10px;
-}
-
-.button:focus,
-.link:focus {
-  box-shadow: 0px 1px 10px 4px rgba(12, 39, 57, 0.2);
 }
 </style>
