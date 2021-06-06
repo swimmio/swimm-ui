@@ -4,6 +4,7 @@
     :type="buttonType"
     :class="classes"
     :disabled="disabled || loading"
+    :href="href"
   >
     <slot>Button text</slot>
     <Icon
@@ -93,6 +94,7 @@ export default class Action extends Vue {
 <style scoped>
 .button {
   position: relative;
+  text-decoration: none;
   border: 1px solid transparent;
   border-radius: 100px;
   display: inline-flex;
@@ -112,6 +114,7 @@ export default class Action extends Vue {
   cursor: pointer;
 }
 
+.button:not([disabled]):focus,
 .button:not([disabled]):hover {
   background: linear-gradient(
       0deg,
@@ -127,6 +130,7 @@ export default class Action extends Vue {
   border-color: var(--deep-sea);
 }
 
+.button.secondary:not([disabled]):focus,
 .button.secondary:not([disabled]):hover {
   color: var(--high-tide);
   background: var(--clear-white-100);
@@ -140,6 +144,7 @@ export default class Action extends Vue {
   color: var(--high-tide);
 }
 
+.button.link:not([disabled]):focus,
 .button.link:not([disabled]):hover {
   background: var(--fifty-shades);
 }
@@ -165,6 +170,7 @@ export default class Action extends Vue {
   color: var(--oh-no-red);
 }
 
+.button.danger:not([disabled]):focus,
 .button.danger:not([disabled]):hover {
   background: var(--oh-no-red-300);
   border-color: transparent;
@@ -177,6 +183,7 @@ export default class Action extends Vue {
   color: var(--success-green);
 }
 
+.button.success:not([disabled]):focus,
 .button.success:not([disabled]):hover {
   background: var(--success-green-300);
   border-color: transparent;
