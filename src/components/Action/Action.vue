@@ -217,6 +217,6 @@ export default {
 
 .button:focus,
 .link:focus {
-  box-shadow: 0px 3px 8px 5px rgba(12, 39, 57, 0.2);
+  box-shadow: 0px 1px 10px 4px rgba(12, 39, 57, 0.2);
 }
 </style>
