@@ -3,7 +3,9 @@
     <div class="row">
       <Action class="dummy-button">Primary Default</Action>
       <Action class="dummy-button"></Action>
-      <Action class="dummy-button" trailingIcon="arrow-right">Primary with</Action>
+      <Action class="dummy-button" trailingIcon="arrow-right"
+        >Primary with</Action
+      >
       <Action class="dummy-button" :disabled="true">Primary Disabled</Action>
     </div>
     <div class="row">
@@ -77,26 +79,26 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
 import Action, { TYPES, SIZES, VARIANTS } from "./components/Action/Action.vue";
 
-export default {
-  name: "App",
+@Component({
   components: {
     Action,
   },
-  computed: {
-    TYPES() {
-      return TYPES;
-    },
-    SIZES() {
-      return SIZES;
-    },
-    VARIANTS() {
-      return VARIANTS;
-    },
-  },
-};
+})
+export default class App extends Vue {
+  get TYPES() {
+    return TYPES;
+  }
+  get SIZES() {
+    return SIZES;
+  }
+  get VARIANTS() {
+    return VARIANTS;
+  }
+}
 </script>
 
 <style>
