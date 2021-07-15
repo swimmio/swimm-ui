@@ -9,17 +9,16 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator";
-
-@Component
-export default class HelpBox extends Vue {
-  @Prop({ type: String, default: null }) readonly iconName: string;
-  @Prop({ type: String, default: null }) readonly title: string;
-  @Prop({ type: String, default: null }) readonly description: string;
-  @Prop({ type: Boolean, default: false }) readonly transparent: boolean;
-  @Prop({ type: Boolean, default: false }) readonly wide: boolean;
-}
+<script>
+export default {
+  props: {
+    iconName: { type: String, default: null },
+    title: { type: String, default: null },
+    description: { type: String, default: null },
+    transparent: { type: Boolean, default: false },
+    wide: { type: Boolean, default: false },
+  },
+};
 </script>
 
 <style scoped>

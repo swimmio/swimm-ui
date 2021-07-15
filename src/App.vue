@@ -27,26 +27,26 @@
   </div>
 </template>
 
-<script lang='ts'>
-import { Component, Vue } from "vue-property-decorator";
+<script>
 import Buttons from "./pages/Buttons.vue";
 
-type Pages = "buttons";
-
-@Component({
+export default {
+  name: "App",
   components: { Buttons },
   filters: {
-    capitalize: function (value: string) {
+    capitalize: function (value) {
       if (!value) return "";
       value = value.toString();
       return value.charAt(0).toUpperCase() + value.slice(1);
     },
   },
-})
-export default class App extends Vue {
-  public pages = ["buttons"];
-  public currentPage: Pages = this.pages[0] as Pages;
-}
+  data() {
+    return {
+      pages: ["buttons"],
+      currentPage: "buttons",
+    };
+  },
+};
 </script>
 
 <style>

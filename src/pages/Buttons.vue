@@ -79,30 +79,30 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+<script>
 import Action, {
   TYPES,
   SIZES,
   VARIANTS,
 } from "../components/Action/Action.vue";
 
-@Component({
+export default {
+  name: "Buttons",
   components: {
     Action,
   },
-})
-export default class Buttons extends Vue {
-  get TYPES() {
-    return TYPES;
-  }
-  get SIZES() {
-    return SIZES;
-  }
-  get VARIANTS() {
-    return VARIANTS;
-  }
-}
+  computed: {
+    TYPES() {
+      return TYPES;
+    },
+    SIZES() {
+      return SIZES;
+    },
+    VARIANTS() {
+      return VARIANTS;
+    },
+  },
+};
 </script>
 
 <style>

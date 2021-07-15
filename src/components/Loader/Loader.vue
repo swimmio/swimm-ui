@@ -2,21 +2,24 @@
   <div class="loader" :class="{ hide: hide, secondary }"></div>
 </template>
 
-<script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator";
-
-@Component
-export default class Loader extends Vue {
-  @Prop({ type: Boolean, default: false }) readonly noFlickering: boolean;
-  @Prop({ type: Boolean, default: false }) readonly secondary: boolean;
-  public hide: boolean = false;
+<script>
+export default {
+  props: {
+    noFlickering: { type: Boolean, default: false },
+    secondary: { type: Boolean, default: false },
+  },
+  data() {
+    return {
+      hide: false,
+    };
+  },
   created() {
     if (this.noFlickering) {
       this.hide = true;
       setTimeout(() => (this.hide = false), 50);
     }
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
