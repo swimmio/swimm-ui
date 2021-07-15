@@ -2,13 +2,16 @@ import Vue from 'vue';
 
 const req = require.context('../components/', true, /\.(vue)$/i);
 
-const fileIgnores: string[] = [];
+// TODO: Comment out if you want to ignore publishing a component
+// const fileIgnores: string[] = [''];
 
-const filterIgnores = (file: string) => {
-    return fileIgnores.indexOf(file) === -1;
-}
+// const filterIgnores = (file: string) => {
+//     return fileIgnores.indexOf(file) === -1;
+// }
 
-req.keys().filter(filterIgnores).forEach((fileName: string) => {
+// TODO: Comment out if you want to ignore publishing a component
+// .filter(filterIgnores)
+req.keys().forEach((fileName: string) => {
     // Get component config
     const componentConfig = req(fileName);
     const nameMatches = fileName.match(/\w+/);
