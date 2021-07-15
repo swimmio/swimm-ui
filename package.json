@@ -1,6 +1,6 @@
 {
   "name": "swimm-ui",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "",
   "private": true,
   "files": [
@@ -8,6 +8,7 @@
     "src/**/*.vue"
   ],
   "scripts": {
+    "deploy": "yarn build && firebase deploy --only hosting:swimm-ui --project swimm-dev",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"

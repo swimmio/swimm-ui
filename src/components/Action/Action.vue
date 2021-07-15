@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Icon from "../Icon/Icon";
+import Icon from "../Icon/Icon.vue";
 
 export const SIZES = { BIG: "big", SMALL: "small" };
 export const VARIANTS = { DANGER: "danger", SUCCESS: "success" };
@@ -32,60 +32,46 @@ export default {
      * The size of the button. Defaults to big.
      * @values big, small
      */
-    size: {
-      type: String,
-      default: SIZES.BIG,
-    },
+    size: { type: String, default: SIZES.BIG },
     /**
      * Flag for secondary button style
      * @type {boolean}
      */
-    secondary: { default: false, type: Boolean },
+    secondary: { type: Boolean, default: false },
     /**
      * Flag for is button is loading
      * @type {boolean}
      */
-    loading: { default: false, type: Boolean },
+    loading: { type: Boolean, default: false },
     /**
      * Flag for is button is disabled
      * @type {boolean}
      */
-    disabled: { default: false, type: Boolean },
+    disabled: { type: Boolean, default: false },
     /**
      * The html element used for the button.
      * @values button, link
      */
-    type: {
-      type: String,
-      default: TYPES.BUTTON,
-    },
+    type: { type: String, default: TYPES.BUTTON },
     /**
      * When setting the button’s type to a link (), use this option to give a href.
      */
-    href: {
-      type: String,
-      default: null,
-    },
+    href: { type: String, default: null },
     /**
      * Variant options
      * @values danger, success
      */
-    variant: {
-      type: String,
-      default: null,
-    },
+    variant: { type: String, default: null },
     /**
      * Appended icon
      * @values Any icon from Fontaweswimm library
      */
-    trailingIcon: {
-      type: String,
-      default: null,
-    },
-    buttonType: {
-      type: String,
-      default: "submit",
-    },
+    trailingIcon: { type: String, default: null },
+    /**
+     * Button type
+     * @values type attr of the button tag
+     */
+    buttonType: { type: String, default: "submit" },
   },
   computed: {
     classes() {

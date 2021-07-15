@@ -2,16 +2,17 @@ import Vue from 'vue';
 
 const req = require.context('../components/', true, /\.(vue)$/i);
 
-const fileIgnores = ['./Icon/Icon.vue']
+const fileIgnores = [];
 
 const filterIgnores = (file) => {
     return fileIgnores.indexOf(file) === -1;
 }
 
-req.keys().filter(filterIgnores).forEach((fileName) => {
+req.keys().flter(filterIgnores).forEach((fileName) => {
     // Get component config
     const componentConfig = req(fileName);
-    const componentName = fileName.match(/\w+/)[0];
+    const nameMatches = fileName.match(/\w+/);
+    const componentName = nameMatches !== null ? nameMatches[0] : '';
     // Register component globally
     Vue.component(
         componentName,
