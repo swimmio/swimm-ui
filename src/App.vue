@@ -3,12 +3,26 @@
     <div class="side-menu">
       <div class="logo"><img width="100" alt="logo" src="/img/logo.png" /></div>
       <div class="items">
-        <div class="page-item" @click="page = ''">Main</div>
-        <div class="page-item" @click="page = 'buttons'">Buttons</div>
+        <div
+          class="page-item"
+          :class="{ current: currentPage === '' }"
+          @click="currentPage = ''"
+        >
+          Main
+        </div>
+        <div
+          v-for="page in pages"
+          :key="page"
+          :class="{ current: currentPage === 'buttons' }"
+          class="page-item"
+          @click="currentPage = page"
+        >
+          {{ page | capitalize }}
+        </div>
       </div>
     </div>
     <div class="page">
-      <buttons v-if="page === 'buttons'" />
+      <buttons v-if="currentPage === 'buttons'" />
     </div>
   </div>
 </template>
@@ -21,9 +35,17 @@ type Pages = "buttons";
 
 @Component({
   components: { Buttons },
+  filters: {
+    capitalize: function (value: string) {
+      if (!value) return "";
+      value = value.toString();
+      return value.charAt(0).toUpperCase() + value.slice(1);
+    },
+  },
 })
 export default class App extends Vue {
-  public page: Pages = "buttons";
+  public pages = ["buttons"];
+  public currentPage: Pages = this.pages[0] as Pages;
 }
 </script>
 
@@ -51,6 +73,7 @@ export default class App extends Vue {
   padding: 4px;
   margin: 10px;
 }
+.side-menu .items .page-item.current,
 .side-menu .items .page-item:hover {
   background-color: var(--fifty-shades);
 }
