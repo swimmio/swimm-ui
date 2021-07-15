@@ -1,18 +1,18 @@
 {
   "name": "swimm-ui",
   "version": "1.1.6",
-  "description": "",
   "private": true,
-  "files": [
-    "dist/*",
-    "src/**/*.vue"
-  ],
+  "description": "",
   "scripts": {
     "deploy": "yarn build && firebase deploy --only hosting:swimm-ui --project swimm-dev",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "fontaweswimm": "https://github.com/swimmio/fontaweswimm#1.0.2",
