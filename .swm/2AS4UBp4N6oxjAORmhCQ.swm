@@ -4,7 +4,7 @@
     "content": [
         {
             "type": "text",
-            "text": "Using our components library in another Vue project is done by importing [[sym:./src/lib-components/index.js(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] into the other projects `main.js` file\n\n`import 'swimm-ui/src/lib-components';`\n\nAs we'll see below -[[sym:./src/lib-components/index.js(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] is adding the request components library to the Vue project importing it by itself"
+            "text": "Using our components library in another Vue project is done by importing [[sym:./src/lib-components/index.ts(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] into the other projects `main.js` file\n\n`import 'swimm-ui/src/lib-components';`\n\nAs we'll see below -[[sym:./src/lib-components/index.ts(1ca51801-54e7-42e5-bc6c-443ee2c96b24)]] is adding the request components library to the Vue project importing it by itself"
         },
         {
             "type": "snippet",
@@ -13,7 +13,7 @@
                 " ",
                 "*const req = require.context('../components/', true, /\\.(vue)$/i);",
                 " ",
-                " const fileIgnores = ['./Icon/Icon.vue']",
+                " const fileIgnores = [];",
                 " "
             ],
             "firstLineNumber": 1,
@@ -28,10 +28,15 @@
                 " ",
                 " const req = require.context('../components/', true, /\\.(vue)$/i);",
                 " ",
-                "*const fileIgnores = ['./Icon/Icon.vue']",
-                " ",
-                " const filterIgnores = (file) => {",
-                "     return fileIgnores.indexOf(file) === -1;"
+                "*const fileIgnores = [];",
+                "*",
+                "*const filterIgnores = (file) => {",
+                "*    return fileIgnores.indexOf(file) === -1;",
+                "*}",
+                "*",
+                "*req.keys().flter(filterIgnores).forEach((fileName) => {",
+                "*    // Get component config",
+                "*    const componentConfig = req(fileName);"
             ],
             "firstLineNumber": 2,
             "path": "src/lib-components/index.js",
@@ -42,8 +47,8 @@
         {
             "type": "snippet",
             "lines": [
-                "     const componentConfig = req(fileName);",
-                "     const componentName = fileName.match(/\\w+/)[0];",
+                "     const nameMatches = fileName.match(/\\w+/);",
+                "     const componentName = nameMatches !== null ? nameMatches[0] : '';",
                 "     // Register component globally",
                 "*    Vue.component(",
                 "*        componentName,",
@@ -52,10 +57,9 @@
                 "*        // otherwise fall back to module's root.",
                 "*        componentConfig.default || componentConfig",
                 "*    );",
-                " });",
-                " "
+                " });"
             ],
-            "firstLineNumber": 13,
+            "firstLineNumber": 14,
             "path": "src/lib-components/index.js",
             "comments": [
                 "Exposing the selected component (iterator) to Vue using `Vue.component` function"
@@ -69,11 +73,11 @@
             "path": "src/lib-components/index.js"
         }
     },
-    "file_version": "2.0.1",
+    "file_version": "2.0.2",
     "meta": {
-        "app_version": "0.4.4-2",
+        "app_version": "0.5.0-0",
         "file_blobs": {
-            "src/lib-components/index.js": "df945d7512ab45e86e72c9906ec564daefd5e059"
+            "src/lib-components/index.js": "41e7e96df315efd885a8e273445200a41068052b"
         }
     }
 }
