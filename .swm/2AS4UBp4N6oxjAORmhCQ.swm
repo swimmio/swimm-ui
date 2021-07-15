@@ -13,7 +13,7 @@
                 " ",
                 "*const req = require.context('../components/', true, /\\.(vue)$/i);",
                 " ",
-                " const fileIgnores: string[] = ['./Icon/Icon.vue'];",
+                " const fileIgnores: string[] = [];",
                 " "
             ],
             "firstLineNumber": 1,
@@ -28,7 +28,7 @@
                 " ",
                 " const req = require.context('../components/', true, /\\.(vue)$/i);",
                 " ",
-                "*const fileIgnores: string[] = ['./Icon/Icon.vue'];",
+                "*const fileIgnores: string[] = [];",
                 " ",
                 " const filterIgnores = (file: string) => {",
                 "     return fileIgnores.indexOf(file) === -1;"
@@ -68,11 +68,11 @@
             "path": "src/lib-components/index.ts"
         }
     },
-    "file_version": "2.0.1",
+    "file_version": "2.0.2",
     "meta": {
-        "app_version": "0.4.6-0",
+        "app_version": "0.5.0-0",
         "file_blobs": {
-            "src/lib-components/index.ts": "b0a23022f7bd04ef470f22a860140d47d5824004"
+            "src/lib-components/index.ts": "5cb860365483780e596fe03ad57aad5f1421670f"
         }
     }
 }
