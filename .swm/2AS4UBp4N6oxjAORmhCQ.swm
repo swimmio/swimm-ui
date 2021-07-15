@@ -13,8 +13,8 @@
                 " ",
                 "*const req = require.context('../components/', true, /\\.(vue)$/i);",
                 " ",
-                " const fileIgnores: string[] = [];",
-                " "
+                " // TODO: Comment out if you want to ignore publishing a component",
+                " // const fileIgnores: string[] = [''];"
             ],
             "firstLineNumber": 1,
             "path": "src/lib-components/index.ts",
@@ -28,10 +28,15 @@
                 " ",
                 " const req = require.context('../components/', true, /\\.(vue)$/i);",
                 " ",
-                "*const fileIgnores: string[] = [];",
-                " ",
-                " const filterIgnores = (file: string) => {",
-                "     return fileIgnores.indexOf(file) === -1;"
+                "*// TODO: Comment out if you want to ignore publishing a component",
+                "*// const fileIgnores: string[] = [''];",
+                "*",
+                "*// const filterIgnores = (file: string) => {",
+                "*//     return fileIgnores.indexOf(file) === -1;",
+                "*// }",
+                "*",
+                "*// TODO: Comment out if you want to ignore publishing a component",
+                "*// .filter(filterIgnores)"
             ],
             "firstLineNumber": 2,
             "path": "src/lib-components/index.ts",
@@ -54,7 +59,7 @@
                 "*    );",
                 " });"
             ],
-            "firstLineNumber": 14,
+            "firstLineNumber": 17,
             "path": "src/lib-components/index.ts",
             "comments": [
                 "Exposing the selected component (iterator) to Vue using `Vue.component` function"
@@ -72,7 +77,7 @@
     "meta": {
         "app_version": "0.5.0-0",
         "file_blobs": {
-            "src/lib-components/index.ts": "5cb860365483780e596fe03ad57aad5f1421670f"
+            "src/lib-components/index.ts": "ec062c270a1257d8eeec4bac0af414028f80d6bb"
         }
     }
 }
