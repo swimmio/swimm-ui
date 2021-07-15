@@ -19,7 +19,7 @@ jobs:
         node-version: 14.16
 
     - name: Install firebase
-      run: npm install firebase-tools
+      run: yarn install firebase-tools
 
     - name: Install npm dependencies
       run: yarn install --network-timeout 120000
