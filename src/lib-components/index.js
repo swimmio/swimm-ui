@@ -11,7 +11,7 @@ const req = require.context('../components/', true, /\.(vue)$/i);
 
 // TODO: Comment out if you want to ignore publishing a component
 // .filter(filterIgnores)
-req.keys().forEach((fileName: string) => {
+req.keys().forEach((fileName) => {
     // Get component config
     const componentConfig = req(fileName);
     const nameMatches = fileName.match(/\w+/);
