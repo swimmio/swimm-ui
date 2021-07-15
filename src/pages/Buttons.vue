@@ -1,0 +1,118 @@
+<template>
+  <div>
+    <div class="row">
+      <Action class="dummy-button">Primary Default</Action>
+      <Action class="dummy-button"></Action>
+      <Action class="dummy-button" trailingIcon="arrow-right"
+        >Primary with</Action
+      >
+      <Action class="dummy-button" :disabled="true">Primary Disabled</Action>
+    </div>
+    <div class="row">
+      <Action class="dummy-button" secondary>Secondary Default</Action>
+      <Action class="dummy-button" secondary :disabled="true"
+        >Secondary Disabled</Action
+      >
+    </div>
+    <div class="row">
+      <Action class="dummy-button" :type="TYPES.LINK" href="https://swimm.io"
+        >Link Default</Action
+      >
+      <Action class="dummy-button" :type="TYPES.LINK" :disabled="true"
+        >Link Disabled</Action
+      >
+    </div>
+    <div class="row">
+      <Action class="dummy-button" loading>Loading</Action>
+      <Action class="dummy-button" secondary loading>Loading</Action>
+      <Action class="dummy-button" :type="TYPES.LINK" loading>Loading</Action>
+      <Action class="dummy-button" loading :size="SIZES.SMALL">Loading</Action>
+      <Action class="dummy-button" loading :variant="VARIANTS.DANGER"
+        >Loading</Action
+      >
+      <Action class="dummy-button" loading :variant="VARIANTS.SUCCESS"
+        >Loading</Action
+      >
+    </div>
+    <div class="row">
+      <Action class="dummy-button" :variant="VARIANTS.DANGER" secondary
+        >Primary Danger</Action
+      >
+      <Action class="dummy-button" :variant="VARIANTS.SUCCESS"
+        >Primary Success</Action
+      >
+    </div>
+    <div class="row">
+      <Action class="dummy-button" :size="SIZES.SMALL">Small Default</Action>
+      <Action class="dummy-button" :size="SIZES.SMALL" :disabled="true"
+        >Small Disabled</Action
+      >
+    </div>
+    <div class="row">
+      <Action class="dummy-button" :size="SIZES.SMALL" secondary
+        >Secondary Default</Action
+      >
+      <Action
+        class="dummy-button"
+        :size="SIZES.SMALL"
+        secondary
+        :disabled="true"
+        >Secondary Disabled</Action
+      >
+    </div>
+    <div class="row">
+      <Action
+        class="dummy-button"
+        :size="SIZES.SMALL"
+        :type="TYPES.LINK"
+        href="https://swimm.io"
+        >Link Default</Action
+      >
+      <Action
+        class="dummy-button"
+        :size="SIZES.SMALL"
+        :type="TYPES.LINK"
+        :disabled="true"
+        >Link Disabled</Action
+      >
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import Action, {
+  TYPES,
+  SIZES,
+  VARIANTS,
+} from "../components/Action/Action.vue";
+
+@Component({
+  components: {
+    Action,
+  },
+})
+export default class Buttons extends Vue {
+  get TYPES() {
+    return TYPES;
+  }
+  get SIZES() {
+    return SIZES;
+  }
+  get VARIANTS() {
+    return VARIANTS;
+  }
+}
+</script>
+
+<style>
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dummy-button {
+  margin: 40px;
+}
+</style>
