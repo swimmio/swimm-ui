@@ -1,4 +1,4 @@
-name: Publish Swimm Web Staging
+name: UI Publish
 
 on:
   push:
