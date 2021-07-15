@@ -2,7 +2,7 @@ import Vue from 'vue';
 
 const req = require.context('../components/', true, /\.(vue)$/i);
 
-const fileIgnores: string[] = ['./Icon/Icon.vue'];
+const fileIgnores: string[] = [];
 
 const filterIgnores = (file: string) => {
     return fileIgnores.indexOf(file) === -1;
