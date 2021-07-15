@@ -1,0 +1,21 @@
+:root {
+    --top-header-height: 55px;
+    --form-sticky-header-height: 100px;
+    --footer-height: 38px;
+    --main-padding-x: 6%;
+
+    --narrow-content-width: 1000px;
+    --content-width: 80%;
+
+    --code-line-height: 23px;
+    --line-number-min-width: 50px;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
