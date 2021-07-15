@@ -8,7 +8,7 @@ const filterIgnores = (file) => {
     return fileIgnores.indexOf(file) === -1;
 }
 
-req.keys().flter(filterIgnores).forEach((fileName) => {
+req.keys().filter(filterIgnores).forEach((fileName) => {
     // Get component config
     const componentConfig = req(fileName);
     const nameMatches = fileName.match(/\w+/);
