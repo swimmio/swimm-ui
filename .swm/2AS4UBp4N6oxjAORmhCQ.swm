@@ -34,7 +34,7 @@
                 "*    return fileIgnores.indexOf(file) === -1;",
                 "*}",
                 "*",
-                "*req.keys().flter(filterIgnores).forEach((fileName) => {",
+                "*req.keys().filter(filterIgnores).forEach((fileName) => {",
                 "*    // Get component config",
                 "*    const componentConfig = req(fileName);"
             ],
@@ -73,11 +73,11 @@
             "path": "src/lib-components/index.js"
         }
     },
-    "file_version": "2.0.2",
+    "file_version": "2.0.3",
     "meta": {
-        "app_version": "0.5.0-0",
+        "app_version": "0.6.4-0",
         "file_blobs": {
-            "src/lib-components/index.js": "41e7e96df315efd885a8e273445200a41068052b"
+            "src/lib-components/index.js": "2320e6ad6b053ba9b125ef44325c910e5711a2a7"
         }
     }
 }
