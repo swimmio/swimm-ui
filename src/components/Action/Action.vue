@@ -96,7 +96,7 @@ export default {
   position: relative;
   text-decoration: none;
   border: 1px solid transparent;
-  border-radius: 100px;
+  border-radius: 4px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -156,6 +156,12 @@ export default {
 .button.disabled,
 .button:disabled {
   color: var(--fifty-shades);
+  background: var(--clear-white);
+  cursor: not-allowed;
+}
+
+.button:not(.secondary):not(.link).disabled,
+.button:not(.secondary):not(.link):disabled {
   background: var(--wash-me);
 }
 
