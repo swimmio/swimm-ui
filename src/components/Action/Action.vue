@@ -49,6 +49,10 @@ export default {
      */
     disabled: { type: Boolean, default: false },
     /**
+     * Flag for having no padding to the button
+     */
+    noPadding: { type: Boolean, default: false },
+    /**
      * The html element used for the button.
      * @values button, link
      */
@@ -80,6 +84,7 @@ export default {
         this.size,
         this.variant,
         {
+          'no-padding': this.noPadding,
           disabled: this.disabled,
           loading: this.loading,
           secondary: this.secondary,
@@ -204,6 +209,7 @@ export default {
   color: transparent;
 }
 
+.button.no-padding,
 .button.loading.small {
   padding: 0;
 }
