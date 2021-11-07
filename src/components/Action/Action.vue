@@ -167,7 +167,7 @@ export default {
 
 .button:not(.secondary):not(.link).disabled,
 .button:not(.secondary):not(.link):disabled {
-  background: var(--wash-me);
+  background-color: var(--wash-me);
 }
 
 .button.small {
