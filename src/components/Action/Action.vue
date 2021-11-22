@@ -121,12 +121,8 @@ export default {
 
 .button:not([disabled]):focus,
 .button:not([disabled]):hover {
-  background: linear-gradient(
-      0deg,
-      rgba(0, 62, 159, 0.3),
-      rgba(0, 62, 159, 0.3)
-    ),
-    var(--swimm-blue);
+  background: var(--quick-dive);
+  opacity: 0.9;
 }
 
 .button.secondary {
