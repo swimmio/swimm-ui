@@ -13,7 +13,7 @@
         <div
           v-for="page in pages"
           :key="page"
-          :class="{ current: currentPage === 'buttons' }"
+          :class="{ current: currentPage === page }"
           class="page-item"
           @click="currentPage = page"
         >
@@ -23,16 +23,18 @@
     </div>
     <div class="page">
       <buttons v-if="currentPage === 'buttons'" />
+      <colors v-if="currentPage === 'colors'" />
     </div>
   </div>
 </template>
 
 <script>
 import Buttons from "./pages/Buttons.vue";
+import Colors from "./pages/Colors.vue";
 
 export default {
   name: "App",
-  components: { Buttons },
+  components: { Buttons, Colors },
   filters: {
     capitalize: function (value) {
       if (!value) return "";
@@ -42,8 +44,8 @@ export default {
   },
   data() {
     return {
-      pages: ["buttons"],
-      currentPage: "buttons",
+      pages: ["buttons", "colors"],
+      currentPage: "colors",
     };
   },
 };
