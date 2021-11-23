@@ -14,8 +14,10 @@ This playlist will get you up and running
 
 <!-- Steps - Do not remove this comment -->
 1. [Collaboration Tools](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/x7wlIb3K6hjYVHDTrDJ3)
-2. [Welcome to Swimm's Creative](welcome-to-swimms-creative.via4d.sw.md)
-3. [Figma file structure in Swimm](figma-file-structure-in-swimm.xipcb.sw.md)
+2. [📸 Let us see you](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/4aF164OjoZDW7wRvYDF9)
+3. [Welcome to Swimm's Creative](welcome-to-swimms-creative.via4d.sw.md)
+4. [Figma file structure in Swimm](figma-file-structure-in-swimm.xipcb.sw.md)
+5. [The Shawarma Method - how our product mechanism works](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/UIcGnNh8bB60Som0ChVe)
 
 
 <br/>
