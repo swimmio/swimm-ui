@@ -1,0 +1,16 @@
+{
+    "id": "via4d",
+    "name": "Welcome to Swimm's Creative",
+    "content": [
+        {
+            "type": "text",
+            "text": "Here is a list of all of the collaboration tools we use"
+        }
+    ],
+    "symbols": {},
+    "file_version": "2.0.3",
+    "meta": {
+        "app_version": "0.6.7-1",
+        "file_blobs": {}
+    }
+}
