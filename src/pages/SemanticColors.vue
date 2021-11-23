@@ -25,13 +25,14 @@ import Action from "../components/Action/Action.vue";
 export default {
   components: { Action },
   name: "Buttons",
-  computed: {
-    isDark() {
-      return document.body.dataset.theme === "dark";
-    },
+  mounted() {
+    if (document.body.dataset.theme === "dark") {
+      this.isDark = true;
+    }
   },
   data() {
     return {
+      isDark: false,
       colorsGroups: [
         {
           name: "Common",
@@ -86,8 +87,10 @@ export default {
     toggleDark() {
       if (this.isDark) {
         document.body.setAttribute("data-theme", "light");
+        this.isDark = false;
       } else {
         document.body.setAttribute("data-theme", "dark");
+        this.isDark = true;
       }
     },
   },
