@@ -1,0 +1,37 @@
+:root {
+    --color-bg: var(--clear-white);
+    --color-surface: var(--wash-me);
+    --color-hover: var(--pearl-river);
+    --color-selected: var(--deep-sea);
+
+    --color-primary-default: var(--swimm-blue);
+    --color-primary-hover: var(--quick-dive);
+    --color-secondary-default: var(--clear-white);
+    --color-secondary-hover: var(--pearl-river);
+    --color-disable: var(--wash-me);
+    --color-error: var(--oh-no-red-100);
+    --color-success: var(--success-green-100);
+    --color-warning: var(--warning-yellow-100);
+    --color-autosync: var(--safe-zone);
+    /* --color-plan-free: var(--TBD);
+    --color-plan-team: var(--TBD);
+    --color-plan-enterprise: var(--TBD);
+    --color-plan-opensource: var(--TBD);
+    --color-label-tags: var(--TBD);
+    --color-label-shortcut: var(--TBD); */
+
+    --text-color-primary: var(--deep-sea);
+    --text-color-secondary: var(--high-tide);
+    --text-color-link: var(--swimm-blue);
+    --text-color-on-primary: var(--clear-white);
+    --text-color-invert: var(--clear-white);
+    --text-color-disable: var(--fifty-shades);
+    --text-color-on-error: var(--oh-no-red-500);
+    --text-color-on-success: var(--success-green-500);
+    --text-color-on-warning: var(--warning-yellow-500);
+    --text-color-on-placeholder: var(--fifty-shades);
+
+    --border-color-input: var(--fifty-shades);
+    --border-color-focus: var(--swimm-blue);
+    --border-color-error: var(--oh-no-red-500);
+}

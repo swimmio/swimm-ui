@@ -22,8 +22,9 @@
       </div>
     </div>
     <div class="page">
-      <buttons v-if="currentPage === 'buttons'" />
-      <colors v-if="currentPage === 'colors'" />
+      <Buttons v-if="currentPage === 'buttons'" />
+      <Colors v-if="currentPage === 'colors'" />
+      <SemanticColors v-if="currentPage === 'semantic'" />
     </div>
   </div>
 </template>
@@ -31,10 +32,11 @@
 <script>
 import Buttons from "./pages/Buttons.vue";
 import Colors from "./pages/Colors.vue";
+import SemanticColors from "./pages/SemanticColors.vue";
 
 export default {
   name: "App",
-  components: { Buttons, Colors },
+  components: { Buttons, Colors, SemanticColors },
   filters: {
     capitalize: function (value) {
       if (!value) return "";
@@ -44,8 +46,8 @@ export default {
   },
   data() {
     return {
-      pages: ["buttons", "colors"],
-      currentPage: "colors",
+      pages: ["buttons", "colors", "semantic"],
+      currentPage: "semantic",
     };
   },
 };
