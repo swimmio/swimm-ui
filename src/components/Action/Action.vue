@@ -127,15 +127,15 @@ export default {
 
 .button.secondary {
   color: var(--deep-sea);
-  background: transparent;
+  background: var(--clear-white);
   border-color: var(--deep-sea);
 }
 
 .button.secondary:not([disabled]):focus,
 .button.secondary:not([disabled]):hover {
-  color: var(--high-tide);
-  background: var(--clear-white-100);
-  border-color: var(--high-tide);
+  color: var(--deep-sea);
+  background: var(--pearl-river);
+  border-color: var(--deep-sea);
 }
 
 .button.link {
