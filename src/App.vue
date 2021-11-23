@@ -20,6 +20,9 @@
           {{ page | capitalize }}
         </div>
       </div>
+      <Action secondary @click.native="toggleDark">
+        {{ isDark ? "Light" : "Dark" }}
+      </Action>
     </div>
     <div class="page">
       <Buttons v-if="currentPage === 'buttons'" />
@@ -30,13 +33,14 @@
 </template>
 
 <script>
+import Action from "./components/Action/Action.vue";
 import Buttons from "./pages/Buttons.vue";
 import Colors from "./pages/Colors.vue";
 import SemanticColors from "./pages/SemanticColors.vue";
 
 export default {
   name: "App",
-  components: { Buttons, Colors, SemanticColors },
+  components: { Action, Buttons, Colors, SemanticColors },
   filters: {
     capitalize: function (value) {
       if (!value) return "";
@@ -44,11 +48,28 @@ export default {
       return value.charAt(0).toUpperCase() + value.slice(1);
     },
   },
+  mounted() {
+    if (document.body.dataset.theme === "dark") {
+      this.isDark = true;
+    }
+  },
   data() {
     return {
+      isDark: false,
       pages: ["buttons", "colors", "semantic"],
       currentPage: "semantic",
     };
+  },
+  methods: {
+    toggleDark() {
+      if (this.isDark) {
+        document.body.setAttribute("data-theme", "light");
+        this.isDark = false;
+      } else {
+        document.body.setAttribute("data-theme", "dark");
+        this.isDark = true;
+      }
+    },
   },
 };
 </script>
@@ -59,7 +80,8 @@ export default {
   justify-content: space-between;
 }
 .side-menu {
-  background-color: var(--wash-me);
+  background-color: var(--color-surface);
+  color: var(--text-color-primary);
   min-width: 250px;
   height: 100vh;
   text-align: center;
@@ -79,10 +101,13 @@ export default {
 }
 .side-menu .items .page-item.current,
 .side-menu .items .page-item:hover {
-  background-color: var(--fifty-shades);
+  background-color: var(--text-color-invert);
 }
 
 .page {
   flex: 1;
+  background-color: var(--color-bg);
+  color: var(--text-color-primary);
+  border-color: var(--border-color-input);
 }
 </style>

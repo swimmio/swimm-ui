@@ -13,26 +13,14 @@
         </div>
       </div>
     </div>
-    <Action @click.native="toggleDark">
-      {{ isDark ? "Light" : "Dark" }}
-    </Action>
   </div>
 </template>
 
 <script>
-import Action from "../components/Action/Action.vue";
-
 export default {
-  components: { Action },
   name: "Buttons",
-  mounted() {
-    if (document.body.dataset.theme === "dark") {
-      this.isDark = true;
-    }
-  },
   data() {
     return {
-      isDark: false,
       colorsGroups: [
         {
           name: "Common",
@@ -83,17 +71,6 @@ export default {
       ],
     };
   },
-  methods: {
-    toggleDark() {
-      if (this.isDark) {
-        document.body.setAttribute("data-theme", "light");
-        this.isDark = false;
-      } else {
-        document.body.setAttribute("data-theme", "dark");
-        this.isDark = true;
-      }
-    },
-  },
 };
 </script>
 
@@ -120,6 +97,6 @@ export default {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid var(--fifty-shades);
+  border: 1px solid var(--border-color-input);
 }
 </style>

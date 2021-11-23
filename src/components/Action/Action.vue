@@ -84,7 +84,7 @@ export default {
         this.size,
         this.variant,
         {
-          'no-padding': this.noPadding,
+          "no-padding": this.noPadding,
           disabled: this.disabled,
           loading: this.loading,
           secondary: this.secondary,
@@ -106,8 +106,8 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 12px 32px;
-  background: var(--swimm-blue);
-  color: var(--clear-white);
+  background: var(--color-primary-default);
+  color: var(--text-color-on-primary);
   font-family: var(--fontfamily-main);
   font-size: var(--subtitle-L);
   font-weight: 800;
@@ -119,35 +119,34 @@ export default {
   cursor: pointer;
 }
 
-.button:not([disabled]):focus,
+.button:not([disabled]):focus-visible,
 .button:not([disabled]):hover {
-  background: var(--quick-dive);
-  opacity: 0.9;
+  background: var(--color-primary-hover);
 }
 
 .button.secondary {
-  color: var(--deep-sea);
-  background: var(--clear-white);
-  border-color: var(--deep-sea);
+  color: var(--text-color-primary);
+  background: var(--color-secondary-default);
+  border-color: var(--border-color-primary);
 }
 
-.button.secondary:not([disabled]):focus,
+.button.secondary:not([disabled]):focus-visible,
 .button.secondary:not([disabled]):hover {
-  color: var(--deep-sea);
-  background: var(--pearl-river);
-  border-color: var(--deep-sea);
+  color: var(--text-color-primary);
+  background: var(--color-secondary-hover);
+  border-color: var(--border-color-primary);
 }
 
 .button.link {
   display: unset;
-  background: var(--clear-white);
-  border-color: var(--clear-white);
+  background: transparent;
+  border-color: transparent;
   color: var(--high-tide);
 }
 
-.button.link:not([disabled]):focus,
+.button.link:not([disabled]):focus-visible,
 .button.link:not([disabled]):hover {
-  background: var(--fifty-shades);
+  background: var(--color-secondary-hover);
 }
 
 .button:active:not([disabled]) {
@@ -156,14 +155,19 @@ export default {
 
 .button.disabled,
 .button:disabled {
-  color: var(--fifty-shades);
-  background: var(--clear-white);
+  color: var(--text-color-disable);
+  background: var(--color-bg);
   cursor: not-allowed;
 }
 
 .button:not(.secondary):not(.link).disabled,
 .button:not(.secondary):not(.link):disabled {
-  background-color: var(--wash-me);
+  background-color: var(--color-disable);
+}
+
+.button.secondary:not(.link).disabled,
+.button.secondary:not(.link):disabled {
+  border-color: var(--text-color-disable);
 }
 
 .button.small {
@@ -172,12 +176,12 @@ export default {
 }
 
 .button.danger {
-  background: var(--oh-no-red-100);
+  background: var(--color-error);
   border-color: transparent;
-  color: var(--oh-no-red);
+  color: var(--text-color-on-error);
 }
 
-.button.danger:not([disabled]):focus,
+.button.danger:not([disabled]):focus-visible,
 .button.danger:not([disabled]):hover {
   background: var(--oh-no-red-300);
   border-color: transparent;
@@ -185,12 +189,12 @@ export default {
 }
 
 .button.success {
-  background: var(--success-green-100);
+  background: var(--color-success);
   border-color: transparent;
-  color: var(--success-green);
+  color: var(--text-color-on-success);
 }
 
-.button.success:not([disabled]):focus,
+.button.success:not([disabled]):focus-visible,
 .button.success:not([disabled]):hover {
   background: var(--success-green-300);
   border-color: transparent;

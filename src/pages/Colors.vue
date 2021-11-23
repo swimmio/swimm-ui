@@ -126,6 +126,6 @@ export default {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid var(--fifty-shades);
+  border: 1px solid var(--border-color-input);
 }
 </style>

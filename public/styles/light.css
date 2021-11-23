@@ -31,6 +31,7 @@
     --text-color-on-warning: var(--warning-yellow-500);
     --text-color-on-placeholder: var(--fifty-shades);
 
+    --border-color-primary: var(--deep-sea);
     --border-color-input: var(--fifty-shades);
     --border-color-focus: var(--swimm-blue);
     --border-color-error: var(--oh-no-red-500);
