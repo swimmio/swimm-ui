@@ -26,7 +26,7 @@ export default {
   box-sizing: border-box;
   text-align: center;
   margin-top: 20px;
-  background-color: var(--wash-me);
+  background-color: var(--color-surface);
   padding: 75px 185px;
   box-shadow: 1px 1px 4px rgba(66, 66, 66, 0.2);
   border-radius: 6px;
