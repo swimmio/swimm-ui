@@ -1,26 +1,23 @@
 :root {
     /*** Primary ***/
-    --clear-white: #ffffff;
-    --clear-white-750: #ffffffbf;
-    --clear-white-650: #ffffffa6;
-    --clear-white-100: #ffffff1a;
-
     --feet-in-the-water: #e5ecff;
-    --feet-in-the-water-500: #e5ecff80;
 
-    --safe-zone: #f3e2fd;
-    --safe-zone-100: #f3e2fd7f;
+    --coastal-shore: #1675e5;
 
-    --swimm-blue: #0968ff;
-    --swimm-blue-100: #0968ff1a;
+    --swimm-blue: #1847de;
 
     --quick-dive: #053c86;
 
     --deep-sea: #0c2739;
 
     /*** Neutral ***/
+    --clear-white: #ffffff;
+
     --wash-me: #f4f5f7;
-    --wash-me-500: #f4f5f780;
+
+    --pearl-river: #e7e7e7;
+
+    --harbor-gray: #dad7d7;
 
     --fifty-shades: #c1c7d0;
     --fifty-shades-500: #c1c7d080;
@@ -28,28 +25,49 @@
     --high-tide: #6a6b6c;
     --high-tide-500: #6a6b6c80;
 
+    --gravel-rocks: #515151;
+
+    --sea-anchor: #343434;
+
+    --dark-charcoal: #1f2427;
+
     /*** Accent ***/
+
+    --safe-zone: #f3e2fd;
+    --safe-zone-100: #f3e2fd7f;
+
+    --high-violet: #ff7cff;
+
+    --wave-jammer: #a31177;
+
+    --wild-ultra: #3d274a;
+
     --fake-caffe-sheva: #b5fee6;
     --fake-caffe-sheva-500: #b5fee680;
 
-    --high-violet: #c558f5;
-
-    --wave-jammer: #b6248a;
-
     /*** Semantic ***/
-    --success-green: #2ea44f;
+    --success-green-900: #193821;
+    --success-green-700: #077025;
+    --success-green-500: #2ea44f;
     --success-green-300: #2ea44f4d;
     --success-green-100: #ebf6ee;
+    --success-green: var(--success-green-500);
 
-    --warning-yellow: #ffd33d;
+    --warning-yellow-900: #544b2c;
+    --warning-yellow-700: #edbf1c;
+    --warning-yellow-500: #ffd33d;
     --warning-yellow-300: #ffd33d4d;
     --warning-yellow-200: #ffd33d33;
-    --warning-yellow-100: #fffcee;
+    --warning-yellow-100: #fff9dc;
+    --warning-yellow: var(--warning-yellow-500);
 
-    --oh-no-red: #cb2431;
+    --oh-no-red-900: #3b1316;
+    --oh-no-red-700: #ab0101;
+    --oh-no-red-500: #d84a4a;
     --oh-no-red-300: #cb24314d;
     --oh-no-red-200: #cb243133;
     --oh-no-red-100: #fae9ec;
+    --oh-no-red: var(--oh-no-red-500);
 
     /*** Gradients ***/
     --blue-high-from: #b958f0;

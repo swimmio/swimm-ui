@@ -1,0 +1,38 @@
+[data-theme="dark"] {
+    --color-bg: var(--dark-charcoal);
+    --color-surface: var(--sea-anchor);
+    --color-hover: var(--gravel-rocks);
+    --color-selected: var(--quick-dive);
+
+    --color-primary-default: var(--coastal-shore);
+    --color-primary-hover: var(--quick-dive);
+    --color-secondary-default: var(--high-tide);
+    --color-secondary-hover: var(--gravel-rocks);
+    --color-disable: var(--gravel-rocks);
+    --color-error: var(--oh-no-red-900);
+    --color-success: var(--success-green-900);
+    --color-warning: var(--warning-yellow-900);
+    --color-autosync: var(--wild-ultra);
+    /* --color-plan-free: var(--TBD);
+    --color-plan-team: var(--TBD);
+    --color-plan-enterprise: var(--TBD);
+    --color-plan-opensource: var(--TBD);
+    --color-label-tags: var(--TBD);
+    --color-label-shortcut: var(--TBD); */
+
+    --text-color-primary: var(--harbor-gray);
+    --text-color-secondary: var(--fifty-shades);
+    --text-color-link: var(--coastal-shore);
+    --text-color-on-primary: var(--clear-white);
+    --text-color-invert: var(--deep-sea);
+    --text-color-disable: var(--high-tide);
+    --text-color-on-error: var(--oh-no-red-500);
+    --text-color-on-success: var(--success-green-500);
+    --text-color-on-warning: var(--warning-yellow-500);
+    --text-color-on-placeholder: var(--high-tide);
+
+    --border-color-primary: var(--gravel-rocks);
+    --border-color-input: var(--gravel-rocks);
+    --border-color-focus: var(--coastal-shore);
+    --border-color-error: var(--oh-no-red-500);
+}
