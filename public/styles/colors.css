@@ -90,7 +90,7 @@
 }
 
 body {
-    color: var(--deep-sea);
+    color: var(--text-color-primary);
 }
 
 .box-shadow-small {

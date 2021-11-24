@@ -68,6 +68,16 @@ export default {
             "border-color-error",
           ],
         },
+        {
+          name: "Decorative",
+          colors: [
+            "color-decorative-1",
+            "color-decorative-2",
+            "color-decorative-3",
+            "color-decorative-4",
+            "color-decorative-5",
+          ],
+        },
       ],
     };
   },

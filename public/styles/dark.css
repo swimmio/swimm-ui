@@ -32,7 +32,16 @@
     --text-color-on-placeholder: var(--high-tide);
 
     --border-color-primary: var(--gravel-rocks);
+    --border-color-secondary: var(--fifty-shades);
     --border-color-input: var(--gravel-rocks);
     --border-color-focus: var(--coastal-shore);
     --border-color-error: var(--oh-no-red-500);
+
+    --color-decorative-1: var(--swimm-blue);
+    --color-decorative-2: var(--feet-in-the-water);
+    --color-decorative-3: var(--fake-caffe-sheva);
+    --color-decorative-4: var(--high-violet);
+    --color-decorative-5: var(--deep-sea);
+
+    color: var(--text-color-primary);
 }
