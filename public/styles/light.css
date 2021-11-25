@@ -13,6 +13,7 @@
     --color-success: var(--success-green-100);
     --color-warning: var(--warning-yellow-100);
     --color-autosync: var(--safe-zone);
+    --color-info: var(--feet-in-the-water);
     /* --color-plan-free: var(--TBD);
     --color-plan-team: var(--TBD);
     --color-plan-enterprise: var(--TBD);
@@ -26,6 +27,7 @@
     --text-color-on-primary: var(--clear-white);
     --text-color-invert: var(--clear-white);
     --text-color-disable: var(--fifty-shades);
+    --text-color-accent: var(--high-violet);
     --text-color-on-error: var(--oh-no-red-500);
     --text-color-on-success: var(--success-green-500);
     --text-color-on-warning: var(--warning-yellow-500);
@@ -42,4 +44,8 @@
     --color-decorative-3: var(--fake-caffe-sheva);
     --color-decorative-4: var(--high-violet);
     --color-decorative-5: var(--deep-sea);
+
+    --color-doc-cover: var(--feet-in-the-water);
+    --color-code-error: var(--oh-no-red-100);
+    --color-code-autosync: var(--wide-awake);
 }
