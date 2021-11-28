@@ -18,6 +18,10 @@ This playlist will get you up and running
 3. [Welcome to Swimm's Creative](welcome-to-swimms-creative.via4d.sw.md)
 4. [Figma file structure in Swimm](figma-file-structure-in-swimm.xipcb.sw.md)
 5. [The Shawarma Method - how our product mechanism works](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/UIcGnNh8bB60Som0ChVe)
+6. [More Swimminars](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/bM7cv3vu6SogzbYEC6Vf)
+7. [Wrap Ups and Kick Offs](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/jFQsmDhWjyfOA51UBKd5)
+8. [How to make a French press](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/oKGkm8eMdanbTuWIsDYx)
+9. [Slack channels to know](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/vzpUn5kRgZawU7E7QtqV)
 
 
 <br/>
