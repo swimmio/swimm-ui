@@ -126,7 +126,7 @@ export default {
 
 .button.secondary {
   color: var(--text-color-primary);
-  background: var(--color-secondary-default);
+  background: transparent;
   border-color: var(--border-color-primary);
 }
 
