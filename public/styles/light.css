@@ -46,6 +46,8 @@
     --color-decorative-5: var(--deep-sea);
 
     --color-doc-cover: var(--feet-in-the-water);
-    --color-code-error: var(--oh-no-red-100);
-    --color-code-autosync: var(--wide-awake);
+    --color-code-error-sandwich: var(--oh-no-red-100);
+    --color-code-error-meat: var(--oh-no-red-300);
+    --color-code-autosync-sandwich: var(--safe-zone);
+    --color-code-autosync-meat: var(--wide-awake);
 }

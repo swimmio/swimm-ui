@@ -46,8 +46,10 @@
     --color-decorative-5: var(--deep-sea);
 
     --color-doc-cover: var(--gravel-rocks);
-    --color-code-error: var(--oh-no-red-100);
-    --color-code-autosync: var(--wide-awake);
+    --color-code-error-sandwich: var(--oh-no-red-900);
+    --color-code-error-meat: var(--oh-no-red-700);
+    --color-code-autosync-sandwich: var(--wild-ultra);
+    --color-code-autosync-meat: var(--wave-jammer);
 
     color: var(--text-color-primary);
 }
