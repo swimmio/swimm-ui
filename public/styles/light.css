@@ -14,7 +14,7 @@
     --color-warning: var(--warning-yellow-100);
     --color-autosync: var(--safe-zone);
     --color-info: var(--feet-in-the-water);
-    --color-label-tag: var(--fifty-shades);
+    --text-color-on-light: var(--deep-sea);
     /* --color-plan-free: var(--TBD);
     --color-plan-team: var(--TBD);
     --color-plan-enterprise: var(--TBD);

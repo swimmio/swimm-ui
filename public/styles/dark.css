@@ -14,7 +14,7 @@
     --color-warning: var(--warning-yellow-900);
     --color-autosync: var(--wild-ultra);
     --color-info: var(--quick-dive);
-    --color-label-tag: var(--high-tide);
+    --text-on-light: var(--deep-sea);
     /* --color-plan-free: var(--TBD);
     --color-plan-team: var(--TBD);
     --color-plan-enterprise: var(--TBD);
