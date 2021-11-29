@@ -2,7 +2,7 @@
 id: xipcb
 name: Figma file structure in Swimm
 file_version: 1.0.2
-app_version: 0.6.7-1
+app_version: 0.6.8-0
 ---
 
 ### Figma 5 project folders:
@@ -60,6 +60,10 @@ app_version: 0.6.7-1
 <br/>
 
 <div align="center"><img src="https://firebasestorage.googleapis.com/v0/b/swimmio-content/o/repositories%2Fpw8tVz0TAgLaoHABDlsw%2Fd50edbe2-ba93-4e30-b038-2ceb669cc8b3.png?alt=media&token=623a4337-dc42-4100-bdec-a9e360c46a28" style="width:'100%'"/></div>
+
+<br/>
+
+For more information about the file structure, read [here](https://www.figma.com/file/wHMtbUq5zXG9GDvP4BU3gi/Design-System---WIP?node-id=583%3A6).
 
 <br/>
 
