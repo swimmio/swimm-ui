@@ -2,7 +2,7 @@
 id: 2d8iu
 name: Emiliya's Onboarding
 file_version: 1.0.2
-app_version: 0.6.7-1
+app_version: 0.6.8-0
 ---
 
 <!-- Intro - Do not remove this comment -->
@@ -14,8 +14,13 @@ This playlist will get you up and running
 
 <!-- Steps - Do not remove this comment -->
 1. [Collaboration Tools](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/x7wlIb3K6hjYVHDTrDJ3)
-2. [Welcome to Swimm's Creative](welcome-to-swimms-creative.via4d.sw.md)
+2. [📸 Let us see you](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/4aF164OjoZDW7wRvYDF9)
 3. [Figma file structure in Swimm](figma-file-structure-in-swimm.xipcb.sw.md)
+4. [The Shawarma Method - how our product mechanism works](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/UIcGnNh8bB60Som0ChVe)
+5. [More Swimminars](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/bM7cv3vu6SogzbYEC6Vf)
+6. [Wrap Ups and Kick Offs](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/jFQsmDhWjyfOA51UBKd5)
+7. [How to make a French press](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/oKGkm8eMdanbTuWIsDYx)
+8. [Slack channels to know](https://app.swimm.io/repos/veezvxCuzpPrRLLXWD2E/docs/vzpUn5kRgZawU7E7QtqV)
 
 
 <br/>
