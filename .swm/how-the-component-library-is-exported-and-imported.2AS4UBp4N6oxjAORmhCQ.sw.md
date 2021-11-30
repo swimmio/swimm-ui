@@ -2,7 +2,7 @@
 id: 2AS4UBp4N6oxjAORmhCQ
 name: How the component library is exported and imported
 file_version: 1.0.2
-app_version: 0.6.7-1
+app_version: 0.6.8-1
 file_blobs:
   src/lib-components/index.js: 2320e6ad6b053ba9b125ef44325c910e5711a2a7
 ---
@@ -65,6 +65,10 @@ Exposing the selected component (iterator) to Vue using `Vue.component` function
 🟩 23         );
 ⬜ 24     });
 ```
+
+<br/>
+
+test emiliya
 
 <br/>
 
