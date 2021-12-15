@@ -88,20 +88,13 @@
         var(--gradient-middle) 0.01%,
         var(--gradient-to) 100%
     );
+
+    /*** Shadows ***/
+    --box-shadow-small: 0 1px 3px rgba(0, 0, 0, 0.2);
+    --box-shadow-medium: 0 1px 8px rgba(0, 0, 0, 0.2);
+    --box-shadow-big: 0 12px 18px rgba(0, 0, 0, 0.12), 0 5px 22px rgba(0, 0, 0, 0.16), 0 7px 8px rgba(0, 0, 0, 0.2);
 }
 
 body {
     color: var(--text-color-primary);
-}
-
-.box-shadow-small {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.box-shadow-medium {
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
-}
-
-.box-shadow-big {
-    box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.12), 0px 5px 22px rgba(0, 0, 0, 0.16), 0px 7px 8px rgba(0, 0, 0, 0.2);
 }
