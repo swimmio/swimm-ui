@@ -5,7 +5,7 @@
     --color-selected: var(--quick-dive);
 
     --color-primary-default: var(--coastal-shore);
-    --color-primary-hover: var(--quick-dive);
+    --color-primary-hover: var(--swimm-blue);
     --color-secondary-default: var(--high-tide);
     --color-secondary-hover: var(--gravel-rocks);
     --color-disable: var(--gravel-rocks);
@@ -13,7 +13,7 @@
     --color-success: var(--success-green-900);
     --color-warning: var(--warning-yellow-900);
     --color-autosync: var(--wild-ultra);
-    --color-info: var(--quick-dive);
+    --color-info: var(--sea-anchor);
     --color-label-tag: var(--high-tide);
     --text-color-on-light: var(--deep-sea);
     /* --color-plan-free: var(--TBD);
@@ -23,7 +23,7 @@
     --color-label-tags: var(--TBD);
     --color-label-shortcut: var(--TBD); */
 
-    --text-color-primary: var(--harbor-gray);
+    --text-color-primary: var(--pearl-river);
     --text-color-secondary: var(--fifty-shades);
     --text-color-link: var(--coastal-shore);
     --text-color-on-primary: var(--clear-white);
@@ -47,7 +47,7 @@
     --color-decorative-4: var(--high-violet);
     --color-decorative-5: var(--deep-sea);
 
-    --color-doc-cover: var(--gravel-rocks);
+    --color-doc-cover: var(--sea-anchor);
     --color-code-error-sandwich: var(--oh-no-red-900);
     --color-code-error-meat: var(--oh-no-red-700);
     --color-code-autosync-sandwich: var(--wild-ultra);
