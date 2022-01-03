@@ -71,12 +71,12 @@
     --oh-no-red: var(--oh-no-red-500);
 
     /*** Gradients ***/
-    --blue-high-from: #b958f0;
-    --blue-high-to: #0c68ff;
-    --blue-high: radial-gradient(
+    --primary-gradient-from: #b958f0;
+    --primary-gradient-to: #0c68ff;
+    --primary-gradient: radial-gradient(
         81.39% 140.38% at 83.61% -16.79%,
-        var(--blue-high-from) 30.43%,
-        var(--blue-high-to) 81.53%
+        var(--primary-gradient-from) 30.43%,
+        var(--primary-gradient-to) 81.53%
     );
 
     --gradient-from: #b3ffe6;
