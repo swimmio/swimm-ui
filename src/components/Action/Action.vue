@@ -209,8 +209,7 @@ export default {
   color: transparent;
 }
 
-.button.no-padding,
-.button.loading.small {
+.button.no-padding {
   padding: 0;
 }
 
