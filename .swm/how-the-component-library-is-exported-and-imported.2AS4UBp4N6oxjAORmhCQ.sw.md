@@ -2,18 +2,10 @@
 id: 2AS4UBp4N6oxjAORmhCQ
 name: How the component library is exported and imported
 file_version: 1.0.2
-app_version: 0.6.7-1
+app_version: 0.7.3-0
 file_blobs:
   src/lib-components/index.js: 2320e6ad6b053ba9b125ef44325c910e5711a2a7
 ---
-
-Using our components library in another Vue project is done by importing `📄 src/lib-components/index.js` into the other projects `main.js` file
-
-`import 'swimm-ui/src/lib-components';`
-
-As we'll see below -`📄 src/lib-components/index.js` is adding the request components library to the Vue project importing it by itself
-
-<br/>
 
 Find all files inside the `../components/` folder
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
@@ -26,6 +18,14 @@ Find all files inside the `../components/` folder
 ⬜ 5      const fileIgnores = [];
 ⬜ 6      
 ```
+
+<br/>
+
+Using our components library in another Vue project is done by importing `📄 src/lib-components/index.js` into the other projects `main.js` file
+
+`import 'swimm-ui/src/lib-components';`
+
+As we'll see below -`📄 src/lib-components/index.js` is adding the request components library to the Vue project importing it by itself
 
 <br/>
 
