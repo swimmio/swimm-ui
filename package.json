@@ -9,7 +9,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit --watch",
-    "test:ci": "vue-cli-service test:unit"
+    "test:ci": "vue-cli-service test:unit",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "files": [
     "dist/*",
@@ -32,8 +34,11 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "glob": "^7.2.0",
     "vue": "^2.6.12",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.12",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-demo-code": "^0.6.0"
   },
   "peerDependencies": {
     "vue": "^2.6.12"
