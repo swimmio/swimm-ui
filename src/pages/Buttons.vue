@@ -79,7 +79,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 import Action, {
   TYPES,
   SIZES,
