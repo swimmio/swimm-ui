@@ -38,20 +38,6 @@
   "peerDependencies": {
     "vue": "^2.6.12"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
   "engines": {
     "node": ">=12"
   }
