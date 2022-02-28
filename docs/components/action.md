@@ -1,5 +1,5 @@
-<script>
-  </script>
+# Action
+
 <script>
 import { TYPES, SIZES, VARIANTS } from "../../src/components/Action/Action";
 export default {
@@ -8,8 +8,6 @@ export default {
   }
 }
 </script>
-
-# Action
 
 ## Primary
 
