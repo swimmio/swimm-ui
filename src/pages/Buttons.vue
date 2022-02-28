@@ -83,13 +83,13 @@
 import Action, {
   TYPES,
   SIZES,
-  VARIANTS,
-} from "../components/Action/Action.vue";
+  VARIANTS
+} from '../components/Action/Action.vue';
 
 export default {
-  name: "Buttons",
+  name: 'Buttons',
   components: {
-    Action,
+    Action
   },
   computed: {
     TYPES() {
@@ -100,12 +100,12 @@ export default {
     },
     VARIANTS() {
       return VARIANTS;
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style>
+<style scoped>
 .row {
   display: flex;
   justify-content: space-around;
