@@ -16,75 +16,70 @@
   </div>
 </template>
 
-<script scoped>
+<script>
 export default {
-  name: "Buttons",
+  name: 'Buttons',
   data() {
     return {
       colorsGroups: [
         {
-          name: "Common",
-          colors: [
-            "color-bg",
-            "color-surface",
-            "color-hover",
-            "color-selected",
-          ],
+          name: 'Common',
+          colors: ['color-bg', 'color-surface', 'color-hover', 'color-selected']
         },
         {
-          name: "Variants",
+          name: 'Variants',
           colors: [
-            "color-primary-default",
-            "color-primary-hover",
-            "color-secondary-default",
-            "color-secondary-hover",
-            "color-disable",
-            "color-error",
-            "color-success",
-            "color-warning",
-            "color-autosync",
-          ],
+            'color-primary-default',
+            'color-primary-hover',
+            'color-secondary-default',
+            'color-secondary-hover',
+            'color-disable',
+            'color-error',
+            'color-success',
+            'color-warning',
+            'color-autosync'
+          ]
         },
         {
-          name: "Text",
+          name: 'Text',
           colors: [
-            "text-color-primary",
-            "text-color-secondary",
-            "text-color-link",
-            "text-color-on-primary",
-            "text-color-invert",
-            "text-color-disable",
-            "text-color-on-error",
-            "text-color-on-success",
-            "text-color-on-warning",
-            "text-color-on-placeholder",
-          ],
+            'text-color-primary',
+            'text-color-secondary',
+            'text-color-link',
+            'text-color-on-primary',
+            'text-color-invert',
+            'text-color-disable',
+            'text-color-on-error',
+            'text-color-on-success',
+            'text-color-on-warning',
+            'text-color-on-placeholder'
+          ]
         },
         {
-          name: "Border",
+          name: 'Border',
           colors: [
-            "border-color-input",
-            "border-color-focus",
-            "border-color-error",
-          ],
+            'border-color-input',
+            'border-color-focus',
+            'border-color-error'
+          ]
         },
         {
-          name: "Decorative",
+          name: 'Decorative',
           colors: [
-            "color-decorative-1",
-            "color-decorative-2",
-            "color-decorative-3",
-            "color-decorative-4",
-            "color-decorative-5",
-          ],
-        },
-      ],
+            'color-decorative-1',
+            'color-decorative-2',
+            'color-decorative-3',
+            'color-decorative-4',
+            'color-decorative-5'
+          ]
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
-<style>
+<style scoped>
 .row {
   display: flex;
   justify-content: space-around;
