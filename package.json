@@ -18,6 +18,7 @@
     "src/**/*.vue"
   ],
   "dependencies": {
+    "@vue/composition-api": "^1.4.9",
     "core-js": "^3.6.5",
     "fontaweswimm": "https://github.com/swimmio/fontaweswimm#1.0.2",
     "v-tooltip": "^2.1.3",
