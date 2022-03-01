@@ -1,6 +1,6 @@
 <template>
   <div class='breadcrumb'>
-    <component :is='link ? "router-link" : "div"' :to='link' class='content'>
+    <component :is='link ? "router-link" : "div"' :to='link' class='content' :class="{ 'has-link': !!link }">
       <Icon :name='icon' />
       <span>{{ name }}</span>
     </component>
@@ -38,9 +38,13 @@ export default {
   transition: background-color 150ms linear;
 }
 
-.breadcrumb .content:hover {
+.breadcrumb .content.has-link:hover {
   text-decoration: none;
   background-color: var(--color-hover);
+}
+
+.breadcrumb .content:not(.has-link) {
+  cursor: default;
 }
 
 span {
