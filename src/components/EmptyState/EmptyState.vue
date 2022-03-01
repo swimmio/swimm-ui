@@ -10,10 +10,8 @@
 </template>
 
 <script>
-import Icon from '@/components/Icon/Icon';
 
 export default {
-  components: {Icon},
   props: {
     iconName: { type: String, default: null },
     title: { type: String },
