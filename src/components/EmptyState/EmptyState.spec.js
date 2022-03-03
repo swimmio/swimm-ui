@@ -11,8 +11,8 @@ describe('EmptyState', () => {
     expect(wrapper.text()).toMatch('hey you');
   });
 
-  it('render empty state with icon', async () => {
-    const wrapper = await shallowMount(EmptyState, {
+  it('render empty state with icon', () => {
+    const wrapper = shallowMount(EmptyState, {
       components: { Icon },
       propsData: { title: 'hey', description: 'you', iconName: 'pr' }
     });
@@ -20,8 +20,8 @@ describe('EmptyState', () => {
     expect(wrapper.findAll('.icon')).toHaveLength(1);
   });
 
-  it('render empty state with action', async () => {
-    const wrapper = await shallowMount(EmptyState, {
+  it('render empty state with action', () => {
+    const wrapper = shallowMount(EmptyState, {
       components: { Icon },
       propsData: { title: 'hey', description: 'you', iconName: 'pr' },
       slots: {

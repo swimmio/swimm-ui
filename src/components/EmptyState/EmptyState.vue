@@ -10,17 +10,16 @@
 </template>
 
 <script>
-
 export default {
   props: {
     iconName: { type: String, default: null },
-    title: { type: String },
-    description: { type: String, default: null },
+    title: { type: String, required: true },
+    description: { type: String, required: true },
     transparent: { type: Boolean, default: false },
-    wide: { type: Boolean, default: false },
+    wide: { type: Boolean, default: false }
   },
   computed: {
-    isSlot(){
+    isSlot() {
       return !!this.$slots.default;
     }
   }
@@ -28,15 +27,12 @@ export default {
 </script>
 
 <style scoped>
-
-.title{
+.title {
   margin: 0 0 8px 0;
   font-weight: 700;
 }
-.description{
+.description {
   margin: 0 0 8px 0;
-  font-weight: 400;
-
   color: var(--text-color-secondary);
 }
 
@@ -55,7 +51,7 @@ export default {
   align-content: space-evenly;
   padding: 24px 0;
 }
-.action{
+.action {
   margin-top: 8px;
 }
 
