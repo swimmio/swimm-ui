@@ -10,7 +10,7 @@ exports[`Breadcrumb should render item 1`] = `
 
 exports[`Breadcrumb should render router-link for link 1`] = `
 <div class="breadcrumb">
-  <router-link-stub to="/g" class="content">
+  <router-link-stub to="/g" class="content has-link">
     <icon-stub name="g"></icon-stub> <span>g</span>
   </router-link-stub>
 </div>
