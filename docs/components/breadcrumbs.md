@@ -6,38 +6,32 @@
 <Breadcrumbs :items="[]"/>
 :::
 
-## with item
+## One crumb
 ::: demo
-<Breadcrumbs :items="[{icon: 'github', name: 'Workspace', link: '/workspace'}]"/>
+<Breadcrumbs :items="[{icon: 'workspace', name: 'Workspace', link: '#workspace'}]"/>
 :::
 
-
-
-## with items
+## Multiple crumbs
 ::: demo
 <Breadcrumbs :items="[
-{icon: 'github', name: 'Github', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'no link' },
+{icon: 'workspace', name: 'Workspace', link: '#workspace'},
+{icon: 'github', name: 'repo', link: '#repo'},
+{icon: 'branch', name: 'branch', link: '#branch'},
+{icon: 'doc', name: 'doc' },
 ]"/>
 :::
 
-## stacked
+## Wrapped crumbs
 ::: demo
 <Breadcrumbs :items="[
-{icon: 'github', name: 'Github', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'Team', link: '/workspace'},
-{icon: 'team', name: 'no link' },
+{icon: 'workspace', name: 'Workspace', link: '#workspace'},
+{icon: 'github', name: 'repo', link: '#repo'},
+{icon: 'branch', name: 'branch', link: '#branch'},
+{icon: 'folder', name: 'folder', link: '#folder'},
+{icon: 'folder', name: 'folder', link: '#folder'},
+{icon: 'folder', name: 'folder', link: '#folder'},
+{icon: 'folder', name: 'folder', link: '#folder'},
+{icon: 'folder', name: 'folder', link: '#folder'},
+{icon: 'doc', name: 'doc' },
 ]"/>
 :::
