@@ -3,6 +3,7 @@
     :class="[$style.wrapper, $style[size], { [$style.disabled]: disabled }]"
   >
     <input
+      :class="$style.input"
       v-model="value"
       :disabled="disabled"
       type="checkbox"
@@ -74,7 +75,7 @@ export default {
   opacity: 0.3;
 }
 
-input {
+.input {
   opacity: 0;
   width: 0;
   margin: 0;
@@ -91,11 +92,11 @@ input {
   transition: background 0.2s;
 }
 
-input:checked ~ .toggle {
+.input:checked ~ .toggle {
   background: var(--text-color-link);
 }
 
-input:focus ~ .toggle {
+.input:focus ~ .toggle {
   outline: none;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s;
@@ -113,7 +114,7 @@ input:focus ~ .toggle {
   transition: transform 0.2s;
 }
 
-input:checked ~ .toggle::after {
+.input:checked ~ .toggle::after {
   transform: translateX(var(--toggle-height));
 }
 </style>
