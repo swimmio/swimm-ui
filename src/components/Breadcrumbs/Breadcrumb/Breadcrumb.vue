@@ -2,7 +2,7 @@
   <div class='breadcrumb'>
     <component :is='link ? "router-link" : "div"' :to='link' class='content' :class="{ 'has-link': !!link }">
       <Icon :name='icon' />
-      <span>{{ name }}</span>
+      <span class="name">{{ name }}</span>
     </component>
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
   cursor: default;
 }
 
-span {
+.name {
   padding-inline-start: 6px;
 }
 </style>
