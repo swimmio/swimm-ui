@@ -1,6 +1,6 @@
 <template>
   <div :class="[$style.wrapper, $style[shape], $style[size]]">
-    <img v-if="src" :src="src" :alt="text" />
+    <img :class="$style.image" v-if="src" :src="src" :alt="text" />
     <span v-else :class="$style.capitalize">{{ letter }}</span>
   </div>
 </template>
@@ -55,7 +55,7 @@ export default {
   border: 1px solid var(--border-color-secondary);
 }
 
-img {
+.image {
   width: 100%;
   object-fit: cover;
 }
