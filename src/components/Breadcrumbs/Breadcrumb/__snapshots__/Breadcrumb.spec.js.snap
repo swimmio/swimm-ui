@@ -3,7 +3,7 @@
 exports[`Breadcrumb should render item 1`] = `
 <div class="breadcrumb">
   <div class="content">
-    <icon-stub name="g"></icon-stub> <span>g</span>
+    <icon-stub name="g"></icon-stub> <span class="name">g</span>
   </div>
 </div>
 `;
