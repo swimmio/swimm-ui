@@ -24,6 +24,7 @@
     --headline1: 2rem; /* 32px */
     --headline2: 1.5rem; /* 24px */
     --headline3: 1.3125rem; /* 21px */
+    --subtitle-XL: 1rem; /* 16px */
     --subtitle-L: 0.875rem; /* 14px */
     --subtitle-S: 0.75rem; /* 12px */
     --body-L: 1rem; /* 16px */
@@ -67,6 +68,11 @@ body {
 .headline3 {
     font-size: var(--headline3);
     line-height: 2rem; /* 32px */
+}
+
+.subtitle-XL {
+    font-size: var(--subtitle-XL);
+    line-height: 1.5rem; /* 24px */
 }
 
 .subtitle-L {
