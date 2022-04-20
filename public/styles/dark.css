@@ -3,6 +3,7 @@
     --color-surface: var(--sea-anchor);
     --color-hover: var(--gravel-rocks);
     --color-selected: var(--quick-dive);
+    --color-invert: var(--clear-white);
 
     --color-primary-default: var(--coastal-shore);
     --color-primary-hover: var(--swimm-blue);
