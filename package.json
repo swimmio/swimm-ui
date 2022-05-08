@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "yarn docs",
     "build": "vite build",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "lint": "eslint . --ext .vue,.js, cjs --fix --ignore-path .gitignore",
     "test": "vitest watch",
     "test:ci": "vitest run",
     "docs": "vuepress dev docs",
