@@ -1,20 +1,21 @@
 {
-  "name": "swimm-ui",
+  "name": "@swimm/ui",
   "version": "0.0.1",
   "description": "Swimm's Design System and Component Library",
   "scripts": {
     "dev": "yarn docs",
     "build": "vite build",
-    "lint": "eslint . --ext .vue,.js, cjs --fix --ignore-path .gitignore",
+    "lint": "eslint . --ext .vue,.js --fix --ignore-path .gitignore",
     "test": "vitest watch",
     "test:ci": "vitest run",
     "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "files": [
-    "dist/*",
-    "src/**/*.vue"
+    "dist"
   ],
+  "main": "./dist/swimm-ui.umd.js",
+  "module": "./dist/swimm-ui.es.js",
   "dependencies": {
     "fontaweswimm": "https://github.com/swimmio/fontaweswimm#1.1.23",
     "v-tooltip": "^2.1.3",
