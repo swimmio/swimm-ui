@@ -59,7 +59,7 @@
   <Color name="oh-no-red-200" />
   <Color name="oh-no-red-300" />
   <Color name="oh-no-red-500" />
-  <Color name="oh-no-red-00" />
+  <Color name="oh-no-red-700" />
   <Color name="oh-no-red-900" />
 </ColorGroup>
 
