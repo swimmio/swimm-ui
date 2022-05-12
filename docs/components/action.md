@@ -1,13 +1,9 @@
+<script setup>
+import { Action, TYPES, SIZES, VARIANTS } from '@swimm/ui';
+</script>
+
 # Action
 
-<script>
-import { TYPES, SIZES, VARIANTS } from "../../src/components/Action/Action";
-export default {
-  setup() {
-    return { TYPES, SIZES, VARIANTS }
-  }
-}
-</script>
 
 ## Primary
 

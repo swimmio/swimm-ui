@@ -1,3 +1,8 @@
+<script setup>
+import { SwAvatar, SHAPE, SIZE } from '@swimm/ui';
+const img = 'https://www.w3schools.com/howto/img_avatar2.png';
+</script>
+
 # Avatar
 
 Avatar can get props that will define the appearance and behavior of the component.
@@ -6,17 +11,6 @@ Avatar can get props that will define the appearance and behavior of the compone
 - **src** - Optional. The source for the image to be rendered.
 - **size** - Optional. Defaults to `SIZE.LARGE`. Can be one of the sizes (`SIZE`) defined on the component.
 - **shape** - Optional. Defaults to `SHAPE.ROUND`. Can be one of the shapes (`SHAPE`) defined on the component.
-
-<script>
-import SwAvatar, { SHAPE, SIZE } from '../../src/components/Avatar/SwAvatar';
-const img = 'https://www.w3schools.com/howto/img_avatar2.png';
-export default {
-  components: { SwAvatar },
-  setup() {
-    return { SHAPE, SIZE, img }
-  }
-}
-</script>
 
 ## Rounded With Text
 

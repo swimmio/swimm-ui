@@ -1,6 +1,9 @@
+<script setup>
+import { EmptyState, Action, Icon } from '@swimm/ui';
+</script>
+
 # EmptyState
 
-## Empty State
 
 ::: demo 
 <EmptyState title="Empty State" description="This is a description" />
