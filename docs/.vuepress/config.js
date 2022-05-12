@@ -7,6 +7,7 @@ const {
 const componentDemoPlugin = require('./plugins/component-demo.js');
 
 module.exports = {
+  base: '/swimm-ui/',
   title: 'Swimm UI',
   description: `Swimm's Design System`,
   plugins: [
