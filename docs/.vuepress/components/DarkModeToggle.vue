@@ -1,11 +1,19 @@
 <script setup>
+import { onMounted, ref } from 'vue';
 import { useDark, useToggle } from '@vueuse/core';
+
+const htmlElement = ref(null);
+
+onMounted(() => {
+  htmlElement.value = document.querySelector('html');
+});
 
 const isDark = useDark({
   onChanged: (isDarkValue) => {
-    const htmlElement = document.querySelector('html');
-    htmlElement.classList.toggle('dark', isDarkValue);
-    htmlElement.dataset.theme = isDarkValue ? 'dark' : 'light';
+    if (htmlElement.value) {
+      htmlElement.value.classList.toggle('dark', isDarkValue);
+      htmlElement.value.dataset.theme = isDarkValue ? 'dark' : 'light';
+    }
     return !isDarkValue;
   },
 });
