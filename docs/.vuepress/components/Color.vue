@@ -1,3 +1,17 @@
+<script setup>
+import { computed, toRefs } from 'vue';
+
+const props = defineProps({
+  name: { type: String, required: true },
+});
+
+const { name } = toRefs(props);
+const hex = computed(() => {
+  const style = window.getComputedStyle(document.body);
+  return style.getPropertyValue(`--${name.value}`);
+});
+</script>
+
 <template>
   <div class="color-wrapper">
     <div class="color" :style="`background: var(--${name})`" />
@@ -8,27 +22,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    name: { type:String, required: true }
-  },
-  computed:{
-    hex() {
-      const style = getComputedStyle(document.body);
-      return style.getPropertyValue(`--${this.name}`);
-    }
-  }
-}
-</script>
-
 <style scoped>
 .color-wrapper {
-  margin: 10px;
+  margin: 16px 16px 0 0;
   width: 200px;
-  box-shadow: var(--box-shadow-small);
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px;
   border-radius: 4px;
   overflow: hidden;
+  border: 1px solid var(--c-border);
 }
 
 .content {
