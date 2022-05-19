@@ -10,7 +10,8 @@
     "test:ci": "vitest run",
     "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "cz"
   },
   "files": [
     "dist"
@@ -33,6 +34,7 @@
     "@vue/test-utils": "^2.0.0-rc.20",
     "@vuepress/plugin-register-components": "^2.0.0-beta.43",
     "@vueuse/core": "^8.4.2",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^8.0.1",
@@ -45,5 +47,10 @@
   },
   "peerDependencies": {
     "vue": "^3.2.33"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
