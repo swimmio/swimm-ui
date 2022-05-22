@@ -5,7 +5,7 @@
     :class="classes"
     :disabled="disabled || loading"
     :href="href"
-    @click="$emit('click')"
+    @click="$emit('click', $event)"
   >
     <slot>Button text</slot>
     <Icon

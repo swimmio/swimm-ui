@@ -3,7 +3,7 @@
     v-tooltip="tooltip"
     class="icon"
     :class="[computedIconNameClass, computedNoPaddingClass]"
-    @click="$emit('click')"
+    @click="$emit('click', $event)"
   ></i>
 </template>
 
