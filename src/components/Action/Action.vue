@@ -5,6 +5,7 @@
     :class="classes"
     :disabled="disabled || loading"
     :href="href"
+    @click="$emit('click')"
   >
     <slot>Button text</slot>
     <Icon
@@ -27,6 +28,7 @@ export const TYPES = { BUTTON: 'button', LINK: 'a' };
  */
 export default {
   components: { Icon },
+  emits: ['click'],
   props: {
     /**
      * The size of the button. Defaults to big.
