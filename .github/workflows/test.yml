@@ -1,6 +1,6 @@
 name: Test
 
-on: [ pull_request ]
+on: [pull_request]
 
 jobs:
   test:
@@ -20,7 +20,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
-            ${{ runner.os }}-         
+            ${{ runner.os }}-
 
       - name: Install Dependencies
         run: yarn install
