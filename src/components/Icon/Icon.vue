@@ -9,7 +9,6 @@
 
 <script>
 export default {
-  emit: ['click'],
   props: {
     name: { type: String, required: true },
     tooltip: { type: String, default: null },

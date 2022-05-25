@@ -1,8 +1,15 @@
-<script setup>
-import { SwToggle, SIZE } from '@swimm/ui';
-</script>
-
 # Toggle
+
+<script>
+import { SwToggle, SIZE } from '@swimm/ui';
+
+export default {
+  components: { SwToggle },
+	setup() {
+  	return { SIZE }
+  }
+}
+</script>
 
 Toggle can get props that will define the appearance and behavior of the component.
 

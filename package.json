@@ -1,6 +1,6 @@
 {
   "name": "@swimm/ui",
-  "version": "0.0.5",
+  "version": "1.5.0",
   "description": "Swimm's Design System and Component Library",
   "scripts": {
     "dev": "yarn docs",
@@ -21,7 +21,7 @@
   "dependencies": {
     "fontaweswimm": "https://github.com/swimmio/fontaweswimm#1.1.23",
     "v-tooltip": "^2.1.3",
-    "vue": "^3.2.33"
+    "vue": "^2.6.14"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
@@ -30,23 +30,27 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/composition-api": "^1.6.2",
     "@vue/eslint-config-prettier": "^7.0.0",
-    "@vue/test-utils": "^2.0.0-rc.20",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.43",
+    "@vue/test-utils": "^1.3.0",
+    "@vuepress/plugin-register-components": "^1.9.7",
     "@vueuse/core": "^8.4.2",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^8.2.0",
+    "glob": "^7.2.0",
     "husky": "^8.0.1",
     "jsdom": "^19.0.0",
+    "markdown-it-container": "^3.0.0",
     "prettier": "^2.5.1",
     "semantic-release": "^19.0.2",
     "vite": "^2.9.5",
+    "vite-plugin-vue2": "^2.0.1",
     "vitest": "^0.9.3",
-    "vuepress": "^2.0.0-beta.43"
+    "vuepress": "^1.8.2"
   },
   "peerDependencies": {
-    "vue": "^3.2.33"
+    "vue": "^2.6.14"
   },
   "config": {
     "commitizen": {

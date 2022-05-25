@@ -1,13 +1,18 @@
-<script setup>
-import { ref, computed, toRefs } from 'vue';
-
-const props = defineProps({
-  content: { type: String, default: '' },
-});
-const { content } = toRefs(props);
-
-const showCode = ref(false);
-const code = computed(() => decodeURIComponent(content.value));
+<script>
+export default {
+  name: 'ComponentDemo',
+  props: {
+    content: { type: String, default: '' },
+  },
+  data() {
+    return { showCode: false };
+  },
+  computed: {
+    code() {
+      return decodeURIComponent(this.content);
+    },
+  },
+};
 </script>
 
 <template>
@@ -16,9 +21,7 @@ const code = computed(() => decodeURIComponent(content.value));
       <slot />
       <button class="show-button" @click="showCode = !showCode">Code</button>
     </div>
-    <div v-if="showCode" class="code language-vue ext-vue">
-      <pre class="language-vue"><code v-html="code" /></pre>
-    </div>
+    <div v-if="showCode" class="code language-vue ext-vue" v-html="code"></div>
   </section>
 </template>
 
@@ -34,11 +37,6 @@ const code = computed(() => decodeURIComponent(content.value));
 .slot-wrapper {
   position: relative;
   padding: 32px 24px;
-}
-
-pre.language-vue {
-  margin: 0;
-  border-radius: 0;
 }
 
 .code.language-vue {
@@ -62,5 +60,12 @@ pre.language-vue {
 
 .show-button:hover {
   opacity: 0.5;
+}
+</style>
+
+<style>
+.code.language-vue.ext-vue pre.language-vue {
+  margin: 0;
+  border-radius: 0;
 }
 </style>
