@@ -106,7 +106,7 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 8px 32px;
   background: var(--color-primary-default);
   color: var(--text-color-on-primary);
   font-family: var(--fontfamily-main);
