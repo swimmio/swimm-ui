@@ -30,7 +30,6 @@
 
 <ColorGroup>
   <Color name="safe-zone" />
-  <Color name="safe-zone-100" />
   <Color name="high-violet" />
   <Color name="wave-jammer" />
   <Color name="wild-ultra" />
@@ -66,9 +65,6 @@
 ## Gradients
 
 <ColorGroup>
-  <Color name="blue-high-from" />
-  <Color name="blue-high-to" />
-  <Color name="blue-high" />
   <Color name="gradient-from" />
   <Color name="gradient-middle" />
   <Color name="gradient-to" />
