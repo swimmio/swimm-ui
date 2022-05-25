@@ -11,15 +11,15 @@
 <script>
 export default {
   props: {
-    name: { type:String, required: true }
+    name: { type: String, required: true },
   },
-  computed:{
+  computed: {
     hex() {
       const style = getComputedStyle(document.body);
       return style.getPropertyValue(`--${this.name}`);
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>

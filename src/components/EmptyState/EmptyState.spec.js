@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import { shallowMount } from '@vue/test-utils';
 import EmptyState from './EmptyState.vue';
 import Icon from '../Icon/Icon.vue';
@@ -6,29 +7,32 @@ describe('EmptyState', () => {
   it('render minimal empty state', () => {
     const wrapper = shallowMount(EmptyState, {
       components: { Icon },
-      propsData: { title: 'hey', description: 'you' }
+      propsData: { title: 'title', description: 'description' },
     });
-    expect(wrapper.text()).toMatch('hey you');
+    expect(wrapper.find('.title').text()).toMatch('title');
+    expect(wrapper.find('.description').text()).toMatch('description');
   });
 
   it('render empty state with icon', () => {
     const wrapper = shallowMount(EmptyState, {
       components: { Icon },
-      propsData: { title: 'hey', description: 'you', iconName: 'pr' }
+      propsData: { title: 'title', description: 'description', iconName: 'pr' },
     });
-    expect(wrapper.text()).toMatch('hey you');
+    expect(wrapper.find('.title').text()).toMatch('title');
+    expect(wrapper.find('.description').text()).toMatch('description');
     expect(wrapper.findAll('.icon')).toHaveLength(1);
   });
 
   it('render empty state with action', () => {
     const wrapper = shallowMount(EmptyState, {
       components: { Icon },
-      propsData: { title: 'hey', description: 'you', iconName: 'pr' },
+      propsData: { title: 'title', description: 'description', iconName: 'pr' },
       slots: {
-        default: '<div class="test-me">hello</div>'
-      }
+        default: '<div class="test-me">hello</div>',
+      },
     });
-    expect(wrapper.text()).toMatch('hey you');
+    expect(wrapper.find('.title').text()).toMatch('title');
+    expect(wrapper.find('.description').text()).toMatch('description');
     expect(wrapper.findAll('.icon')).toHaveLength(1);
     expect(wrapper.findAll('.test-me')).toHaveLength(1);
   });

@@ -1,6 +1,13 @@
+
+
 # EmptyState
 
-## Empty State
+<script>
+  import { EmptyState, Action, Icon } from '@swimm/ui';
+export default {
+  components: { EmptyState, Action, Icon }
+}
+</script>
 
 ::: demo 
 <EmptyState title="Empty State" description="This is a description" />

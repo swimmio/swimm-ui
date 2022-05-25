@@ -1,7 +1,9 @@
 <template>
-  <div class="color-group">
-    <slot />
-  </div>
+  <ClientOnly>
+    <div class="color-group">
+      <slot />
+    </div>
+  </ClientOnly>
 </template>
 
 <style scoped>

@@ -1,10 +1,11 @@
+import { describe, it, expect } from 'vitest';
 import { shallowMount } from '@vue/test-utils';
 import Breadcrumb from './Breadcrumb.vue';
 
 describe('Breadcrumb', () => {
   it('should render item', async () => {
     const wrapper = shallowMount(Breadcrumb, {
-      propsData: { icon: 'g', name: 'g' }
+      propsData: { icon: 'g', name: 'g' },
     });
 
     expect(wrapper.html()).toMatchSnapshot();
@@ -13,11 +14,9 @@ describe('Breadcrumb', () => {
   it('should render router-link for link', async () => {
     const wrapper = shallowMount(Breadcrumb, {
       propsData: { icon: 'g', name: 'g', link: '/g' },
-      components: {
-        'router-link': {
-          template: '<div class="router-link"></div>'
-        }
-      }
+      slots: {
+        default: '<router-link class="router-link"></router-link>',
+      },
     });
 
     expect(wrapper.html()).toMatchSnapshot();

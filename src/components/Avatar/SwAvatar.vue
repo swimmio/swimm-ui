@@ -1,14 +1,14 @@
 <template>
-  <div :class="[$style.wrapper, $style[shape], $style[size]]">
-    <img :class="$style.image" v-if="src" :src="src" :alt="text" />
-    <span v-else :class="$style.capitalize">{{ letter }}</span>
+  <div :class="['wrapper', [shape], [size]]">
+    <img class="image" v-if="src" :src="src" :alt="text" />
+    <span v-else class="capitalize">{{ letter }}</span>
   </div>
 </template>
 
 <script>
 export const SHAPE = {
   ROUND: 'round',
-  SQUARE: 'square'
+  SQUARE: 'square',
 };
 
 export const SIZE = {
@@ -17,7 +17,7 @@ export const SIZE = {
   MEDIUM: 'medium',
   LARGE: 'large',
   XLARGE: 'xlarge',
-  HUGE: 'huge'
+  HUGE: 'huge',
 };
 
 export default {
@@ -27,23 +27,23 @@ export default {
     size: {
       type: String,
       default: SIZE.LARGE,
-      validator: value => Object.values(SIZE).includes(value)
+      validator: (value) => Object.values(SIZE).includes(value),
     },
     shape: {
       type: String,
       default: SHAPE.ROUND,
-      validator: value => Object.values(SHAPE).includes(value)
-    }
+      validator: (value) => Object.values(SHAPE).includes(value),
+    },
   },
   computed: {
     letter() {
       return this.text.charAt(0);
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style module>
+<style scoped>
 .wrapper {
   display: flex;
   align-items: center;

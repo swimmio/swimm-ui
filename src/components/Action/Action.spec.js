@@ -1,5 +1,6 @@
+import { describe, it, expect } from 'vitest';
 import { shallowMount } from '@vue/test-utils';
-import Action from '@/components/Action/Action';
+import Action from '@/components/Action/Action.vue';
 
 describe('Action', () => {
   it('renders default button', () => {

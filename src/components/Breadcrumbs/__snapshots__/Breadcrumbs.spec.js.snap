@@ -1,16 +1,16 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Breadcrumbs renders breadcrumbs with links 1`] = `
-<div class="breadcrumbs">
-  <breadcrumb-stub icon="g" name="g" link="/g" class="item"></breadcrumb-stub>
-  <breadcrumb-stub icon="b" name="b" link="/b" class="item"></breadcrumb-stub>
-</div>
+exports[`Breadcrumbs > renders breadcrumbs with links 1`] = `
+"<div data-v-7650ef71=\\"\\" class=\\"breadcrumbs\\">
+  <breadcrumb-stub data-v-7650ef71=\\"\\" icon=\\"g\\" name=\\"g\\" link=\\"/g\\" class=\\"item\\"></breadcrumb-stub>
+  <breadcrumb-stub data-v-7650ef71=\\"\\" icon=\\"b\\" name=\\"b\\" link=\\"/b\\" class=\\"item\\"></breadcrumb-stub>
+</div>"
 `;
 
-exports[`Breadcrumbs renders default Breadcrumbs 1`] = `
-<div class="breadcrumbs">
-  <breadcrumb-stub icon="g" name="g" class="item"></breadcrumb-stub>
-</div>
+exports[`Breadcrumbs > renders default Breadcrumbs 1`] = `
+"<div data-v-7650ef71=\\"\\" class=\\"breadcrumbs\\">
+  <breadcrumb-stub data-v-7650ef71=\\"\\" icon=\\"g\\" name=\\"g\\" class=\\"item\\"></breadcrumb-stub>
+</div>"
 `;
 
-exports[`Breadcrumbs renders empty array 1`] = `<div class="breadcrumbs"></div>`;
+exports[`Breadcrumbs > renders empty array 1`] = `"<div data-v-7650ef71=\\"\\" class=\\"breadcrumbs\\"></div>"`;

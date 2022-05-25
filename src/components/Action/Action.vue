@@ -1,10 +1,11 @@
 <template>
-  <componet
+  <component
     :is="type"
     :type="buttonType"
     :class="classes"
     :disabled="disabled || loading"
     :href="href"
+    @click="$emit('click', $event)"
   >
     <slot>Button text</slot>
     <Icon
@@ -12,15 +13,15 @@
       :name="trailingIcon"
       class="trailing-icon no-padding"
     />
-  </componet>
+  </component>
 </template>
 
 <script>
-import Icon from "../Icon/Icon.vue";
+import Icon from '../Icon/Icon.vue';
 
-export const SIZES = { BIG: "big", SMALL: "small" };
-export const VARIANTS = { DANGER: "danger", SUCCESS: "success" };
-export const TYPES = { BUTTON: "button", LINK: "a" };
+export const SIZES = { BIG: 'big', SMALL: 'small' };
+export const VARIANTS = { DANGER: 'danger', SUCCESS: 'success' };
+export const TYPES = { BUTTON: 'button', LINK: 'a' };
 
 /**
  * Button
@@ -75,16 +76,16 @@ export default {
      * Button type
      * @values type attr of the button tag
      */
-    buttonType: { type: String, default: "submit" },
+    buttonType: { type: String, default: 'submit' },
   },
   computed: {
     classes() {
       return [
-        "button",
+        'button',
         this.size,
         this.variant,
         {
-          "no-padding": this.noPadding,
+          'no-padding': this.noPadding,
           disabled: this.disabled,
           loading: this.loading,
           secondary: this.secondary,

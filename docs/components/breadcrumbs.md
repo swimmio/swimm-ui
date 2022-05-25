@@ -1,17 +1,22 @@
+
+
 # Breadcrumbs
 
-## Default
-
-::: demo
-<Breadcrumbs :items="[]"/>
-:::
+<script>
+import { Breadcrumbs } from '@swimm/ui';
+export default {
+  components: { Breadcrumbs }
+}
+</script>
 
 ## One crumb
+
 ::: demo
 <Breadcrumbs :items="[{icon: 'workspace', name: 'Workspace', link: '#workspace'}]"/>
 :::
 
 ## Multiple crumbs
+
 ::: demo
 <Breadcrumbs :items="[
 {icon: 'workspace', name: 'Workspace', link: '#workspace'},
@@ -22,6 +27,7 @@
 :::
 
 ## Wrapped crumbs
+
 ::: demo
 <Breadcrumbs :items="[
 {icon: 'workspace', name: 'Workspace', link: '#workspace'},

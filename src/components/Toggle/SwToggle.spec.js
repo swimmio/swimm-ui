@@ -1,5 +1,6 @@
+import { describe, it, expect } from 'vitest';
 import { shallowMount } from '@vue/test-utils';
-import SwToggle from '@/components/Toggle/SwToggle';
+import SwToggle from '@/components/Toggle/SwToggle.vue';
 
 describe('SwToggle', () => {
   it('should be enabled and checked', () => {
@@ -38,9 +39,9 @@ describe('SwToggle', () => {
 
   it('should be disabled and checked', () => {
     const wrapper = shallowMount(SwToggle, {
-      propsData: { value: true, disabled: true }
+      propsData: { value: true, disabled: true },
     });
-    expect(wrapper.find('input').attributes().disabled).toBeTruthy();
+    expect(wrapper.find('input').element.disabled).toBeTruthy();
     expect(wrapper.find('.wrapper.disabled').exists()).toBeTruthy();
     const toggle = wrapper.find('input');
     expect(toggle.element.checked).toBeTruthy();
@@ -48,9 +49,9 @@ describe('SwToggle', () => {
 
   it('should be disabled and unchecked', () => {
     const wrapper = shallowMount(SwToggle, {
-      propsData: { value: false, disabled: true }
+      propsData: { value: false, disabled: true },
     });
-    expect(wrapper.find('input').attributes().disabled).toBeTruthy();
+    expect(wrapper.find('input').element.disabled).toBeTruthy();
     expect(wrapper.find('.wrapper.disabled').exists()).toBeTruthy();
     const toggle = wrapper.find('input');
     expect(toggle.element.checked).toBeFalsy();
@@ -58,9 +59,9 @@ describe('SwToggle', () => {
 
   it('should not change to checked when disabled', async () => {
     const wrapper = shallowMount(SwToggle, {
-      propsData: { value: false, disabled: true }
+      propsData: { value: false, disabled: true },
     });
-    expect(wrapper.find('input').attributes().disabled).toBeTruthy();
+    expect(wrapper.find('input').element.disabled).toBeTruthy();
     const toggle = wrapper.find('input');
     await toggle.trigger('click');
     expect(toggle.element.checked).toBeFalsy();
@@ -69,9 +70,9 @@ describe('SwToggle', () => {
 
   it('should not change to unchecked when disabled', async () => {
     const wrapper = shallowMount(SwToggle, {
-      propsData: { value: true, disabled: true }
+      propsData: { value: true, disabled: true },
     });
-    expect(wrapper.find('input').attributes().disabled).toBeTruthy();
+    expect(wrapper.find('input').element.disabled).toBeTruthy();
     const toggle = wrapper.find('input');
     await toggle.trigger('click');
     expect(toggle.element.checked).toBeTruthy();

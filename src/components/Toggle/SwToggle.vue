@@ -1,15 +1,13 @@
 <template>
-  <label
-    :class="[$style.wrapper, $style[size], { [$style.disabled]: disabled }]"
-  >
+  <label :class="['wrapper', [size], { disabled }]">
     <input
-      :class="$style.input"
+      class="input"
       v-model="value"
       :disabled="disabled"
       type="checkbox"
       @change="onChange"
     />
-    <span :class="$style.toggle" />
+    <span class="toggle" />
   </label>
 </template>
 
@@ -18,7 +16,7 @@ export const SIZE = {
   XSMALL: 'xsmall',
   SMALL: 'small',
   MEDIUM: 'medium',
-  LARGE: 'large'
+  LARGE: 'large',
 };
 
 export default {
@@ -28,18 +26,18 @@ export default {
     size: {
       type: String,
       default: SIZE.MEDIUM,
-      validator: value => Object.values(SIZE).includes(value)
-    }
+      validator: (value) => Object.values(SIZE).includes(value),
+    },
   },
   methods: {
     onChange(event) {
       !this.disabled && this.$emit('change', event.target.checked);
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style module>
+<style scoped>
 .wrapper {
   display: flex;
   cursor: pointer;

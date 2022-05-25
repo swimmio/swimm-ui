@@ -1,0 +1,8 @@
+:root,
+html.dark {
+  --c-brand: var(--color-primary-default);
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 3px;
+}
