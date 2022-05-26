@@ -46,7 +46,7 @@
     "semantic-release": "^19.0.2",
     "vite": "^2.9.5",
     "vite-plugin-vue2": "^2.0.1",
-    "vitest": "^0.9.3",
+    "vitest": "^0.12.9",
     "vuepress": "^1.8.2"
   },
   "peerDependencies": {
