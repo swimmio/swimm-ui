@@ -15,11 +15,11 @@ Run `yarn dev` to open Vuepress, the documentation platform we use to create a c
 
 <br/>
 
-To change an existing component, open it's `.md` files inside [[sym:./docs/components(414a9d81-f005-4e53-81f4-e948763c280d)]] and edit the file.
+To change an existing component, open it's `.md` files inside `📄 docs/components` and edit the file.
 
 <br/>
 
-When creating a new component, create a new `.md` inside [[sym:./docs/components(414a9d81-f005-4e53-81f4-e948763c280d)]] and add examples for all the possible variants of the component (see below).
+When creating a new component, create a new `.md` inside `📄 docs/components` and add examples for all the possible variants of the component (see below).
 
 <br/>
 
@@ -27,7 +27,7 @@ When creating a new component, create a new `.md` inside [[sym:./docs/components
 
 <br/>
 
-Make sure to document the possible variants of a component, or any design token, using the correct markdown file inside the [[sym:./docs(4c6086a6-819c-4a92-a6ed-e032e1348db8)]] folder. Using the `::: demo` markdown container, you can easily create a live example of the component, while showing the code snippet you used for that example:
+Make sure to document the possible variants of a component, or any design token, using the correct markdown file inside the `📄 docs` folder. Using the `::: demo` markdown container, you can easily create a live example of the component, while showing the code snippet you used for that example:
 
 <br/>
 
@@ -87,7 +87,7 @@ If a new version is triggered, the release workflow will run in GitHub Action. W
 
 <br/>
 
-Also, the [[sym:./CHANGELOG.md(dc4079c6-57fc-414f-aea6-f499516d7dfd)]] will be updated and the new version will be updated in [[sym:./package.json(e626242b-9dd2-4b03-b376-44dfc8601094)]].
+Also, the `📄 CHANGELOG.md` will be updated and the new version will be updated in [[sym:././package.json(e626242b-9dd2-4b03-b376-44dfc8601094)]].
 
 <br/>
 
