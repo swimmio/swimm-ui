@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/swimmio/swimm-ui/compare/v1.0.0...v1.0.1) (2022-05-29)
+
+
+### Bug Fixes
+
+* **Action:** change padding to 8px/32px ([5d74286](https://github.com/swimmio/swimm-ui/commit/5d742867d45aef8899d299d2e8f9b73686ad4480))
+
 # 1.0.0 (2022-05-25)
 
 
