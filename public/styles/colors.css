@@ -1,6 +1,8 @@
 :root {
     /*** Primary ***/
-    --feet-in-the-water: #e5ecff;
+    --feet-in-the-water: rgb(229, 236, 255);
+
+    --feet-in-the-water-light: rgba(229, 236, 255, 0.6);
 
     --coastal-shore: #4293F3;
 
