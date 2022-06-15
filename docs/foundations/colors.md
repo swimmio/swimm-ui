@@ -4,7 +4,6 @@
 
 <ColorGroup>
   <Color name="feet-in-the-water" />
-  <Color name="feet-in-the-water-light" />
   <Color name="coastal-shore" />
   <Color name="swimm-blue" />
   <Color name="quick-dive" />
