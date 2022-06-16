@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/swimmio/swimm-ui/compare/v1.0.1...v1.1.0) (2022-06-16)
+
+
+### Features
+
+* feet-in-the-water to 60% opacity, quick-dive to DS color ([321c1c1](https://github.com/swimmio/swimm-ui/commit/321c1c1fe5f13ed3f7c02a1d7e233cfc3c92de34))
+
 ## [1.0.1](https://github.com/swimmio/swimm-ui/compare/v1.0.0...v1.0.1) (2022-05-29)
 
 
