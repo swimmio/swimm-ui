@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/swimmio/swimm-ui/compare/v1.1.0...v1.1.1) (2022-06-19)
+
+
+### Bug Fixes
+
+* remove opacity from feet-in-the-water ([#91](https://github.com/swimmio/swimm-ui/issues/91)) ([77a08f6](https://github.com/swimmio/swimm-ui/commit/77a08f6e5231d6033adaaa9328e0852bdb8cf446))
+
 # [1.1.0](https://github.com/swimmio/swimm-ui/compare/v1.0.1...v1.1.0) (2022-06-16)
 
 
