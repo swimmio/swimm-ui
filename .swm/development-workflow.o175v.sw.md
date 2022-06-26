@@ -2,30 +2,22 @@
 id: o175v
 name: Development Workflow
 file_version: 1.0.2
-app_version: 0.8.6-2
+app_version: 0.9.0-2
 file_blobs:
   docs/components/action.md: e116a30b82082794a8bcfb09eb9bb3ed235b2580
 ---
 
 ## Development
 
-<br/>
+Run `yarn install` to install dependencies.
 
 Run `yarn dev` to open Vuepress, the documentation platform we use to create a catalog of the components, as well as the design tokens (fonts, colors, spacings etc).
 
-<br/>
-
 To change an existing component, open it's `.md` files inside `📄 docs/components` and edit the file.
-
-<br/>
 
 When creating a new component, create a new `.md` inside `📄 docs/components` and add examples for all the possible variants of the component (see below).
 
-<br/>
-
 ## Documentation
-
-<br/>
 
 Make sure to document the possible variants of a component, or any design token, using the correct markdown file inside the `📄 docs` folder. Using the `::: demo` markdown container, you can easily create a live example of the component, while showing the code snippet you used for that example:
 
@@ -45,39 +37,23 @@ Make sure to document the possible variants of a component, or any design token,
 
 You can also add a description for the component, or any other relevant information.
 
-<br/>
-
 ## Testing
-
-<br/>
 
 We use Vitest and Vue Test Utils for component and unit testing. Make sure to cover your changes with tests.
 
-<br/>
-
 To run all test, run `yarn test`
-
-<br/>
 
 ## Committing Your Changes
 
-<br/>
+**IMPORTANT: Before committing your changes, make sure to read this: [Release Workflow](release-workflow.lnjwx.sw.md).**
 
 To commit your changes you can run `yarn commit` and follow the wizard, or alternatively write a commit in the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format. Pay attention to the type of the commit as it will or will not trigger a new version release.
 
-<br/>
-
 You can also use the VS Code extension or IntelliJ
-
-<br/>
 
 Read more about Conventional commits and the automated release in [Release Workflow](release-workflow.lnjwx.sw.md).
 
-<br/>
-
 ## Release
-
-<br/>
 
 If a new version is triggered, the release workflow will run in GitHub Action. When it's finished, Semantic Release will add a message to the PR/s who are included in this release:
 
@@ -87,15 +63,11 @@ If a new version is triggered, the release workflow will run in GitHub Action. W
 
 <br/>
 
-Also, the `📄 CHANGELOG.md` will be updated and the new version will be updated in [[sym:././package.json(e626242b-9dd2-4b03-b376-44dfc8601094)]].
+Also, the `📄 CHANGELOG.md` will be updated and the new version will be updated in [[sym:././package.json(e626242b-9dd2-4b03-b376-44dfc8601094)]]. 
 
-<br/>
+ ## Using The Library 
 
-## Using The Library
-
-<br/>
-
-Read more about using the library in [Using The Library](using-the-library.bc324.sw.md).
+ Read more about using the library in [Using The Library](using-the-library.bc324.sw.md).
 
 <br/>
 
