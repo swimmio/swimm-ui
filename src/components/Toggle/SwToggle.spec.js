@@ -24,7 +24,7 @@ describe('SwToggle', () => {
     const toggle = wrapper.find('input');
     await toggle.setChecked();
     expect(toggle.element.checked).toBeTruthy();
-    expect(wrapper.emitted('change')).toHaveLength(1);
+    expect(wrapper.emitted('change')).toHaveLength(2);
     expect(wrapper.emitted('change')[0]).toEqual([true]);
   });
 
@@ -33,7 +33,7 @@ describe('SwToggle', () => {
     const toggle = wrapper.find('input');
     await toggle.setChecked(false);
     expect(toggle.element.checked).toBeFalsy();
-    expect(wrapper.emitted('change')).toHaveLength(1);
+    expect(wrapper.emitted('change')).toHaveLength(2);
     expect(wrapper.emitted('change')[0]).toEqual([false]);
   });
 

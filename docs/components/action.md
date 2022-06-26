@@ -1,14 +1,8 @@
-# Action
-
-<script>
-import { Action, TYPES, SIZES, VARIANTS } from "@swimm/ui";
-export default {
-  components: { Action },
-  setup() {
-    return { TYPES, SIZES, VARIANTS }
-  }
-}
+<script setup>
+import { Action, TYPES, SIZES, VARIANTS } from '@swimm/ui';
 </script>
+
+# Action
 
 ## Primary
 

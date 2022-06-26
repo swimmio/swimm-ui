@@ -1,3 +1,15 @@
+<script setup>
+import { computed, toRefs } from 'vue';
+const props = defineProps({
+  name: { type: String, required: true },
+});
+const { name } = toRefs(props);
+const hex = computed(() => {
+  const style = window.getComputedStyle(document.body);
+  return style.getPropertyValue(`--${name.value}`);
+});
+</script>
+
 <template>
   <div class="color-wrapper">
     <div class="color" :style="`background: var(--${name})`" />
@@ -7,20 +19,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    name: { type: String, required: true },
-  },
-  computed: {
-    hex() {
-      const style = getComputedStyle(document.body);
-      return style.getPropertyValue(`--${this.name}`);
-    },
-  },
-};
-</script>
 
 <style scoped>
 .color-wrapper {

@@ -1,21 +1,9 @@
-
+<script setup>
+import { SwAvatar, SHAPE, SIZE } from '@swimm/ui';
+const img = 'https://www.w3schools.com/howto/img_avatar2.png';
+</script>
 
 # Avatar
-
-<script >
-import { SwAvatar, SHAPE, SIZE } from '@swimm/ui';
-export default {
-	components: { SwAvatar },
-	setup(){ 
-		const img = 'https://www.w3schools.com/howto/img_avatar2.png';
-		return {
-			img,
-			SHAPE,
-			SIZE
-		}
-  }
-}
-</script>
 
 Avatar can get props that will define the appearance and behavior of the component.
 
