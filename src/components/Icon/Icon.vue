@@ -1,5 +1,6 @@
 <template>
   <i
+    v-tooltip="tooltip"
     class="icon"
     :class="[computedIconNameClass, computedNoPaddingClass]"
     @click="$emit('click', $event)"

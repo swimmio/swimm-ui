@@ -19,6 +19,7 @@
   "main": "./dist/swimm-ui.umd.js",
   "module": "./dist/swimm-ui.es.js",
   "dependencies": {
+    "floating-vue": "^2.0.0-beta.17",
     "fontaweswimm": "https://github.com/swimmio/fontaweswimm#1.1.23",
     "vue": "^3.2.33"
   },
