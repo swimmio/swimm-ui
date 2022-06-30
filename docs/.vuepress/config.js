@@ -18,7 +18,7 @@ module.exports = {
   ],
   alias: {
     '@swimm/ui': path.resolve(__dirname, '../../src/'),
-    '@theme/ToggleDarkModeButton.vue': path.resolve(
+    '@theme/ToggleColorModeButton.vue': path.resolve(
       __dirname,
       './components/DarkModeToggle.vue'
     ),
