@@ -9,3 +9,9 @@ import { Icon } from '@swimm/ui';
 ::: demo
 <Icon name="github" />
 :::
+
+## With Tooltip
+
+::: demo
+<Icon name="github" :tooltip="'Hello from Icon'" />
+:::
