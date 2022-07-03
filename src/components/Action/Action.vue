@@ -28,6 +28,7 @@ export const TYPES = { BUTTON: 'button', LINK: 'a' };
  */
 export default {
   components: { Icon },
+  emits: ['click'],
   props: {
     /**
      * The size of the button. Defaults to big.

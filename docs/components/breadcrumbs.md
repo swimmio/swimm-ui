@@ -1,13 +1,7 @@
-
-
-# Breadcrumbs
-
-<script>
+<script setup>
 import { Breadcrumbs } from '@swimm/ui';
-export default {
-  components: { Breadcrumbs }
-}
 </script>
+# Breadcrumbs
 
 ## One crumb
 

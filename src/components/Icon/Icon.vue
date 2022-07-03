@@ -14,6 +14,7 @@ export default {
     tooltip: { type: String, default: null },
     noPadding: { type: Boolean, required: false, default: false },
   },
+  emits: ['click'],
   computed: {
     computedIconNameClass() {
       return `icon-${this.name}`;
