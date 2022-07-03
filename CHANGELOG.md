@@ -1,3 +1,21 @@
+# [2.0.0](https://github.com/swimmio/swimm-ui/compare/v1.1.1...v2.0.0) (2022-07-03)
+
+
+### Bug Fixes
+
+* **Icon:** emit click event ([3fc0d0c](https://github.com/swimmio/swimm-ui/commit/3fc0d0c78f1469b4354c324bf566ab59809fa7de))
+
+
+### Features
+
+* replace v-tooltip with floating-vue ([6b6a467](https://github.com/swimmio/swimm-ui/commit/6b6a46799ab65b25e76bee7850be38995145ffd6))
+* upgrade to Vue 3 and Vuepress 2 ([2a1d06c](https://github.com/swimmio/swimm-ui/commit/2a1d06c85c45c7cc4a22c79ff99328d141b67b9b))
+
+
+### BREAKING CHANGES
+
+* upgrade to Vue 3
+
 ## [1.1.1](https://github.com/swimmio/swimm-ui/compare/v1.1.0...v1.1.1) (2022-06-19)
 
 
