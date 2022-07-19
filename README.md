@@ -5,3 +5,6 @@
 
 This repository contains components for Swimm's information architecture (styles, UI fixtures and other things). 
 You can view the component library [here](https://swimmio.github.io/swimm-ui/).
+
+You can read on the dev workflow [here](.swm/development-workflow.o175v.sw.md).
+
