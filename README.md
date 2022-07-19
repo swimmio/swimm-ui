@@ -4,4 +4,4 @@
 [![npm version](https://badge.fury.io/js/@swimm%2Fui.svg)](https://badge.fury.io/js/@swimm%2Fui)
 
 This repository contains components for Swimm's information architecture (styles, UI fixtures and other things). 
-You can view the component library [here](https://swimm-ui.web.app).
+You can view the component library [here](https://swimmio.github.io/swimm-ui/).
