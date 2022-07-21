@@ -2,6 +2,7 @@
   "name": "@swimm/ui",
   "version": "2.0.0",
   "description": "Swimm's Design System and Component Library",
+  "license": "MIT",
   "scripts": {
     "dev": "yarn docs",
     "build": "vite build",
