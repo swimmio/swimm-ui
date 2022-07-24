@@ -1,3 +1,11 @@
+## [2.0.1](https://github.com/swimmio/swimm-ui/compare/v2.0.0...v2.0.1) (2022-07-24)
+
+
+### Bug Fixes
+
+* change back package.json ([b7bb492](https://github.com/swimmio/swimm-ui/commit/b7bb49232c90e1a6743db03fbe7887fd28832f89))
+* change quick dive color ([4b4daac](https://github.com/swimmio/swimm-ui/commit/4b4daacd22bb42838001588932f89fbc5747f0aa))
+
 # [2.0.0](https://github.com/swimmio/swimm-ui/compare/v1.1.1...v2.0.0) (2022-07-03)
 
 
