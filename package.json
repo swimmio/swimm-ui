@@ -1,6 +1,6 @@
 {
   "name": "@swimm/ui",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Swimm's Design System and Component Library",
   "scripts": {
     "dev": "yarn docs",
@@ -43,7 +43,7 @@
     "prettier": "^2.5.1",
     "semantic-release": "^19.0.2",
     "vite": "^2.9.5",
-    "vitest": "^0.9.3",
+    "vitest": "^0.19.0",
     "vuepress": "2.0.0-beta.48"
   },
   "peerDependencies": {
