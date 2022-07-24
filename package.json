@@ -1,6 +1,6 @@
 {
   "name": "@swimm/ui",
-  "version": "2.0.1",
+  "version": "2.0.0",
   "description": "Swimm's Design System and Component Library",
   "scripts": {
     "dev": "yarn docs",
