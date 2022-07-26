@@ -7,10 +7,9 @@
   background: var(--spec-color);
   border-radius: 50%;
   color: var(--text-color-on-primary);
-  padding: 4px;
+  padding: var(--space-xs);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
 }
 </style>
