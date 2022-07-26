@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue';
-import { getCssVariable, getSizeInPx } from './utils.js';
+import { getCssVariable, getSizeInRem, getSizeInPx } from './utils.js';
 
 const props = defineProps({
   name: { type: String, required: true },
@@ -8,6 +8,7 @@ const props = defineProps({
 
 const spacingValue = computed(() => getCssVariable(props.name));
 const spacingValueInPx = computed(() => getSizeInPx(spacingValue.value));
+const spacingValueInRem = computed(() => getSizeInRem(spacingValue.value));
 </script>
 
 <template>
@@ -25,7 +26,7 @@ const spacingValueInPx = computed(() => getSizeInPx(spacingValue.value));
       <Detail>{{ spacingValueInPx }}</Detail>
     </td>
     <td>
-      {{ spacingValue }}
+      {{ spacingValueInRem }}
     </td>
     <td><slot /></td>
   </tr>
