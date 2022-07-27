@@ -1,13 +1,12 @@
 <script setup>
 import { computed, toRefs } from 'vue';
+import { getCssVariable } from './utils.js';
+
 const props = defineProps({
   name: { type: String, required: true },
 });
 const { name } = toRefs(props);
-const hex = computed(() => {
-  const style = window.getComputedStyle(document.body);
-  return style.getPropertyValue(`--${name.value}`);
-});
+const hex = computed(() => getCssVariable(name.value));
 </script>
 
 <template>
