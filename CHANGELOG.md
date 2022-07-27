@@ -1,3 +1,23 @@
+# [2.1.0](https://github.com/swimmio/swimm-ui/compare/v2.0.1...v2.1.0) (2022-07-27)
+
+
+### Bug Fixes
+
+* calculate rem size ([b1b0f42](https://github.com/swimmio/swimm-ui/commit/b1b0f421bcbc49587b4d57e59c1307dfcac10cc7))
+
+
+### Features
+
+* add spacing variables ([0d3e3a9](https://github.com/swimmio/swimm-ui/commit/0d3e3a9aa9deda217db0ba326795cd587be2b53a))
+
+## [2.0.1](https://github.com/swimmio/swimm-ui/compare/v2.0.0...v2.0.1) (2022-07-24)
+
+
+### Bug Fixes
+
+* change back package.json ([b7bb492](https://github.com/swimmio/swimm-ui/commit/b7bb49232c90e1a6743db03fbe7887fd28832f89))
+* change quick dive color ([4b4daac](https://github.com/swimmio/swimm-ui/commit/4b4daacd22bb42838001588932f89fbc5747f0aa))
+
 # [2.0.0](https://github.com/swimmio/swimm-ui/compare/v1.1.1...v2.0.0) (2022-07-03)
 
 

@@ -1,6 +1,8 @@
 <script setup>
 import { computed, onMounted, ref, toRefs } from 'vue';
 import { useMutationObserver } from '@vueuse/core';
+import { getCssVariable } from './utils.js';
+
 const props = defineProps({
   name: { type: String, required: true },
 });
@@ -8,21 +10,16 @@ const { name } = toRefs(props);
 const hex = ref('');
 const htmlElement = ref(null);
 
-const getHexValue = () => {
-  const style = window.getComputedStyle(document.body);
-  return style.getPropertyValue(`--${name.value}`);
-};
-
 onMounted(() => {
   htmlElement.value = document.querySelector('html');
-  hex.value = getHexValue();
+  hex.value = getCssVariable(name.value);
 });
 
 useMutationObserver(
   htmlElement,
   (mutations) => {
     if (mutations[0].target.dataset.theme) {
-      hex.value = getHexValue();
+      hex.value = getCssVariable(name.value);
     }
   },
   {
