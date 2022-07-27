@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"Swimm UI","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1645998652000},"filePathRelative":"index.md"}');export{e as data};

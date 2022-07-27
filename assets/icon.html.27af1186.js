@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0746ee80","path":"/components/icon.html","title":"Icon","lang":"en-US","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"Default","slug":"default","children":[]},{"level":2,"title":"With Tooltip","slug":"with-tooltip","children":[]}],"git":{"updatedTime":1656576496000},"filePathRelative":"components/icon.md"}');export{e as data};

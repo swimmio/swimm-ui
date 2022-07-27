@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as r,h as o}from"./app.380bf9cb.js";const s={},n={class:"detail"};function c(e,d){return t(),r("span",n,[o(e.$slots,"default",{},void 0,!0)])}var l=a(s,[["render",c],["__scopeId","data-v-3a3496d2"],["__file","Detail.vue"]]);export{l as default};
