@@ -1,4 +1,4 @@
-const REM_SIZE = 8;
+const BASE_SPACING_SIZE_IN_PX = 8;
 
 export function getCssVariable(name) {
   const style = window.getComputedStyle(document.body);
@@ -9,6 +9,6 @@ export function getSizeInPx(size) {
   return parseFloat(size, 10);
 }
 
-export function getSizeInRem(size) {
-  return parseFloat(size, 10) / REM_SIZE;
+export function getSpacingSizeInEm(size) {
+  return parseFloat(size, 10) / BASE_SPACING_SIZE_IN_PX;
 }
