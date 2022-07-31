@@ -10,7 +10,7 @@ module.exports = {
   ],
   env: {
     node: true,
-    'vue/setup-compiler-macros': true,
+    vitest: true,
   },
   rules: {
     // TODO: remove these rules after fixing the components

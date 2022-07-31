@@ -1,4 +1,3 @@
-import { describe, it, expect, beforeEach } from 'vitest';
 import { mount } from '@vue/test-utils';
 import SwAvatar, { SIZE, SHAPE } from '@/components/Avatar/SwAvatar.vue';
 
