@@ -34,7 +34,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.0.0-rc.20",
     "@vuepress/plugin-register-components": "2.0.0-beta.48",
-    "@vueuse/core": "^8.4.2",
+    "@vueuse/core": "^9.0.2",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^8.2.0",
