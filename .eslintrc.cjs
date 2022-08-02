@@ -10,7 +10,6 @@ module.exports = {
   ],
   env: {
     node: true,
-    vitest: true,
   },
   rules: {
     // TODO: remove these rules after fixing the components
