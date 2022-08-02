@@ -41,6 +41,16 @@ module.exports = {
         children: getSidebarGroup('/components'),
       },
     ],
+    navbar: [
+      {
+        text: 'Fontaweswimm',
+        link: 'https://swimmio.github.io/fontaweswimm/src/fonts/fontaweswimm/demo.html',
+      },
+      {
+        text: 'Figma',
+        link: 'https://www.figma.com/file/wHMtbUq5zXG9GDvP4BU3gi/Product---Design-System',
+      },
+    ],
     repo: 'swimmio/swimm-ui',
     docsDir: 'docs',
     docsBranch: 'main',
