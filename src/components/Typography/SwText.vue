@@ -1,6 +1,6 @@
 <template>
   <component
-    :is="getComponent"
+    :is="viewComponent"
     :class="[variant]"
     :style="{
       'font-weight': fontWeight,
@@ -44,7 +44,7 @@ export default {
     return { VARIANTS };
   },
   computed: {
-    getComponent() {
+    viewComponent() {
       if (this.component) {
         return this.component;
       }

@@ -1,5 +1,5 @@
 <script setup>
-import { SwTypography } from '@swimm/ui';
+import { SwText } from '@swimm/ui';
 </script>
 <style scoped>   
 .theme-default-content h1,
@@ -26,37 +26,37 @@ Typography can get props that will change its appearance.
 ## Headline1
 
 ::: demo
- <sw-typography variant="system-headline">system-headline</sw-typography>
- <sw-typography variant="system-subtitle">system-subtitle</sw-typography>
- <sw-typography variant="system-body">system-body</sw-typography>
- <sw-typography variant="title">title</sw-typography>
- <sw-typography variant="headline1">headline1</sw-typography>
- <sw-typography variant="headline2">headline2</sw-typography>
- <sw-typography variant="headline3">headline3</sw-typography>
- <sw-typography variant="subtitle-XL">subtitle-XL</sw-typography>
- <sw-typography variant="subtitle-L">subtitle-L</sw-typography>
- <sw-typography variant="subtitle-S">subtitle-S</sw-typography>
- <sw-typography variant="body-L">body-L</sw-typography>
- <sw-typography variant="body-S">body-S</sw-typography>
- <sw-typography variant="body-XS">body-XS</sw-typography>
+ <sw-text variant="system-headline">system-headline</sw-text>
+ <sw-text variant="system-subtitle">system-subtitle</sw-text>
+ <sw-text variant="system-body">system-body</sw-text>
+ <sw-text variant="title">title</sw-text>
+ <sw-text variant="headline1">headline1</sw-text>
+ <sw-text variant="headline2">headline2</sw-text>
+ <sw-text variant="headline3">headline3</sw-text>
+ <sw-text variant="subtitle-XL">subtitle-XL</sw-text>
+ <sw-text variant="subtitle-L">subtitle-L</sw-text>
+ <sw-text variant="subtitle-S">subtitle-S</sw-text>
+ <sw-text variant="body-L">body-L</sw-text>
+ <sw-text variant="body-S">body-S</sw-text>
+ <sw-text variant="body-XS">body-XS</sw-text>
 :::
 
 ## Headline2
 
 ::: demo
-<sw-typography> TEST</sw-typography>
+<sw-text> TEST</sw-text>
 :::
 
 ## Headline3
 
 ::: demo
-<sw-typography> TEST</sw-typography>
+<sw-text> TEST</sw-text>
 :::
 
 ## System subtitle
 
 ::: demo
-<sw-typography> TEST</sw-typography>
+<sw-text> TEST</sw-text>
 :::
 
 ## VARIANTS
@@ -64,9 +64,9 @@ Typography can get props that will change its appearance.
 ::: demo
 
 <div style="display: flex; justify-content: space-between; align-items: center" >
-    <sw-typography> TEST</sw-typography>
-    <sw-typography> TEST</sw-typography>
-    <sw-typography> TEST</sw-typography>
-    <sw-typography> TEST</sw-typography>
+    <sw-text> TEST</sw-text>
+    <sw-text> TEST</sw-text>
+    <sw-text> TEST</sw-text>
+    <sw-text> TEST</sw-text>
 </div>
 :::
