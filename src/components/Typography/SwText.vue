@@ -44,9 +44,9 @@ const fontFamily = computed(() => {
 });
 const fontWeight = computed(() => {
   if (props.weight) {
-    props.weight;
+    return props.weight;
   }
-  return String(variantToWeightMap[props.variant]);
+  return variantToWeightMap[props.variant];
 });
 </script>
 
