@@ -1,5 +1,5 @@
 <script setup>
-import { SwText } from '@swimm/ui';
+import { SwText, FONT_FAMILY, FONT_WEIGHTS } from '@swimm/ui';
 </script>
 <style scoped>   
 .theme-default-content h1,
@@ -23,7 +23,7 @@ Typography can get props that will change its appearance.
 - **family** - the font family that will be used for the font
 - **weight** - the font weight that will be used for the font
 
-## Headline1
+### Basic
 
 ::: demo
  <sw-text variant="system-headline">system-headline</sw-text>
@@ -41,32 +41,40 @@ Typography can get props that will change its appearance.
  <sw-text variant="body-XS">body-XS</sw-text>
 :::
 
-## Headline2
+## Props deafult
 
+### Font Family
 ::: demo
-<sw-text> TEST</sw-text>
+<sw-text variant="system-subtitle">Secondary font family</sw-text>
+
+<sw-text variant="headline3">Primary font family</sw-text>
+
+<sw-text variant="headline3" :family="FONT_FAMILY.SECONDARY">Force Secondary</sw-text>
+
+:::
+### Font Weights
+::: demo
+<sw-text variant="subtitle-XL">Bold by default</sw-text>
+
+<sw-text variant="body-L">Regular by default</sw-text>
+
+<sw-text variant="subtitle-XL" :weight="FONT_WEIGHTS.REGULAR">Force regular weight</sw-text>
 :::
 
-## Headline3
-
+### Component
 ::: demo
-<sw-text> TEST</sw-text>
+<sw-text variant="subtitle-XL">h4 by default</sw-text>
+
+<sw-text variant="body-L">div by default</sw-text>
+
+<sw-text variant="subtitle-XL" component="div">
+    Force div <small><small>(But keep size)</small></small>
+</sw-text>
+
 :::
 
-## System subtitle
+## Empty variant (default)
 
 ::: demo
-<sw-text> TEST</sw-text>
-:::
-
-## VARIANTS
-
-::: demo
-
-<div style="display: flex; justify-content: space-between; align-items: center" >
-    <sw-text> TEST</sw-text>
-    <sw-text> TEST</sw-text>
-    <sw-text> TEST</sw-text>
-    <sw-text> TEST</sw-text>
-</div>
+<sw-text>Default variant is Body-L</sw-text>
 :::
