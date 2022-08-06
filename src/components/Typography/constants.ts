@@ -20,10 +20,10 @@ export const FONT_FAMILY = {
 };
 
 export const WEIGHTS = {
-  LIGHT: 300,
-  REGULAR: 400,
-  BOLD: 600,
-  BOLDER: 800,
+  LIGHT: '300',
+  REGULAR: '400',
+  BOLD: '600',
+  BOLDER: '800',
 };
 
 export const variantToComponentMap = {
