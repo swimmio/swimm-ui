@@ -45,3 +45,7 @@ Toggle can get props that will define the appearance and behavior of the compone
     <sw-toggle :value="true" :size="SIZE.XSMALL" />
 </div>
 :::
+
+## API
+
+<ComponentApi name="SwToggle" />

@@ -85,3 +85,7 @@ import { Action, TYPES, SIZES, VARIANTS } from '@swimm/ui';
 ::: demo
 <Action :size="SIZES.SMALL" :type="TYPES.LINK" :disabled="true">Link Disabled</Action>
 :::
+
+## API
+
+<ComponentApi name="Action" />

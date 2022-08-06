@@ -35,3 +35,7 @@ import { Breadcrumbs } from '@swimm/ui';
 {icon: 'doc', name: 'doc' },
 ]"/>
 :::
+
+## API
+
+<ComponentApi name="Breadcrumbs" />

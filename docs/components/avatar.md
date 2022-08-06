@@ -65,3 +65,7 @@ Avatar can get props that will define the appearance and behavior of the compone
 	<sw-avatar text="Swimm" :src="img" :size="SIZE.XSMALL" :shape="SHAPE.SQUARE" />
 </div>
 :::
+
+## API
+
+<ComponentApi name="SwAvatar" />
