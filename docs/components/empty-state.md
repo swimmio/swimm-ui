@@ -30,4 +30,6 @@ import { EmptyState, Action, Icon } from '@swimm/ui';
 </EmptyState>
 :::
 
+## API
 
+<ComponentApi name="EmptyState" />
