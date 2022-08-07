@@ -5,7 +5,7 @@ import ComponentEvents from './ComponentEvents.vue';
 import ComponentSlots from './ComponentSlots.vue';
 
 const props = defineProps({
-  name: { type: String, require: true },
+  name: { type: String, required: true },
 });
 
 const data = apiData.filter(

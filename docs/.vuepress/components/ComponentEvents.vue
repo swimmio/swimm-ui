@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({
-  componentEvents: { type: Object, require: true },
+  componentEvents: { type: Object, required: true },
 });
 </script>
 
