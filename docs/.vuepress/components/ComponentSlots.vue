@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps({
+defineProps({
   componentSlots: { type: Object, required: true },
 });
 </script>
