@@ -78,3 +78,7 @@ Typography can get props that will change its appearance.
 ::: demo
 <sw-text>Default variant is Body-L</sw-text>
 :::
+
+## API
+
+<ComponentApi name="SwText" />
