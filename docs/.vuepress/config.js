@@ -1,10 +1,12 @@
 const glob = require('glob');
+const globPromise = require('glob-promise');
 const { defaultTheme } = require('@vuepress/theme-default');
 const { path } = require('@vuepress/utils');
 const {
   registerComponentsPlugin,
 } = require('@vuepress/plugin-register-components');
 const componentDemoPlugin = require('./plugins/component-demo.js');
+const docgen = require('vue-docgen-api');
 
 module.exports = {
   title: 'Swimm UI',
@@ -57,6 +59,14 @@ module.exports = {
     editLinks: true,
     contributors: false,
   }),
+  async onPrepared(app) {
+    const componentsApi = await generateComponentsApi();
+
+    await app.writeTemp(
+      'componentsApi.js',
+      `export const apiData = ${JSON.stringify(componentsApi)}`
+    );
+  },
 };
 
 function getSidebarGroup(path) {
@@ -65,4 +75,13 @@ function getSidebarGroup(path) {
     .filter((file) => file.startsWith(`docs${path}`))
     .map((file) => file.replace(`docs`, ''))
     .map((file) => file.replace('.md', ''));
+}
+
+async function generateComponentsApi() {
+  const componentsPaths = await globPromise.promise('src/components/**/**.vue');
+  return Promise.all(
+    componentsPaths.map(async (component) => {
+      return docgen.parse(path.resolve(__dirname, `../../${component}`));
+    })
+  );
 }

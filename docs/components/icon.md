@@ -15,3 +15,7 @@ import { Icon } from '@swimm/ui';
 ::: demo
 <Icon name="github" :tooltip="'Hello from Icon'" />
 :::
+
+## API
+
+<ComponentApi name="Icon" />
