@@ -37,7 +37,7 @@
     "@vueuse/core": "^9.1.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.5.0",
-    "eslint-plugin-vue": "^8.2.0",
+    "eslint-plugin-vue": "^9.3.0",
     "glob-promise": "^5.0.0",
     "husky": "^8.0.1",
     "jsdom": "^19.0.0",
