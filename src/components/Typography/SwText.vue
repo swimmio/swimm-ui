@@ -62,9 +62,3 @@ const fontWeight = computed(() => {
     <slot></slot>
   </component>
 </template>
-
-<style scoped>
-.some {
-  color: red;
-}
-</style>
