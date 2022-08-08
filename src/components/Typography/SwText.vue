@@ -59,6 +59,6 @@ const fontWeight = computed(() => {
       'font-family': `var(--${fontFamily})`,
     }"
   >
-    <slot></slot>
+    <slot />
   </component>
 </template>
