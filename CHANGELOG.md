@@ -1,3 +1,23 @@
+# [2.2.0](https://github.com/swimmio/swimm-ui/compare/v2.1.0...v2.2.0) (2022-08-08)
+
+
+### Bug Fixes
+
+* **Typography:** Created a proper MD documentation ([1fb2618](https://github.com/swimmio/swimm-ui/commit/1fb2618132a2f66891d822446752088d4ba57afa))
+* **Typography:** Fixed an issue in weight ([40a0a82](https://github.com/swimmio/swimm-ui/commit/40a0a8203a188daea5e821b017fb2de6c83fce35))
+* **Typography:** Fixed an issue in weight ([0fce264](https://github.com/swimmio/swimm-ui/commit/0fce2647e926287603ce5d816cfaa5a4edea8d98))
+* **Typography:** font variants instead of hard coded ([dedb9d2](https://github.com/swimmio/swimm-ui/commit/dedb9d2c7470587837a2638e28be9ebcf0343bb2))
+* **Typography:** Removed unused style ([c44ed36](https://github.com/swimmio/swimm-ui/commit/c44ed36a44f98b41c719bdefa343eb9985fcbe8c))
+* **typography:** Rename typography to SwText ([bd3ec29](https://github.com/swimmio/swimm-ui/commit/bd3ec2973eab8aada743ad089ea087ce93b22063))
+* **typography:** Rewrite SwText in script setup ([8447a56](https://github.com/swimmio/swimm-ui/commit/8447a567d6a1605700c50017c3a13e30141aed8e))
+* **Typography:** Using empty slot syntax ([288f41a](https://github.com/swimmio/swimm-ui/commit/288f41a6ab600f3fb57e9a8732bd53365416f5d8))
+
+
+### Features
+
+* **Typography:** Added props, events & slots to md comp ([e87dec0](https://github.com/swimmio/swimm-ui/commit/e87dec07f28186705dcf96d390f939c47fe8ffc1))
+* **Typogrpahy:** New Typography first steps ([dbddd75](https://github.com/swimmio/swimm-ui/commit/dbddd75aa9af90b6fee48d6ade75e5a310cb4a11))
+
 # [2.1.0](https://github.com/swimmio/swimm-ui/compare/v2.0.1...v2.1.0) (2022-07-27)
 
 
