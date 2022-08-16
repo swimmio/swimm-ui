@@ -1,41 +1,35 @@
-<template>
-  <label :class="['wrapper', [size], { disabled }]">
-    <input
-      class="input"
-      v-model="value"
-      :disabled="disabled"
-      type="checkbox"
-      @change="onChange"
-    />
-    <span class="toggle" />
-  </label>
-</template>
-
 <script>
-export const SIZE = {
+export const TOGGLE_SIZE = {
   XSMALL: 'xsmall',
   SMALL: 'small',
   MEDIUM: 'medium',
   LARGE: 'large',
 };
-
-export default {
-  props: {
-    value: { type: Boolean, required: true },
-    disabled: { type: Boolean, default: false },
-    size: {
-      type: String,
-      default: SIZE.MEDIUM,
-      validator: (value) => Object.values(SIZE).includes(value),
-    },
-  },
-  methods: {
-    onChange(event) {
-      !this.disabled && this.$emit('change', event.target.checked);
-    },
-  },
-};
 </script>
+
+<script setup>
+const props = defineProps({
+  modelValue: { type: Boolean, required: true },
+  disabled: { type: Boolean, default: false },
+  size: {
+    type: String,
+    default: TOGGLE_SIZE.MEDIUM,
+    validator: (value) => Object.values(TOGGLE_SIZE).includes(value),
+  },
+});
+const emit = defineEmits(['update:model-value']);
+
+function onChange(event) {
+  !props.disabled && emit('update:model-value', event.target.checked);
+}
+</script>
+
+<template>
+  <label :class="['wrapper', [size], { disabled }]">
+    <input class="input" :disabled="disabled" type="checkbox" :value="modelValue" @change="onChange" />
+    <span class="toggle" />
+  </label>
+</template>
 
 <style scoped>
 .wrapper {
