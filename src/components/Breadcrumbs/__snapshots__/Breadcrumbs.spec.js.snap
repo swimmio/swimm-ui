@@ -1,16 +1,16 @@
 // Vitest Snapshot v1
 
 exports[`Breadcrumbs > renders breadcrumbs with links 1`] = `
-"<div class=\\"breadcrumbs\\" data-v-490673c1=\\"\\">
-  <breadcrumb-stub name=\\"g\\" icon=\\"g\\" link=\\"/g\\" class=\\"item\\" data-v-490673c1=\\"\\"></breadcrumb-stub>
-  <breadcrumb-stub name=\\"b\\" icon=\\"b\\" link=\\"/b\\" class=\\"item\\" data-v-490673c1=\\"\\"></breadcrumb-stub>
+"<div class=\\"breadcrumbs\\" data-v-7650ef71=\\"\\">
+  <breadcrumb-stub name=\\"g\\" icon=\\"g\\" link=\\"/g\\" class=\\"item\\" data-v-7650ef71=\\"\\"></breadcrumb-stub>
+  <breadcrumb-stub name=\\"b\\" icon=\\"b\\" link=\\"/b\\" class=\\"item\\" data-v-7650ef71=\\"\\"></breadcrumb-stub>
 </div>"
 `;
 
 exports[`Breadcrumbs > renders default Breadcrumbs 1`] = `
-"<div class=\\"breadcrumbs\\" data-v-490673c1=\\"\\">
-  <breadcrumb-stub name=\\"g\\" icon=\\"g\\" class=\\"item\\" data-v-490673c1=\\"\\"></breadcrumb-stub>
+"<div class=\\"breadcrumbs\\" data-v-7650ef71=\\"\\">
+  <breadcrumb-stub name=\\"g\\" icon=\\"g\\" class=\\"item\\" data-v-7650ef71=\\"\\"></breadcrumb-stub>
 </div>"
 `;
 
-exports[`Breadcrumbs > renders empty array 1`] = `"<div class=\\"breadcrumbs\\" data-v-490673c1=\\"\\"></div>"`;
+exports[`Breadcrumbs > renders empty array 1`] = `"<div class=\\"breadcrumbs\\" data-v-7650ef71=\\"\\"></div>"`;
