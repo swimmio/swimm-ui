@@ -33,15 +33,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.13.12", "@babel/parser@^7.6.0", "@babel/parser@^7.9.6":
+"@babel/parser@^7.13.12", "@babel/parser@^7.16.4", "@babel/parser@^7.6.0", "@babel/parser@^7.9.6":
   version "7.18.11"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.11.tgz#68bb07ab3d380affa9a3f96728df07969645d2d9"
   integrity sha512-9JKn5vN+hDt0Hdqn1PiJ2guflwP+B6Ga8qbDuoF0PzzVhrzsKIJo8yGqVk6CmMHiMei9w1C1Bp9IMJSIK+HPIQ==
-
-"@babel/parser@^7.16.4":
-  version "7.18.5"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.5.tgz#337062363436a893a2d22faa60be5bb37091c83c"
-  integrity sha512-YZWVaglMiplo7v8f1oMQ5ZPQr0vn7HPeZXxXWsxXJRjGVrzUFn9OxFQl1sb5wzfootjA/yChhW84BV+383FSOw==
 
 "@babel/types@^7.18.8", "@babel/types@^7.6.1", "@babel/types@^7.9.6":
   version "7.18.10"
@@ -6143,9 +6138,9 @@ vue-demi@*:
   integrity sha512-xmkJ56koG3ptpLnpgmIzk9/4nFf4CqduSJbUM0OdPoU87NwRuZ6x49OLhjSa/fC15fV+5CbEnrxU4oyE022svg==
 
 vue-docgen-api@^4.50.0:
-  version "4.50.0"
-  resolved "https://registry.yarnpkg.com/vue-docgen-api/-/vue-docgen-api-4.50.0.tgz#73249e89c67ab2197313500f1836238c09c70522"
-  integrity sha512-bvLZRamIXN8+RY7tRUNAremxWsR6MD+rZLjzbKkjYDYm0MpNTcgXLT2IQeSCX0h8vdb5Blv6VpDhY3lE7OuYnw==
+  version "4.52.0"
+  resolved "https://registry.yarnpkg.com/vue-docgen-api/-/vue-docgen-api-4.52.0.tgz#83d38e23f640913ec4fd2107c2a9dff1b5af5d0f"
+  integrity sha512-2HSt9KLQ/ehJiwV4+6LgOjRqzh37vtUv6sKhSIp3CAPlwSd4/Bq2uvbs0+GJxdfrMnVquwY5DOavgNSEHsPA2w==
   dependencies:
     "@babel/parser" "^7.13.12"
     "@babel/types" "^7.18.8"
@@ -6157,7 +6152,7 @@ vue-docgen-api@^4.50.0:
     pug "^3.0.2"
     recast "0.21.1"
     ts-map "^1.0.3"
-    vue-inbrowser-compiler-utils "^4.50.0"
+    vue-inbrowser-compiler-independent-utils "^4.52.0"
 
 vue-eslint-parser@^9.0.1:
   version "9.0.3"
@@ -6172,18 +6167,10 @@ vue-eslint-parser@^9.0.1:
     lodash "^4.17.21"
     semver "^7.3.6"
 
-vue-inbrowser-compiler-demi@^4.50.0:
-  version "4.50.0"
-  resolved "https://registry.yarnpkg.com/vue-inbrowser-compiler-demi/-/vue-inbrowser-compiler-demi-4.50.0.tgz#f6ebc3589905fdde7032e880c5ab8bbb66ce60a2"
-  integrity sha512-m0/QD4KRRxAN29c/h+JatwWcrpLxCASImFip0FdoRYcDFxpcs+WeU01xR/FSOhKC6Ksm8H7Gf7c4gkdy/6dmRw==
-
-vue-inbrowser-compiler-utils@^4.50.0:
-  version "4.50.0"
-  resolved "https://registry.yarnpkg.com/vue-inbrowser-compiler-utils/-/vue-inbrowser-compiler-utils-4.50.0.tgz#7f72ce3cc5b3b5a58157b595853e7af1ce687900"
-  integrity sha512-30GBkAJSlemSpNz+Gr7T6SzTX7krGBk/EWylI9ozJ6ai6JqURXmb+u4MPjusGCw6VUvCUQPtj0emsvIf6ze24Q==
-  dependencies:
-    camelcase "^5.3.1"
-    vue-inbrowser-compiler-demi "^4.50.0"
+vue-inbrowser-compiler-independent-utils@^4.52.0:
+  version "4.52.0"
+  resolved "https://registry.yarnpkg.com/vue-inbrowser-compiler-independent-utils/-/vue-inbrowser-compiler-independent-utils-4.52.0.tgz#c40aefe12eef48d22157fd22cd2bf9b9f9ee9e9c"
+  integrity sha512-r09DtBbHbCO/5Ns0UofB/orwX7pYaAJW12+c/cy4brTF06oeng6QbxX0XziiepMyf9E9q/lLa4gk8hlhmG4Zww==
 
 vue-resize@^2.0.0-alpha.1:
   version "2.0.0-alpha.1"
