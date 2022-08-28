@@ -56,5 +56,8 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "resolutions": {
+    "minimist": "1.2.6"
   }
 }
