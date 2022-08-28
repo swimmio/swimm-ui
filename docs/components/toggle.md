@@ -1,3 +1,7 @@
+<script setup>
+import { SwToggle, SIZE } from '@swimm/ui';
+</script>
+
 # Toggle
 
 Toggle can get props that will define the appearance and behavior of the component.
@@ -5,16 +9,6 @@ Toggle can get props that will define the appearance and behavior of the compone
 - **value** - Required. The value of the toggle.
 - **disabled** - Optional. Whether the toggle should be disabled.
 - **size** - Optional. Defaults to `SIZE.MEDIUM`. Can be one of the sizes (`SIZE`) defined on the component.
-
-<script>
-import SwToggle, { SIZE } from '../../src/components/Toggle/SwToggle';
-export default {
-  components: { SwToggle },
-  setup() {
-    return { SIZE }
-  }
-}
-</script>
 
 ## On
 
@@ -51,3 +45,7 @@ export default {
     <sw-toggle :value="true" :size="SIZE.XSMALL" />
 </div>
 :::
+
+## API
+
+<ComponentApi name="SwToggle" />

@@ -1,14 +1,19 @@
 <template>
-  <div class='breadcrumb'>
-    <component :is='link ? "router-link" : "div"' :to='link' class='content' :class="{ 'has-link': !!link }">
-      <Icon :name='icon' />
+  <div class="breadcrumb">
+    <component
+      :is="link ? 'router-link' : 'div'"
+      :to="link"
+      class="content"
+      :class="{ 'has-link': !!link }"
+    >
+      <Icon :name="icon" />
       <span class="name">{{ name }}</span>
     </component>
   </div>
 </template>
 
 <script>
-import Icon from '../../Icon/Icon';
+import Icon from '../../Icon/Icon.vue';
 
 export default {
   components: { Icon },
@@ -16,9 +21,9 @@ export default {
     icon: { type: String, required: true },
     name: { type: String, required: true },
     link: {
-      type: [ String, Object ]
-    }
-  }
+      type: [String, Object],
+    },
+  },
 };
 </script>
 <style scoped>

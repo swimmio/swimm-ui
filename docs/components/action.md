@@ -1,13 +1,8 @@
-# Action
-
-<script>
-import { TYPES, SIZES, VARIANTS } from "../../src/components/Action/Action";
-export default {
-  setup() {
-    return { TYPES, SIZES, VARIANTS }
-  }
-}
+<script setup>
+import { Action, TYPES, SIZES, VARIANTS } from '@swimm/ui';
 </script>
+
+# Action
 
 ## Primary
 
@@ -90,3 +85,7 @@ export default {
 ::: demo
 <Action :size="SIZES.SMALL" :type="TYPES.LINK" :disabled="true">Link Disabled</Action>
 :::
+
+## API
+
+<ComponentApi name="Action" />

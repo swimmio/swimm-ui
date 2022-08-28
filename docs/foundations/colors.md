@@ -30,7 +30,6 @@
 
 <ColorGroup>
   <Color name="safe-zone" />
-  <Color name="safe-zone-100" />
   <Color name="high-violet" />
   <Color name="wave-jammer" />
   <Color name="wild-ultra" />
@@ -59,18 +58,72 @@
   <Color name="oh-no-red-200" />
   <Color name="oh-no-red-300" />
   <Color name="oh-no-red-500" />
-  <Color name="oh-no-red-00" />
+  <Color name="oh-no-red-700" />
   <Color name="oh-no-red-900" />
 </ColorGroup>
 
 ## Gradients
 
 <ColorGroup>
-  <Color name="blue-high-from" />
-  <Color name="blue-high-to" />
-  <Color name="blue-high" />
   <Color name="gradient-from" />
   <Color name="gradient-middle" />
   <Color name="gradient-to" />
   <Color name="gradient" />
+</ColorGroup>
+
+
+## Themed Colors
+
+Toggle Light/Dark button to see the colors in different themes
+
+<ColorGroup>
+  <Color name="color-bg" />
+  <Color name="color-surface" />
+  <Color name="color-hover" />
+  <Color name="color-selected" />
+  <Color name="color-invert" />
+
+  <Color name="color-primary-default" />
+  <Color name="color-primary-hover" />
+  <Color name="color-secondary-default" />
+  <Color name="color-secondary-hover" />
+  <Color name="color-disable" />
+  <Color name="color-error" />
+  <Color name="color-success" />
+  <Color name="color-warning" />
+  <Color name="color-autosync" />
+  <Color name="color-info" />
+  <Color name="color-label-tag" />
+  <Color name="text-color-on-light" />
+  
+  <Color name="text-color-primary" />
+  <Color name="text-color-secondary" />
+  <Color name="text-color-link" />
+  <Color name="text-color-on-primary" />
+  <Color name="text-color-invert" />
+  <Color name="text-color-disable" />
+  <Color name="text-color-accent" />
+  <Color name="text-color-on-error" />
+  <Color name="text-color-on-success" />
+  <Color name="text-color-on-warning" />
+  <Color name="text-color-on-placeholder" />
+
+  <Color name="border-color-primary" />
+  <Color name="border-color-secondary" />
+  <Color name="border-color-input" />
+  <Color name="border-color-focus" />
+  <Color name="border-color-error" />
+
+  <Color name="color-decorative-1" />
+  <Color name="color-decorative-2" />
+  <Color name="color-decorative-3" />
+  <Color name="color-decorative-4" />
+  <Color name="color-decorative-5" />
+  
+  <Color name="color-doc-cover" />
+  <Color name="color-code-error-sandwich" />
+  <Color name="color-code-error-meat" />
+  <Color name="color-code-autosync-sandwich" />
+  <Color name="color-code-autosync-meat" />
+
 </ColorGroup>

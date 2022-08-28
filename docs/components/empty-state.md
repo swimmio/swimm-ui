@@ -1,6 +1,8 @@
-# EmptyState
+<script setup>
+import { EmptyState, Action, Icon } from '@swimm/ui';
+</script>
 
-## Empty State
+# EmptyState
 
 ::: demo 
 <EmptyState title="Empty State" description="This is a description" />
@@ -28,4 +30,6 @@
 </EmptyState>
 :::
 
+## API
 
+<ComponentApi name="EmptyState" />

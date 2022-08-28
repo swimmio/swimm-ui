@@ -1,3 +1,33 @@
+<script setup>
+import { computed, onMounted, ref, toRefs } from 'vue';
+import { useMutationObserver } from '@vueuse/core';
+import { getCssVariable } from './utils.js';
+
+const props = defineProps({
+  name: { type: String, required: true },
+});
+const { name } = toRefs(props);
+const hex = ref('');
+const htmlElement = ref(null);
+
+onMounted(() => {
+  htmlElement.value = document.querySelector('html');
+  hex.value = getCssVariable(name.value);
+});
+
+useMutationObserver(
+  htmlElement,
+  (mutations) => {
+    if (mutations[0].target.dataset.theme) {
+      hex.value = getCssVariable(name.value);
+    }
+  },
+  {
+    attributes: true,
+  }
+);
+</script>
+
 <template>
   <div class="color-wrapper">
     <div class="color" :style="`background: var(--${name})`" />
@@ -7,20 +37,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    name: { type:String, required: true }
-  },
-  computed:{
-    hex() {
-      const style = getComputedStyle(document.body);
-      return style.getPropertyValue(`--${this.name}`);
-    }
-  }
-}
-</script>
 
 <style scoped>
 .color-wrapper {

@@ -1,5 +1,6 @@
+import { describe, it, expect, beforeEach } from 'vitest';
 import { mount } from '@vue/test-utils';
-import SwAvatar, { SIZE, SHAPE } from '@/components/Avatar/SwAvatar';
+import SwAvatar, { SIZE, SHAPE } from '@/components/Avatar/SwAvatar.vue';
 
 const TEXT = 'swimm';
 const IMAGE = 'someImage';
@@ -8,7 +9,7 @@ describe('SwAvatar', () => {
   describe('prop validator', () => {
     it('should show options from SIZE are valid', () => {
       const validator = SwAvatar.props.size.validator;
-      Object.values(SIZE).forEach(optionalValidSize =>
+      Object.values(SIZE).forEach((optionalValidSize) =>
         expect(validator(optionalValidSize)).toBeTruthy()
       );
     });
@@ -20,7 +21,7 @@ describe('SwAvatar', () => {
 
     it('should show options from SHAPE are valid', () => {
       const validator = SwAvatar.props.shape.validator;
-      Object.values(SHAPE).forEach(optionalValidShape =>
+      Object.values(SHAPE).forEach((optionalValidShape) =>
         expect(validator(optionalValidShape)).toBeTruthy()
       );
     });
@@ -83,8 +84,8 @@ describe('SwAvatar', () => {
           text: TEXT,
           src: IMAGE,
           size: SIZE.HUGE,
-          shape: SHAPE.SQUARE
-        }
+          shape: SHAPE.SQUARE,
+        },
       });
     });
 

@@ -3,6 +3,7 @@
     v-tooltip="tooltip"
     class="icon"
     :class="[computedIconNameClass, computedNoPaddingClass]"
+    @click="$emit('click', $event)"
   ></i>
 </template>
 
@@ -13,12 +14,13 @@ export default {
     tooltip: { type: String, default: null },
     noPadding: { type: Boolean, required: false, default: false },
   },
+  emits: ['click'],
   computed: {
     computedIconNameClass() {
       return `icon-${this.name}`;
     },
     computedNoPaddingClass() {
-      return { "no-padding": this.noPadding };
+      return { 'no-padding': this.noPadding };
     },
   },
 };
