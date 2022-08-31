@@ -27,57 +27,57 @@ Typography can get props that will change its appearance.
 ### Basic
 
 ::: demo
- <sw-text :variant="FONT_VARIANTS.SYSTEM_HEADLINE">{{ FONT_VARIANTS.SYSTEM_HEADLINE }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.SYSTEM_SUBTITLE">{{ FONT_VARIANTS.SYSTEM_SUBTITLE }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.SYSTEM_BODY">{{ FONT_VARIANTS.SYSTEM_BODY }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.TITLE">{{ FONT_VARIANTS.TITLE }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.HEADLINE_1">{{ FONT_VARIANTS.HEADLINE_1 }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.HEADLINE_2">{{ FONT_VARIANTS.HEADLINE_2 }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.HEADLINE_3">{{ FONT_VARIANTS.HEADLINE_3 }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.SUBTITLE_XL">{{ FONT_VARIANTS.SUBTITLE_XL }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.SUBTITLE_L">{{ FONT_VARIANTS.SUBTITLE_L }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.SUBTITLE_S">{{ FONT_VARIANTS.SUBTITLE_S }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.BODY_L">{{ FONT_VARIANTS.BODY_L }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.BODY_S">{{ FONT_VARIANTS.BODY_S }}</sw-text>
- <sw-text :variant="FONT_VARIANTS.BODY_XS">{{ FONT_VARIANTS.BODY_XS }}</sw-text>
+ <SwText :variant="FONT_VARIANTS.SYSTEM_HEADLINE">{{ FONT_VARIANTS.SYSTEM_HEADLINE }}</SwText>
+ <SwText :variant="FONT_VARIANTS.SYSTEM_SUBTITLE">{{ FONT_VARIANTS.SYSTEM_SUBTITLE }}</SwText>
+ <SwText :variant="FONT_VARIANTS.SYSTEM_BODY">{{ FONT_VARIANTS.SYSTEM_BODY }}</SwText>
+ <SwText :variant="FONT_VARIANTS.TITLE">{{ FONT_VARIANTS.TITLE }}</SwText>
+ <SwText :variant="FONT_VARIANTS.HEADLINE_1">{{ FONT_VARIANTS.HEADLINE_1 }}</SwText>
+ <SwText :variant="FONT_VARIANTS.HEADLINE_2">{{ FONT_VARIANTS.HEADLINE_2 }}</SwText>
+ <SwText :variant="FONT_VARIANTS.HEADLINE_3">{{ FONT_VARIANTS.HEADLINE_3 }}</SwText>
+ <SwText :variant="FONT_VARIANTS.SUBTITLE_XL">{{ FONT_VARIANTS.SUBTITLE_XL }}</SwText>
+ <SwText :variant="FONT_VARIANTS.SUBTITLE_L">{{ FONT_VARIANTS.SUBTITLE_L }}</SwText>
+ <SwText :variant="FONT_VARIANTS.SUBTITLE_S">{{ FONT_VARIANTS.SUBTITLE_S }}</SwText>
+ <SwText :variant="FONT_VARIANTS.BODY_L">{{ FONT_VARIANTS.BODY_L }}</SwText>
+ <SwText :variant="FONT_VARIANTS.BODY_S">{{ FONT_VARIANTS.BODY_S }}</SwText>
+ <SwText :variant="FONT_VARIANTS.BODY_XS">{{ FONT_VARIANTS.BODY_XS }}</SwText>
 :::
 
 ## Props deafult
 
 ### Font Family
 ::: demo
-<sw-text :variant="FONT_VARIANTS.SYSTEM_SUBTITLE">Secondary font family</sw-text>
+<SwText :variant="FONT_VARIANTS.SYSTEM_SUBTITLE">Secondary font family</SwText>
 
-<sw-text :variant="FONT_VARIANTS.HEADLINE_3">Primary font family</sw-text>
+<SwText :variant="FONT_VARIANTS.HEADLINE_3">Primary font family</SwText>
 
-<sw-text :variant="FONT_VARIANTS.HEADLINE_3" :family="FONT_FAMILY.SECONDARY">Force Secondary</sw-text>
+<SwText :variant="FONT_VARIANTS.HEADLINE_3" :family="FONT_FAMILY.SECONDARY">Force Secondary</SwText>
 
 :::
 ### Font Weights
 ::: demo
-<sw-text :variant="FONT_VARIANTS.SUBTITLE_XL">Bold by default</sw-text>
+<SwText :variant="FONT_VARIANTS.SUBTITLE_XL">Bold by default</SwText>
 
-<sw-text :variant="FONT_VARIANTS.BODY_L">Regular by default</sw-text>
+<SwText :variant="FONT_VARIANTS.BODY_L">Regular by default</SwText>
 
-<sw-text :variant="FONT_VARIANTS.SUBTITLE_XL" :weight="FONT_WEIGHTS.REGULAR">Force regular weight</sw-text>
+<SwText :variant="FONT_VARIANTS.SUBTITLE_XL" :weight="FONT_WEIGHTS.REGULAR">Force regular weight</SwText>
 :::
 
 ### Component
 ::: demo
-<sw-text :variant="FONT_VARIANTS.SUBTITLE_XL">h4 by default</sw-text>
+<SwText :variant="FONT_VARIANTS.SUBTITLE_XL">h4 by default</SwText>
 
-<sw-text :variant="FONT_VARIANTS.BODY_L">div by default</sw-text>
+<SwText :variant="FONT_VARIANTS.BODY_L">div by default</SwText>
 
-<sw-text :variant="FONT_VARIANTS.SUBTITLE_XL" component="div">
+<SwText :variant="FONT_VARIANTS.SUBTITLE_XL" component="div">
     Force div <small><small>(But keep size)</small></small>
-</sw-text>
+</SwText>
 
 :::
 
 ## Empty variant (default)
 
 ::: demo
-<sw-text>Default variant is Body-L</sw-text>
+<SwText>Default variant is Body-L</SwText>
 :::
 
 ## API
