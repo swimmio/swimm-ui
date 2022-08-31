@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/swimmio/swimm-ui/compare/v2.2.0...v2.2.1) (2022-08-31)
+
+
+### Bug Fixes
+
+* **typography:** Updated typography documentation ([81fc746](https://github.com/swimmio/swimm-ui/commit/81fc746f8ea332cb3d7432dd0b3b67520171582d))
+
 # [2.2.0](https://github.com/swimmio/swimm-ui/compare/v2.1.0...v2.2.0) (2022-08-08)
 
 
