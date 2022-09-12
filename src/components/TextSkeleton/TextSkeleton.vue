@@ -1,8 +1,13 @@
 <script setup>
+import { VARIANTS } from '@/components/Typography/constants';
 import SwText from '../Typography/SwText.vue';
 
 defineProps({
-  variant: { type: String, required: true },
+  variant: {
+    type: String,
+    required: true,
+    validator: (value) => Object.values(VARIANTS).includes(value),
+  },
   width: { type: Number, default: 100 },
   animate: { type: Boolean, default: true },
 });
