@@ -1,3 +1,11 @@
+# [2.3.0](https://github.com/swimmio/swimm-ui/compare/v2.2.1...v2.3.0) (2022-09-12)
+
+
+### Features
+
+* **TextSkeleton:** add component for loading state skeletons ([d49ceb1](https://github.com/swimmio/swimm-ui/commit/d49ceb1879f5171ccb03d4f2d9bbcbc6227d6508))
+* **TextSkeleton:** add optional animation ([f8d79f4](https://github.com/swimmio/swimm-ui/commit/f8d79f4467823371c93f05157d147f8dc85659a7))
+
 ## [2.2.1](https://github.com/swimmio/swimm-ui/compare/v2.2.0...v2.2.1) (2022-08-31)
 
 
