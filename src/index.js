@@ -20,3 +20,4 @@ export {
   VARIANTS as FONT_VARIANTS,
   WEIGHTS as FONT_WEIGHTS,
 } from './components/Typography/constants';
+export { default as TextSkeleton } from './components/TextSkeleton/TextSkeleton.vue';
