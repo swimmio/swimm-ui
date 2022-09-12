@@ -1,5 +1,5 @@
 <script setup>
-import { VARIANTS } from '@/components/Typography/constants';
+import { VARIANTS } from '../Typography/constants';
 import SwText from '../Typography/SwText.vue';
 
 defineProps({
