@@ -3,12 +3,13 @@ import SwText from '../Typography/SwText.vue';
 
 defineProps({
   variant: { type: String, required: true },
-  width: { type: String, default: '100' },
+  width: { type: Number, default: 100 },
+  animate: { type: Boolean, default: true },
 });
 </script>
 
 <template>
-  <SwText :variant="variant" class="skeleton" />
+  <SwText :variant="variant" :class="['skeleton', { animate }]" />
 </template>
 
 <style scoped>
@@ -21,5 +22,18 @@ defineProps({
 
 .skeleton:not(h1, h2, h3, h4, h5, h6):before {
   content: '\200b'; /* to apply height for empty div/span */
+}
+
+.skeleton.animate {
+  animation: loading 1s linear infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    background-color: var(--color-surface);
+  }
+  100% {
+    background-color: var(--color-hover);
+  }
 }
 </style>
