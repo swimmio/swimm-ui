@@ -4,22 +4,20 @@ import { TextSkeleton } from '@swimm/ui';
 
 # TextSkeleton
 
-### Title with width
+## Different Variants
 
 ::: demo
-<TextSkeleton variant="title" :width="300"/>
+<TextSkeleton variant="title" :style="{ width: '200px' }" />
 :::
-
-### Body-L
 
 ::: demo
 <TextSkeleton variant="body-L" />
 :::
 
-### Without animation
+## Without animation
 
 ::: demo
-<TextSkeleton variant="subtitle-L" :width="500" :animate="false" />
+<TextSkeleton variant="subtitle-L" :animate="false" :style="{ width: '300px' }" />
 :::
 
 ## API
