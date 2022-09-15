@@ -1,5 +1,5 @@
 <script setup>
-import { VARIANTS } from '@/components/Typography/constants';
+import { VARIANTS } from '../Typography/constants';
 import SwText from '../Typography/SwText.vue';
 
 defineProps({
@@ -8,21 +8,23 @@ defineProps({
     required: true,
     validator: (value) => Object.values(VARIANTS).includes(value),
   },
-  width: { type: Number, default: 100 },
   animate: { type: Boolean, default: true },
 });
 </script>
 
 <template>
-  <SwText :variant="variant" :class="['skeleton', { animate }]" />
+  <SwText
+    :variant="variant"
+    v-bind="$attrs"
+    :class="['skeleton', { animate }]"
+  />
 </template>
 
 <style scoped>
 .skeleton {
   background: var(--color-surface);
-  margin-top: var(--space-xs);
   border-radius: 4px;
-  width: calc(v-bind(width) * 1px);
+  margin: 0;
 }
 
 .skeleton:not(h1, h2, h3, h4, h5, h6):before {
