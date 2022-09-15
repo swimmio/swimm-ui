@@ -1,3 +1,15 @@
+# [2.4.0](https://github.com/swimmio/swimm-ui/compare/v2.3.0...v2.4.0) (2022-09-15)
+
+
+### Bug Fixes
+
+* import on TextSkeleton ([a7c8b75](https://github.com/swimmio/swimm-ui/commit/a7c8b754c713534ed4c57ccc0157b94ceca90720))
+
+
+### Features
+
+* **TextSkeleton:** make skeleton fit to container ([bc20faf](https://github.com/swimmio/swimm-ui/commit/bc20fafae40f35fe00075c93eedba80e24675638))
+
 # [2.3.0](https://github.com/swimmio/swimm-ui/compare/v2.2.1...v2.3.0) (2022-09-12)
 
 
