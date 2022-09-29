@@ -108,7 +108,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 8px 32px;
-  background: var(--color-primary-default);
+  background: var(--color-brand);
   color: var(--text-color-on-primary);
   font-family: var(--fontfamily-main);
   font-size: var(--subtitle-L);
@@ -123,7 +123,7 @@ export default {
 
 .button:not([disabled]):focus-visible,
 .button:not([disabled]):hover {
-  background: var(--color-primary-hover);
+  background: var(--color-brand-hover);
 }
 
 .button.secondary {
@@ -135,7 +135,7 @@ export default {
 .button.secondary:not([disabled]):focus-visible,
 .button.secondary:not([disabled]):hover {
   color: var(--text-color-primary);
-  background: var(--color-secondary-hover);
+  background: var(--color-hover);
   border-color: var(--border-color-primary);
 }
 
@@ -148,7 +148,7 @@ export default {
 
 .button.link:not([disabled]):focus-visible,
 .button.link:not([disabled]):hover {
-  background: var(--color-secondary-hover);
+  background: var(--color-hover);
 }
 
 .button:active:not([disabled]) {

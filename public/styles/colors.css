@@ -2,11 +2,11 @@
     /*** Primary ***/
     --feet-in-the-water: rgb(229, 236, 255);
 
-    --coastal-shore: #4293F3;
+    --coastal-shore: #5E6EFF;
 
-    --swimm-blue: #1847de;
+    --swimm-blue: #4154FF;
 
-    --quick-dive: #204D88;
+    --quick-dive: #1F35FF;
 
     --deep-sea: #0c2739;
 
@@ -15,7 +15,7 @@
 
     --wash-me: #f4f5f7;
 
-    --pearl-river: #e7e7e7;
+    --pearl-river: #ECEFF4;
 
     --harbor-gray: #dad7d7;
 
@@ -25,11 +25,11 @@
     --high-tide: #6a6b6c;
     --high-tide-500: #6a6b6c80;
 
-    --gravel-rocks: #515151;
+    --gravel-rocks: #2F3142;
 
-    --sea-anchor: #343434;
+    --sea-anchor: #252836;
 
-    --dark-charcoal: #212121;
+    --dark-charcoal: #1D1E2B;
 
     /*** Accent ***/
 
@@ -39,7 +39,7 @@
 
     --high-violet: #c558f5;
 
-    --wave-jammer: #a31177;
+    --wave-jammer: #600A6A;
 
     --wild-ultra: #3d274a;
 
@@ -55,18 +55,16 @@
     --success-green: var(--success-green-500);
 
     --warning-yellow-900: #544b2c;
-    --warning-yellow-700: #edbf1c;
+    --warning-yellow-700: #AD841B;
     --warning-yellow-500: #ffd33d;
     --warning-yellow-300: #ffd33d4d;
-    --warning-yellow-200: #ffd33d33;
     --warning-yellow-100: #fff9dc;
     --warning-yellow: var(--warning-yellow-500);
 
     --oh-no-red-900: #3b1316;
-    --oh-no-red-700: #ab0101;
+    --oh-no-red-700: #8D2626;
     --oh-no-red-500: #d84a4a;
-    --oh-no-red-300: #cb24314d;
-    --oh-no-red-200: #cb243133;
+    --oh-no-red-300: #FFC2C2;
     --oh-no-red-100: #fae9ec;
     --oh-no-red: var(--oh-no-red-500);
 

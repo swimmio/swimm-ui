@@ -48,14 +48,12 @@
   <Color name="success-green-900" />
   <Color name="warning-yellow" />
   <Color name="warning-yellow-100" />
-  <Color name="warning-yellow-200" />
   <Color name="warning-yellow-300" />
   <Color name="warning-yellow-500" />
   <Color name="warning-yellow-700" />
   <Color name="warning-yellow-900" />
   <Color name="oh-no-red" />
   <Color name="oh-no-red-100" />
-  <Color name="oh-no-red-200" />
   <Color name="oh-no-red-300" />
   <Color name="oh-no-red-500" />
   <Color name="oh-no-red-700" />
@@ -83,10 +81,8 @@ Toggle Light/Dark button to see the colors in different themes
   <Color name="color-selected" />
   <Color name="color-invert" />
 
-  <Color name="color-primary-default" />
-  <Color name="color-primary-hover" />
-  <Color name="color-secondary-default" />
-  <Color name="color-secondary-hover" />
+  <Color name="color-brand" />
+  <Color name="color-brand-hover" />
   <Color name="color-disable" />
   <Color name="color-error" />
   <Color name="color-success" />
@@ -106,21 +102,21 @@ Toggle Light/Dark button to see the colors in different themes
   <Color name="text-color-on-error" />
   <Color name="text-color-on-success" />
   <Color name="text-color-on-warning" />
-  <Color name="text-color-on-placeholder" />
 
   <Color name="border-color-primary" />
   <Color name="border-color-secondary" />
   <Color name="border-color-input" />
   <Color name="border-color-focus" />
   <Color name="border-color-error" />
+  <Color name="border-color-subtle" />
 
   <Color name="color-decorative-1" />
   <Color name="color-decorative-2" />
   <Color name="color-decorative-3" />
   <Color name="color-decorative-4" />
   <Color name="color-decorative-5" />
-  
-  <Color name="color-doc-cover" />
+  <Color name="color-decorative-6" />
+
   <Color name="color-code-error-sandwich" />
   <Color name="color-code-error-meat" />
   <Color name="color-code-autosync-sandwich" />
