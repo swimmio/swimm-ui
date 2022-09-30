@@ -50,14 +50,14 @@
     --success-green-900: #193821;
     --success-green-700: #077025;
     --success-green-500: #2ea44f;
-    --success-green-300: #2ea44f4d;
+    --success-green-300: #76DD93;
     --success-green-100: #ebf6ee;
     --success-green: var(--success-green-500);
 
     --warning-yellow-900: #544b2c;
     --warning-yellow-700: #AD841B;
     --warning-yellow-500: #ffd33d;
-    --warning-yellow-300: #ffd33d4d;
+    --warning-yellow-300: #FFDE6C;
     --warning-yellow-100: #fff9dc;
     --warning-yellow: var(--warning-yellow-500);
 

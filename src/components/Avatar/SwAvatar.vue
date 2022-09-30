@@ -52,7 +52,7 @@ export default {
   color: var(--text-color-on-primary);
 
   overflow: hidden;
-  border: 1px solid var(--border-color-secondary);
+  border: 1px solid var(--border-color-subtle);
 }
 
 .image {

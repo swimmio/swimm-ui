@@ -104,7 +104,6 @@ Toggle Light/Dark button to see the colors in different themes
   <Color name="text-color-on-warning" />
 
   <Color name="border-color-primary" />
-  <Color name="border-color-secondary" />
   <Color name="border-color-input" />
   <Color name="border-color-focus" />
   <Color name="border-color-error" />

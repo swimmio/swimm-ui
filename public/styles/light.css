@@ -23,12 +23,11 @@
     --text-color-invert: var(--clear-white);
     --text-color-disable: var(--fifty-shades);
     --text-color-accent: var(--high-violet);
-    --text-color-on-error: var(--oh-no-red-500);
-    --text-color-on-success: var(--success-green-500);
+    --text-color-on-error: var(--oh-no-red-700);
+    --text-color-on-success: var(--success-green-700);
     --text-color-on-warning: var(--warning-yellow-700);
 
     --border-color-primary: var(--deep-sea);
-    --border-color-secondary: var(--high-tide);
     --border-color-input: var(--fifty-shades);
     --border-color-focus: var(--swimm-blue);
     --border-color-error: var(--oh-no-red-500);
