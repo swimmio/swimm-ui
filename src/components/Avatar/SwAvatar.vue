@@ -48,11 +48,11 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-primary-default);
+  background-color: var(--color-brand);
   color: var(--text-color-on-primary);
 
   overflow: hidden;
-  border: 1px solid var(--border-color-secondary);
+  border: 1px solid var(--border-color-subtle);
 }
 
 .image {

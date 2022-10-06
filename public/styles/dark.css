@@ -2,13 +2,11 @@
     --color-bg: var(--dark-charcoal);
     --color-surface: var(--sea-anchor);
     --color-hover: var(--gravel-rocks);
-    --color-selected: var(--quick-dive);
+    --color-selected: var(--gravel-rocks);
     --color-invert: var(--clear-white);
 
-    --color-primary-default: var(--coastal-shore);
-    --color-primary-hover: var(--swimm-blue);
-    --color-secondary-default: var(--high-tide);
-    --color-secondary-hover: var(--gravel-rocks);
+    --color-brand: var(--coastal-shore);
+    --color-brand-hover: var(--swimm-blue);
     --color-disable: var(--gravel-rocks);
     --color-error: var(--oh-no-red-900);
     --color-success: var(--success-green-900);
@@ -17,12 +15,6 @@
     --color-info: var(--sea-anchor);
     --color-label-tag: var(--high-tide);
     --text-color-on-light: var(--deep-sea);
-    /* --color-plan-free: var(--TBD);
-    --color-plan-team: var(--TBD);
-    --color-plan-enterprise: var(--TBD);
-    --color-plan-opensource: var(--TBD);
-    --color-label-tags: var(--TBD);
-    --color-label-shortcut: var(--TBD); */
 
     --text-color-primary: var(--pearl-river);
     --text-color-secondary: var(--fifty-shades);
@@ -34,21 +26,20 @@
     --text-color-on-error: var(--oh-no-red-500);
     --text-color-on-success: var(--success-green-500);
     --text-color-on-warning: var(--warning-yellow-500);
-    --text-color-on-placeholder: var(--high-tide);
 
     --border-color-primary: var(--harbor-gray);
-    --border-color-secondary: var(--fifty-shades);
     --border-color-input: var(--gravel-rocks);
     --border-color-focus: var(--coastal-shore);
     --border-color-error: var(--oh-no-red-500);
+    --border-color-subtle: var(--gravel-rocks);
 
     --color-decorative-1: var(--swimm-blue);
     --color-decorative-2: var(--feet-in-the-water);
     --color-decorative-3: var(--fake-caffe-sheva);
     --color-decorative-4: var(--high-violet);
     --color-decorative-5: var(--deep-sea);
+    --color-decorative-6: var(--warning-yellow-500);
 
-    --color-doc-cover: var(--sea-anchor);
     --color-code-error-sandwich: var(--oh-no-red-900);
     --color-code-error-meat: var(--oh-no-red-700);
     --color-code-autosync-sandwich: var(--wild-ultra);
