@@ -1,3 +1,12 @@
+# [2.5.0](https://github.com/swimmio/swimm-ui/compare/v2.4.0...v2.5.0) (2022-10-06)
+
+
+### Features
+
+* **Design system audits:** Update tokens with Shuju ([e0f5ebb](https://github.com/swimmio/swimm-ui/commit/e0f5ebb07ca0149f2f0cb34e9add15153226f6c9))
+* **Design system audits:** Update tokens with Shuju 2 + Removed border-color-secondary ([1ddb165](https://github.com/swimmio/swimm-ui/commit/1ddb16539b072259e2baafa1ab53c163b2b70272))
+* **Design system:** BREAKING CHANGE - updating major color mapping ([899c018](https://github.com/swimmio/swimm-ui/commit/899c01871c5ddbefd614391212aaaafe2152a44c))
+
 # [2.4.0](https://github.com/swimmio/swimm-ui/compare/v2.3.0...v2.4.0) (2022-09-15)
 
 
