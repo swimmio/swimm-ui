@@ -33,7 +33,7 @@
     "@vitejs/plugin-vue": "^2.3.4",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.0.0-rc.20",
-    "@vuepress/plugin-register-components": "2.0.0-beta.48",
+    "@vuepress/plugin-register-components": "2.0.0-beta.51",
     "@vueuse/core": "^9.1.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.5.0",
