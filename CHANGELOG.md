@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/swimmio/swimm-ui/compare/v2.5.0...v2.6.0) (2022-10-20)
+
+
+### Features
+
+* **Divider:** Adding Divider component to the swimmUI ([b5134ae](https://github.com/swimmio/swimm-ui/commit/b5134ae695f6feb80217211fe0e0108126fda5fe))
+
 # [2.5.0](https://github.com/swimmio/swimm-ui/compare/v2.4.0...v2.5.0) (2022-10-06)
 
 
