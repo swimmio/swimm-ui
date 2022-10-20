@@ -21,3 +21,4 @@ export {
   WEIGHTS as FONT_WEIGHTS,
 } from './components/Typography/constants';
 export { default as TextSkeleton } from './components/TextSkeleton/TextSkeleton.vue';
+export { default as Divider } from './components/Divider/Divider.vue';
