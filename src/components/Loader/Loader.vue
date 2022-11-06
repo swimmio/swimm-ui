@@ -6,11 +6,11 @@
 export default {
   props: {
     noFlickering: { type: Boolean, default: false },
-    secondary: { type: Boolean, default: false },
+    secondary: { type: Boolean, default: false }
   },
   data() {
     return {
-      hide: false,
+      hide: false
     };
   },
   created() {
@@ -18,14 +18,14 @@ export default {
       this.hide = true;
       setTimeout(() => (this.hide = false), 50);
     }
-  },
+  }
 };
 </script>
 
 <style scoped>
 .loader {
   --loader-size: 150px;
-  background-image: url("/img/loading.gif");
+  background-image: url('/img/secondary-loading.gif');
   background-size: var(--loader-size);
   background-repeat: no-repeat;
   background-position: center;
@@ -36,7 +36,7 @@ export default {
 
 .loader.secondary {
   --loader-size: 70px;
-  background-image: url("/img/secondary-loading.gif");
+  background-image: url('/img/secondary-loading.gif');
 }
 
 .loader.hide {
