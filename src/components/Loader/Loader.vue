@@ -1,16 +1,22 @@
 <template>
-  <div class="loader" :class="{ hide: hide, secondary }"></div>
+  <div v-if="secondary" class="loader-secondary" :class="{ hide: hide }"></div>
+  <div v-else class="spinner-container" :class="{ hide: hide }">
+    <div class="loader-ripple">
+      <div class="animation-div"></div>
+      <div class="animation-div"></div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
     noFlickering: { type: Boolean, default: false },
-    secondary: { type: Boolean, default: false },
+    secondary: { type: Boolean, default: false }
   },
   data() {
     return {
-      hide: false,
+      hide: false
     };
   },
   created() {
@@ -18,14 +24,14 @@ export default {
       this.hide = true;
       setTimeout(() => (this.hide = false), 50);
     }
-  },
+  }
 };
 </script>
 
-<style scoped>
-.loader {
-  --loader-size: 150px;
-  background-image: url("/img/loading.gif");
+<style scoped lang="postcss">
+.loader-secondary {
+  --loader-size: 70px;
+  background-image: url('/img/secondary-loading.gif');
   background-size: var(--loader-size);
   background-repeat: no-repeat;
   background-position: center;
@@ -34,12 +40,62 @@ export default {
   min-width: var(--loader-size);
 }
 
-.loader.secondary {
-  --loader-size: 70px;
-  background-image: url("/img/secondary-loading.gif");
+.hide {
+  visibility: hidden;
 }
 
-.loader.hide {
-  visibility: hidden;
+.spinner-container {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  div {
+    position: absolute;
+    border: 4px solid var(--color-brand);
+    opacity: 1;
+    border-radius: 50%;
+    animation: loader-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    &:nth-child(2) {
+      animation-delay: -0.5s;
+    }
+    @keyframes loader-ripple {
+      0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+      }
+      4.9% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+      }
+      5% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+      100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+      }
+    }
+  }
 }
 </style>
