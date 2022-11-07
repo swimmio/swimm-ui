@@ -2,34 +2,51 @@
 id: bc324
 name: Using The Library
 file_version: 1.0.2
-app_version: 0.8.6-2
+app_version: 0.9.9-2
+cross_repo_file_blobs:
+  veezvxCuzpPrRLLXWD2E:
+    apps/web/src/main.js: 2b9025d76da9ee6de3a56b48be78115a2f0e8d23
+    apps/web/src/common/components/atoms/TagHandler.vue: ee356ee6d8a458084766c29189cfb115bfdbca15
 ---
 
 To use Swimm UI, in your project, run:
 
-<br/>
-
 `yarn add @swimm/ui`
+
+
+
 
 <br/>
 
 Import the styles files to root of your project (`main.js`):
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+<!-- NOTE-swimm-repo ::veezvxCuzpPrRLLXWD2E:: -->
+### 📄 apps/web/src/main.js
+```javascript
+⬜ 23     import FloatingVue from 'floating-vue';
+⬜ 24     import vSelect from 'vue-select';
+⬜ 25     import 'vue-select/dist/vue-select.css';
+🟩 26     import '@swimm/ui/dist/styles/index.css';
+🟩 27     import '@swimm/ui/dist/style.css';
+⬜ 28     import 'floating-vue/dist/style.css';
+⬜ 29     import 'fontaweswimm/src/fonts/fontaweswimm/style.css';
+⬜ 30     import Worker from './workers/tasks-worker?worker';
+```
 
 <br/>
 
-```
-import '@swimm/ui/dist/styles/index.css';
-import '@swimm/ui/dist/style.css';
-```
-
-<br/>
-
-Import the required component/s:\`
-
-<br/>
-
-```
-import { Icon } from '@swimm/ui';
+Import the required component(s):
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+<!-- NOTE-swimm-repo ::veezvxCuzpPrRLLXWD2E:: -->
+### 📄 apps/web/src/common/components/atoms/TagHandler.vue
+```vue
+⬜ 5      
+⬜ 6      <script>
+⬜ 7      import { Tag } from '@swimm/editor';
+🟩 8      import { Icon } from '@swimm/ui';
+⬜ 9      
+⬜ 10     export default {
+⬜ 11       components: {
 ```
 
 <br/>
