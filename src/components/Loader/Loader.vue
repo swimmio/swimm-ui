@@ -1,6 +1,6 @@
 <template>
-  <div v-if="secondary" class="loader-secondary" :class="{ hide: hide }"></div>
-  <div v-else class="spinner-container" :class="{ hide: hide }">
+  <div v-if="secondary" class="loader-secondary" :class="{ hide }"></div>
+  <div v-else class="spinner-container" :class="{ hide }">
     <div class="loader-ripple">
       <div class="animation-div"></div>
       <div class="animation-div"></div>
@@ -57,45 +57,45 @@ export default {
   position: relative;
   width: 80px;
   height: 80px;
-  div {
-    position: absolute;
-    border: 4px solid var(--color-brand);
+}
+.loader-ripple .animation-div {
+  position: absolute;
+  border: 4px solid var(--color-brand);
+  opacity: 1;
+  border-radius: 50%;
+  animation: loader-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.loader-ripple .animation-div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes loader-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
     opacity: 1;
-    border-radius: 50%;
-    animation: loader-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-    &:nth-child(2) {
-      animation-delay: -0.5s;
-    }
-    @keyframes loader-ripple {
-      0% {
-        top: 36px;
-        left: 36px;
-        width: 0;
-        height: 0;
-        opacity: 0;
-      }
-      4.9% {
-        top: 36px;
-        left: 36px;
-        width: 0;
-        height: 0;
-        opacity: 0;
-      }
-      5% {
-        top: 36px;
-        left: 36px;
-        width: 0;
-        height: 0;
-        opacity: 1;
-      }
-      100% {
-        top: 0px;
-        left: 0px;
-        width: 72px;
-        height: 72px;
-        opacity: 0;
-      }
-    }
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
   }
 }
 </style>
