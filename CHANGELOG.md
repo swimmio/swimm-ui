@@ -1,3 +1,11 @@
+# [2.7.0](https://github.com/swimmio/swimm-ui/compare/v2.6.0...v2.7.0) (2022-11-09)
+
+
+### Features
+
+* **colors:** change border-color-input to high-tide in dark mode ([5e7e17a](https://github.com/swimmio/swimm-ui/commit/5e7e17adb64f1b2f26ad00aaa9990318b6a5b86f))
+* **Divider:** change divider color to border-color-subtle ([b5ce276](https://github.com/swimmio/swimm-ui/commit/b5ce2760a931c66776254f3275e9f901aa132ef1))
+
 # [2.6.0](https://github.com/swimmio/swimm-ui/compare/v2.5.0...v2.6.0) (2022-10-20)
 
 
