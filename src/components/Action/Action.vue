@@ -77,7 +77,7 @@ export default {
      * Button type
      * @values type attr of the button tag
      */
-    buttonType: { type: String, default: 'submit' }
+    buttonType: { type: String, default: 'submit' },
   },
   computed: {
     classes() {
@@ -90,11 +90,11 @@ export default {
           disabled: this.disabled,
           loading: this.loading,
           secondary: this.secondary,
-          link: this.type === TYPES.LINK
-        }
+          link: this.type === TYPES.LINK,
+        },
       ];
-    }
-  }
+    },
+  },
 };
 </script>
 
