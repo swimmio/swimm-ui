@@ -4,7 +4,7 @@
       :is="link ? 'router-link' : 'div'"
       :to="link"
       class="content"
-      :class="{ 'has-link': !!link }"
+      :class="{ 'has-link': link }"
     >
       <Icon :name="icon" />
       <span class="name">{{ name }}</span>
@@ -18,9 +18,7 @@ import Icon from '../../Icon/Icon.vue';
 defineProps({
   icon: { type: String, required: true },
   name: { type: String, required: true },
-  link: {
-    type: [String, Object],
-  },
+  link: { type: String, default: null },
 });
 </script>
 
