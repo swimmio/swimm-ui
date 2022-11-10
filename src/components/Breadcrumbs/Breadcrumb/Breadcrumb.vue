@@ -12,20 +12,18 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import Icon from '../../Icon/Icon.vue';
 
-export default {
-  components: { Icon },
-  props: {
-    icon: { type: String, required: true },
-    name: { type: String, required: true },
-    link: {
-      type: [String, Object],
-    },
+defineProps({
+  icon: { type: String, required: true },
+  name: { type: String, required: true },
+  link: {
+    type: [String, Object],
   },
-};
+});
 </script>
+
 <style scoped>
 .breadcrumb {
   color: var(--text-color-primary);

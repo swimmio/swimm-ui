@@ -7,23 +7,20 @@
   ></i>
 </template>
 
-<script>
-export default {
-  props: {
-    name: { type: String, required: true },
-    tooltip: { type: String, default: null },
-    noPadding: { type: Boolean, required: false, default: false },
-  },
-  emits: ['click'],
-  computed: {
-    computedIconNameClass() {
-      return `icon-${this.name}`;
-    },
-    computedNoPaddingClass() {
-      return { 'no-padding': this.noPadding };
-    },
-  },
-};
+<script setup lang="ts">
+import { computed } from 'vue';
+
+const props = defineProps({
+  name: { type: String, required: true },
+  tooltip: { type: String, default: null },
+  noPadding: { type: Boolean, required: false, default: false },
+});
+defineEmits(['click']);
+
+const computedIconNameClass = computed(() => `icon-${props.name}`);
+const computedNoPaddingClass = computed(() => ({
+  'no-padding': props.noPadding,
+}));
 </script>
 <style scoped>
 .no-padding {

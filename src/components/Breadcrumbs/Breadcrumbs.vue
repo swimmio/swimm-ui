@@ -11,23 +11,21 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import Breadcrumb from './Breadcrumb/Breadcrumb.vue';
+import type { BreadcrumbType } from './Breadcrumb/types';
 
-export default {
-  components: { Breadcrumb },
-  props: {
-    items: {
-      type: Array,
-      required: true,
-      validator: (items) => {
-        return items.every(({ icon, name }) => {
-          return icon && name;
-        });
-      },
+defineProps({
+  items: {
+    type: Array as () => Array<BreadcrumbType>,
+    required: true,
+    validator: (items: BreadcrumbType[]) => {
+      return items.every(({ icon, name }) => {
+        return icon && name;
+      });
     },
   },
-};
+});
 </script>
 <style scoped>
 .breadcrumbs {

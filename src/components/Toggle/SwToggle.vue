@@ -11,30 +11,23 @@
   </label>
 </template>
 
-<script>
-export const SIZE = {
-  XSMALL: 'xsmall',
-  SMALL: 'small',
-  MEDIUM: 'medium',
-  LARGE: 'large',
-};
+<script setup lang="ts">
+import { SIZE } from './constants';
 
-export default {
-  props: {
-    value: { type: Boolean, required: true },
-    disabled: { type: Boolean, default: false },
-    size: {
-      type: String,
-      default: SIZE.MEDIUM,
-      validator: (value) => Object.values(SIZE).includes(value),
-    },
+const props = defineProps({
+  value: { type: Boolean, required: true },
+  disabled: { type: Boolean, default: false },
+  size: {
+    type: String,
+    default: SIZE.MEDIUM,
+    validator: (value: string) => Object.values(SIZE).includes(value),
   },
-  methods: {
-    onChange(event) {
-      !this.disabled && this.$emit('change', event.target.checked);
-    },
-  },
-};
+});
+const emit = defineEmits(['change']);
+
+function onChange(event: Event) {
+  !props.disabled && emit('change', (event.target as HTMLInputElement).checked);
+}
 </script>
 
 <style scoped>

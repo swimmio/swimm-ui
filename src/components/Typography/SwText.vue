@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue';
 import {
   FONT_FAMILY,
@@ -14,35 +14,35 @@ const props = defineProps({
   variant: {
     type: String,
     default: VARIANTS.BODY_L,
-    validator: (value) => Object.values(VARIANTS).includes(value),
+    validator: (value: string) => Object.values(VARIANTS).includes(value),
   },
   family: {
     type: String,
     default: null,
-    validator: (value) => Object.values(FONT_FAMILY).includes(value),
+    validator: (value: string) => Object.values(FONT_FAMILY).includes(value),
   },
   weight: {
     type: String,
     default: null,
-    validator: (value) => Object.values(WEIGHTS).includes(value),
+    validator: (value: string) => Object.values(WEIGHTS).includes(value),
   },
 });
 
-const viewComponent = computed(() => {
+const viewComponent = computed<string>(() => {
   if (props.component) {
     return props.component;
   }
 
   return variantToComponentMap[props.variant];
 });
-const fontFamily = computed(() => {
+const fontFamily = computed<string>(() => {
   if (props.family) {
     return props.family;
   }
 
   return variantToFontFamilyMap[props.variant];
 });
-const fontWeight = computed(() => {
+const fontWeight = computed<string>(() => {
   if (props.weight) {
     return props.weight;
   }

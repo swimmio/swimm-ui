@@ -9,24 +9,21 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
+import { computed, useSlots } from 'vue';
 import Icon from '../Icon/Icon.vue';
 
-export default {
-  components: { Icon },
-  props: {
-    iconName: { type: String, default: null },
-    title: { type: String, required: true },
-    description: { type: String, required: true },
-    transparent: { type: Boolean, default: false },
-    wide: { type: Boolean, default: false },
-  },
-  computed: {
-    isSlot() {
-      return !!this.$slots.default;
-    },
-  },
-};
+const slots = useSlots();
+
+defineProps({
+  iconName: { type: String, default: null },
+  title: { type: String, required: true },
+  description: { type: String, required: true },
+  transparent: { type: Boolean, default: false },
+  wide: { type: Boolean, default: false },
+});
+
+const isSlot = computed(() => !!slots.default);
 </script>
 
 <style scoped>

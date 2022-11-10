@@ -16,86 +16,90 @@
   </component>
 </template>
 
-<script>
+<script setup lang="ts">
+import { computed } from 'vue';
 import Icon from '../Icon/Icon.vue';
+import { VARIANTS, SIZES, TYPES } from './constants';
 
-export const SIZES = { BIG: 'big', SMALL: 'small' };
-export const VARIANTS = { DANGER: 'danger', SUCCESS: 'success' };
-export const TYPES = { BUTTON: 'button', LINK: 'a' };
-
-/**
- * Button
- */
-export default {
-  components: { Icon },
-  emits: ['click'],
-  props: {
-    /**
-     * The size of the button. Defaults to big.
-     * @values big, small
-     */
-    size: { type: String, default: SIZES.BIG },
-    /**
-     * Flag for secondary button style
-     * @type {boolean}
-     */
-    secondary: { type: Boolean, default: false },
-    /**
-     * Flag for is button is loading
-     * @type {boolean}
-     */
-    loading: { type: Boolean, default: false },
-    /**
-     * Flag for is button is disabled
-     * @type {boolean}
-     */
-    disabled: { type: Boolean, default: false },
-    /**
-     * Flag for having no padding to the button
-     */
-    noPadding: { type: Boolean, default: false },
-    /**
-     * The html element used for the button.
-     * @values button, link
-     */
-    type: { type: String, default: TYPES.BUTTON },
-    /**
-     * When setting the button’s type to a link (), use this option to give a href.
-     */
-    href: { type: String, default: null },
-    /**
-     * Variant options
-     * @values danger, success
-     */
-    variant: { type: String, default: null },
-    /**
-     * Appended icon
-     * @values Any icon from Fontaweswimm library
-     */
-    trailingIcon: { type: String, default: null },
-    /**
-     * Button type
-     * @values type attr of the button tag
-     */
-    buttonType: { type: String, default: 'submit' },
+defineEmits(['click']);
+const props = defineProps({
+  /**
+   * The size of the button. Defaults to big.
+   * @values big, small
+   */
+  size: {
+    type: String,
+    default: SIZES.BIG,
+    validator: (value: string) => Object.values(SIZES).includes(value),
   },
-  computed: {
-    classes() {
-      return [
-        'button',
-        this.size,
-        this.variant,
-        {
-          'no-padding': this.noPadding,
-          disabled: this.disabled,
-          loading: this.loading,
-          secondary: this.secondary,
-          link: this.type === TYPES.LINK,
-        },
-      ];
+  /**
+   * Flag for secondary button style
+   * @type {boolean}
+   */
+  secondary: { type: Boolean, default: false },
+  /**
+   * Flag for is button is loading
+   * @type {boolean}
+   */
+  loading: { type: Boolean, default: false },
+  /**
+   * Flag for is button is disabled
+   * @type {boolean}
+   */
+  disabled: { type: Boolean, default: false },
+  /**
+   * Flag for having no padding to the button
+   */
+  noPadding: { type: Boolean, default: false },
+  /**
+   * The html element used for the button.
+   * @values button, link
+   */
+  type: {
+    type: String,
+    default: TYPES.BUTTON,
+    validator: (value: string) => Object.values(TYPES).includes(value),
+  },
+  /**
+   * When setting the button’s type to a link (), use this option to give a href.
+   */
+  href: { type: String, default: null },
+  /**
+   * Variant options
+   * @values danger, success
+   */
+  variant: {
+    type: String,
+    default: null,
+    validator: (value: string) =>
+      !value || Object.values(VARIANTS).includes(value),
+  },
+  /**
+   * Appended icon
+   * @values Any icon from Fontaweswimm library
+   */
+  trailingIcon: { type: String, default: null },
+  /**
+   * Button type
+   * @values type attr of the button tag
+   */
+  buttonType: { type: String, default: 'submit' },
+});
+
+const classes = computed(() => {
+  return [
+    'button',
+    props.size,
+    props.variant,
+    {
+      'no-padding': props.noPadding,
+      disabled: props.disabled,
+      loading: props.loading,
+      secondary: props.secondary,
+      link: props.type === TYPES.LINK,
     },
-  },
-};
+  ];
+});
 </script>
 
 <style scoped>
