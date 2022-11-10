@@ -12,11 +12,11 @@
 export default {
   props: {
     noFlickering: { type: Boolean, default: false },
-    secondary: { type: Boolean, default: false }
+    secondary: { type: Boolean, default: false },
   },
   data() {
     return {
-      hide: false
+      hide: false,
     };
   },
   created() {
@@ -24,7 +24,7 @@ export default {
       this.hide = true;
       setTimeout(() => (this.hide = false), 50);
     }
-  }
+  },
 };
 </script>
 
