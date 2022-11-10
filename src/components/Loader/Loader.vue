@@ -1,3 +1,20 @@
+<script setup lang="ts">
+import { onMounted, ref } from 'vue';
+
+const hide = ref(false);
+const props = defineProps({
+  noFlickering: { type: Boolean, default: false },
+  secondary: { type: Boolean, default: false },
+});
+
+onMounted(() => {
+  if (props.noFlickering) {
+    hide.value = true;
+    setTimeout(() => (hide.value = false), 50);
+  }
+});
+</script>
+
 <template>
   <div v-if="secondary" class="loader-secondary" :class="{ hide }"></div>
   <div v-else class="spinner-container" :class="{ hide }">
@@ -7,26 +24,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    noFlickering: { type: Boolean, default: false },
-    secondary: { type: Boolean, default: false },
-  },
-  data() {
-    return {
-      hide: false,
-    };
-  },
-  created() {
-    if (this.noFlickering) {
-      this.hide = true;
-      setTimeout(() => (this.hide = false), 50);
-    }
-  },
-};
-</script>
 
 <style scoped lang="postcss">
 .loader-secondary {
