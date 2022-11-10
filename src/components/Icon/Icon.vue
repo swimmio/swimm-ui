@@ -1,12 +1,3 @@
-<template>
-  <i
-    v-tooltip="tooltip"
-    class="icon"
-    :class="[computedIconNameClass, computedNoPaddingClass]"
-    @click="$emit('click', $event)"
-  ></i>
-</template>
-
 <script setup lang="ts">
 import { computed } from 'vue';
 
@@ -22,6 +13,16 @@ const computedNoPaddingClass = computed(() => ({
   'no-padding': props.noPadding,
 }));
 </script>
+
+<template>
+  <i
+    v-tooltip="tooltip"
+    class="icon"
+    :class="[computedIconNameClass, computedNoPaddingClass]"
+    @click="$emit('click', $event)"
+  ></i>
+</template>
+
 <style scoped>
 .no-padding {
   padding: 0;

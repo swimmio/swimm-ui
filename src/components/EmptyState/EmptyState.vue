@@ -1,14 +1,3 @@
-<template>
-  <div class="empty-state" :class="{ transparent, wide }">
-    <Icon v-if="iconName" class="icon" :name="iconName" />
-    <h3 v-if="title" class="title">{{ title }}</h3>
-    <p v-if="description" class="description">{{ description }}</p>
-    <div v-if="isSlot" class="action">
-      <slot />
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
 import { computed, useSlots } from 'vue';
 import Icon from '../Icon/Icon.vue';
@@ -25,6 +14,17 @@ defineProps({
 
 const isSlot = computed(() => !!slots.default);
 </script>
+
+<template>
+  <div class="empty-state" :class="{ transparent, wide }">
+    <Icon v-if="iconName" class="icon" :name="iconName" />
+    <h3 v-if="title" class="title">{{ title }}</h3>
+    <p v-if="description" class="description">{{ description }}</p>
+    <div v-if="isSlot" class="action">
+      <slot />
+    </div>
+  </div>
+</template>
 
 <style scoped>
 .title {

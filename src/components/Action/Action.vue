@@ -1,21 +1,3 @@
-<template>
-  <component
-    :is="type"
-    :type="buttonType"
-    :class="classes"
-    :disabled="disabled || loading"
-    :href="href"
-    @click="$emit('click', $event)"
-  >
-    <slot>Button text</slot>
-    <Icon
-      v-if="trailingIcon"
-      :name="trailingIcon"
-      class="trailing-icon no-padding"
-    />
-  </component>
-</template>
-
 <script setup lang="ts">
 import { computed } from 'vue';
 import Icon from '../Icon/Icon.vue';
@@ -101,6 +83,24 @@ const classes = computed(() => {
   ];
 });
 </script>
+
+<template>
+  <component
+    :is="type"
+    :type="buttonType"
+    :class="classes"
+    :disabled="disabled || loading"
+    :href="href"
+    @click="$emit('click', $event)"
+  >
+    <slot>Button text</slot>
+    <Icon
+      v-if="trailingIcon"
+      :name="trailingIcon"
+      class="trailing-icon no-padding"
+    />
+  </component>
+</template>
 
 <style scoped>
 .button {

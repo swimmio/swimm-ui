@@ -1,10 +1,3 @@
-<template>
-  <div :class="['wrapper', [shape], [size]]">
-    <img class="image" v-if="src" :src="src" :alt="text" />
-    <span v-else class="capitalize">{{ letter }}</span>
-  </div>
-</template>
-
 <script setup lang="ts">
 import { computed } from 'vue';
 import { SHAPE, SIZE } from './constants';
@@ -26,6 +19,13 @@ const props = defineProps({
 
 const letter = computed(() => props.text.charAt(0));
 </script>
+
+<template>
+  <div :class="['wrapper', [shape], [size]]">
+    <img class="image" v-if="src" :src="src" :alt="text" />
+    <span v-else class="capitalize">{{ letter }}</span>
+  </div>
+</template>
 
 <style scoped>
 .wrapper {

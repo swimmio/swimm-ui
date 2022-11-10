@@ -1,16 +1,3 @@
-<template>
-  <div class="breadcrumbs">
-    <Breadcrumb
-      v-for="(item, index) in items"
-      :key="index"
-      class="item"
-      :name="item.name"
-      :icon="item.icon"
-      :link="item.link"
-    />
-  </div>
-</template>
-
 <script setup lang="ts">
 import Breadcrumb from './Breadcrumb/Breadcrumb.vue';
 import type { BreadcrumbType } from './Breadcrumb/types';
@@ -27,6 +14,20 @@ defineProps({
   },
 });
 </script>
+
+<template>
+  <div class="breadcrumbs">
+    <Breadcrumb
+      v-for="(item, index) in items"
+      :key="index"
+      class="item"
+      :name="item.name"
+      :icon="item.icon"
+      :link="item.link"
+    />
+  </div>
+</template>
+
 <style scoped>
 .breadcrumbs {
   display: flex;

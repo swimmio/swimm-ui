@@ -1,16 +1,3 @@
-<template>
-  <label :class="['wrapper', [size], { disabled }]">
-    <input
-      class="input"
-      v-model="value"
-      :disabled="disabled"
-      type="checkbox"
-      @change="onChange"
-    />
-    <span class="toggle" />
-  </label>
-</template>
-
 <script setup lang="ts">
 import { SIZE } from './constants';
 
@@ -29,6 +16,19 @@ function onChange(event: Event) {
   !props.disabled && emit('change', (event.target as HTMLInputElement).checked);
 }
 </script>
+
+<template>
+  <label :class="['wrapper', [size], { disabled }]">
+    <input
+      class="input"
+      v-model="value"
+      :disabled="disabled"
+      type="checkbox"
+      @change="onChange"
+    />
+    <span class="toggle" />
+  </label>
+</template>
 
 <style scoped>
 .wrapper {
