@@ -1,11 +1,12 @@
 {
   "name": "@swimm/ui",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "description": "Swimm's Design System and Component Library",
   "license": "MIT",
   "scripts": {
     "dev": "yarn docs",
     "build": "vite build",
+    "watch": "yarn build --watch",
     "lint": "eslint . --ext .vue,.js --fix --ignore-path .gitignore",
     "test": "vitest watch",
     "test:ci": "vitest run",

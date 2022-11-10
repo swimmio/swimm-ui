@@ -208,7 +208,7 @@ const classes = computed(() => {
 }
 
 .button.loading {
-  background-image: url(/img/loading.gif);
+  background-image: url(/img/secondary-loading.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

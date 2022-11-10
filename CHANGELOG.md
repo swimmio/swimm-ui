@@ -1,3 +1,17 @@
+# [2.8.0](https://github.com/swimmio/swimm-ui/compare/v2.7.0...v2.8.0) (2022-11-10)
+
+
+### Bug Fixes
+
+* **Loader refactor:** Added commas ([fa860a5](https://github.com/swimmio/swimm-ui/commit/fa860a585e9d2283c678fec6037c819aadf5dc38))
+* **loader:** CR fixes ([914010e](https://github.com/swimmio/swimm-ui/commit/914010ec8df53c943a1cda98a92e835f60346402))
+* **Loader:** Fix missing comma ([aad3458](https://github.com/swimmio/swimm-ui/commit/aad3458956290de5d09382a060aab6e34c672367))
+
+
+### Features
+
+* **loader:** change <Loader> animation from gif to CSS based spinner ([fd0fb2f](https://github.com/swimmio/swimm-ui/commit/fd0fb2f32e8adad751eaa6feb19d76d49e5f501a))
+
 # [2.7.0](https://github.com/swimmio/swimm-ui/compare/v2.6.0...v2.7.0) (2022-11-09)
 
 
