@@ -1,3 +1,12 @@
-export const SIZES = { BIG: 'big', SMALL: 'small' };
-export const VARIANTS = { DANGER: 'danger', SUCCESS: 'success' };
-export const TYPES = { BUTTON: 'button', LINK: 'a' };
+export enum SIZES {
+  BIG = 'big',
+  SMALL = 'small',
+}
+export enum VARIANTS {
+  DANGER = 'danger',
+  SUCCESS = 'success',
+}
+export enum TYPES {
+  BUTTON = 'button',
+  LINK = 'a',
+}
