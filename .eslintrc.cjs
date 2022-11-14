@@ -13,8 +13,8 @@ module.exports = {
     node: true,
   },
   rules: {
-    // TODO: remove these rules after fixing the components
-    'vue/multi-word-component-names': 'warn',
+    // TODO: remove these rules after fixing the components names
+    'vue/multi-word-component-names': 'off',
     'vue/no-mutating-props': 'warn',
     'vue-scoped-css/no-unused-selector': 'off',
   },
