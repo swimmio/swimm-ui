@@ -25,7 +25,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'Swimm UI',
-      fileName: (format) => `swimm-ui.${format}.ts`,
+      fileName: (format) => `swimm-ui.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],
