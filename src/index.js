@@ -22,3 +22,4 @@ export {
 } from './components/Typography/constants';
 export { default as TextSkeleton } from './components/TextSkeleton/TextSkeleton.vue';
 export { default as Divider } from './components/Divider/Divider.vue';
+export { default as ErrorBox } from './components/ErrorBox/ErrorBox.vue';
