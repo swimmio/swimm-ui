@@ -1,3 +1,15 @@
+# [2.9.0](https://github.com/swimmio/swimm-ui/compare/v2.8.0...v2.9.0) (2022-11-14)
+
+
+### Bug Fixes
+
+* **ErrorBox:** revert the version change ([9af4a85](https://github.com/swimmio/swimm-ui/commit/9af4a85ffc94fb39a011e7d4071ca3af22a0b754))
+
+
+### Features
+
+* **ErrorBox:** moving errorbox to the swimmui ([cfbe505](https://github.com/swimmio/swimm-ui/commit/cfbe505052f20a8dc7d92f9bf8e490da0fefcfd0))
+
 # [2.8.0](https://github.com/swimmio/swimm-ui/compare/v2.7.0...v2.8.0) (2022-11-10)
 
 
