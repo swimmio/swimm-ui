@@ -1,5 +1,6 @@
-<script setup>
-import { apiData } from '@temp/componentsApi';
+<script setup lang="ts">
+// @ts-ignore
+import { apiData } from '@temp/componentsApi.js';
 import ComponentProps from './ComponentProps.vue';
 import ComponentEvents from './ComponentEvents.vue';
 import ComponentSlots from './ComponentSlots.vue';

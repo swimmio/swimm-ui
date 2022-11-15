@@ -1,8 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import { useDark, useToggle } from '@vueuse/core';
 
-const htmlElement = ref(null);
+const htmlElement = ref<HTMLElement | null>(null);
 
 onMounted(() => {
   htmlElement.value = document.querySelector('html');
