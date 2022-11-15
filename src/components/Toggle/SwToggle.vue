@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import { SIZE } from './constants';
 
 const props = defineProps({
@@ -10,6 +11,8 @@ const props = defineProps({
     validator: (value: string) => Object.values(SIZE).includes(value),
   },
 });
+
+const modelValue = ref(props.value);
 const emit = defineEmits(['change']);
 
 function onChange(event: Event) {
@@ -21,7 +24,7 @@ function onChange(event: Event) {
   <label :class="['wrapper', [size], { disabled }]">
     <input
       class="input"
-      v-model="value"
+      v-model="modelValue"
       :disabled="disabled"
       type="checkbox"
       @change="onChange"

@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { mount } from '@vue/test-utils';
-import SwAvatar, { SIZE, SHAPE } from '@/components/Avatar/SwAvatar.vue';
+import SwAvatar from '@/components/Avatar/SwAvatar.vue';
+import { SIZE, SHAPE } from '@/components/Avatar/constants';
 
 const TEXT = 'swimm';
 const IMAGE = 'someImage';
