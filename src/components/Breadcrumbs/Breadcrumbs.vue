@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import type { PropType } from 'vue';
 import Breadcrumb from './Breadcrumb/Breadcrumb.vue';
 import type { BreadcrumbType } from './Breadcrumb/types';
 
 defineProps({
   items: {
-    type: Array as () => Array<BreadcrumbType>,
+    type: Array as PropType<BreadcrumbType[]>,
     required: true,
     validator: (items: BreadcrumbType[]) => {
       return items.every(({ icon, name }) => {

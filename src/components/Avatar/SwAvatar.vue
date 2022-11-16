@@ -1,19 +1,17 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, type PropType } from 'vue';
 import { SHAPE, SIZE } from './constants';
 
 const props = defineProps({
   text: { type: String, required: true },
   src: { type: String, default: '' },
   size: {
-    type: String,
+    type: String as PropType<SIZE>,
     default: SIZE.LARGE,
-    validator: (value: string) => Object.values(SIZE).includes(value),
   },
   shape: {
-    type: String,
+    type: String as PropType<SHAPE>,
     default: SHAPE.ROUND,
-    validator: (value: string) => Object.values(SHAPE).includes(value),
   },
 });
 

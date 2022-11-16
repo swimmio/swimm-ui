@@ -1,13 +1,13 @@
-export const SHAPE = {
-  ROUND: 'round',
-  SQUARE: 'square',
-};
+export enum SHAPE {
+  ROUND = 'round',
+  SQUARE = 'square',
+}
 
-export const SIZE = {
-  XSMALL: 'xsmall',
-  SMALL: 'small',
-  MEDIUM: 'medium',
-  LARGE: 'large',
-  XLARGE: 'xlarge',
-  HUGE: 'huge',
-};
+export enum SIZE {
+  XSMALL = 'xsmall',
+  SMALL = 'small',
+  MEDIUM = 'medium',
+  LARGE = 'large',
+  XLARGE = 'xlarge',
+  HUGE = 'huge',
+}

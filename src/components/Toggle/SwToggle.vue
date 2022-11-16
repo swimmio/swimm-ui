@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, type PropType } from 'vue';
 import { SIZE } from './constants';
 
 const props = defineProps({
   value: { type: Boolean, required: true },
   disabled: { type: Boolean, default: false },
   size: {
-    type: String,
+    type: String as PropType<SIZE>,
     default: SIZE.MEDIUM,
-    validator: (value: string) => Object.values(SIZE).includes(value),
   },
 });
 
