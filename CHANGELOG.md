@@ -1,3 +1,10 @@
+# [2.10.0](https://github.com/swimmio/swimm-ui/compare/v2.9.0...v2.10.0) (2022-11-17)
+
+
+### Features
+
+* use old loader ([b0790e1](https://github.com/swimmio/swimm-ui/commit/b0790e1d120a3d673a1fef52735d3d46140d783e))
+
 # [2.9.0](https://github.com/swimmio/swimm-ui/compare/v2.8.0...v2.9.0) (2022-11-14)
 
 
