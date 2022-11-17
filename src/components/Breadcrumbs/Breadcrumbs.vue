@@ -1,3 +1,21 @@
+<script setup lang="ts">
+import type { PropType } from 'vue';
+import Breadcrumb from './Breadcrumb/Breadcrumb.vue';
+import type { BreadcrumbType } from './Breadcrumb/types';
+
+defineProps({
+  items: {
+    type: Array as PropType<BreadcrumbType[]>,
+    required: true,
+    validator: (items: BreadcrumbType[]) => {
+      return items.every(({ icon, name }) => {
+        return icon && name;
+      });
+    },
+  },
+});
+</script>
+
 <template>
   <div class="breadcrumbs">
     <Breadcrumb
@@ -11,24 +29,6 @@
   </div>
 </template>
 
-<script>
-import Breadcrumb from './Breadcrumb/Breadcrumb.vue';
-
-export default {
-  components: { Breadcrumb },
-  props: {
-    items: {
-      type: Array,
-      required: true,
-      validator: (items) => {
-        return items.every(({ icon, name }) => {
-          return icon && name;
-        });
-      },
-    },
-  },
-};
-</script>
 <style scoped>
 .breadcrumbs {
   display: flex;

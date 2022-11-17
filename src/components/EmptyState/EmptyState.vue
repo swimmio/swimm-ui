@@ -1,3 +1,20 @@
+<script setup lang="ts">
+import { computed, useSlots } from 'vue';
+import Icon from '../Icon/Icon.vue';
+
+const slots = useSlots();
+
+defineProps({
+  iconName: { type: String, default: null },
+  title: { type: String, required: true },
+  description: { type: String, required: true },
+  transparent: { type: Boolean, default: false },
+  wide: { type: Boolean, default: false },
+});
+
+const isSlot = computed(() => !!slots.default);
+</script>
+
 <template>
   <div class="empty-state" :class="{ transparent, wide }">
     <Icon v-if="iconName" class="icon" :name="iconName" />
@@ -8,26 +25,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import Icon from '../Icon/Icon.vue';
-
-export default {
-  components: { Icon },
-  props: {
-    iconName: { type: String, default: null },
-    title: { type: String, required: true },
-    description: { type: String, required: true },
-    transparent: { type: Boolean, default: false },
-    wide: { type: Boolean, default: false },
-  },
-  computed: {
-    isSlot() {
-      return !!this.$slots.default;
-    },
-  },
-};
-</script>
 
 <style scoped>
 .title {

@@ -12,6 +12,9 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_CI_TOKEN }}
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
@@ -21,26 +24,26 @@ jobs:
           cache-name: cache-node-modules
         with:
           path: ./node_modules
-          key: ${{ runner.os }}-node_modules-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-node_modules-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
       - name: Install Dependencies
-        run: yarn install
+        run: pnpm install
 
       - name: Run Tests
-        run: yarn test:ci
+        run: pnpm test:ci
 
       - name: Run ESLint
-        run: yarn lint
+        run: pnpm lint
 
       - name: Build
-        run: yarn build
+        run: pnpm build
 
       - name: Release
-        run: yarn semantic-release
+        run: pnpm semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

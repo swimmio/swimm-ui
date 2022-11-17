@@ -1,6 +1,6 @@
-const markdownItContainer = require('markdown-it-container');
+import markdownItContainer from 'markdown-it-container';
 
-module.exports = () => {
+export default () => {
   return {
     name: 'component-demo',
     extendsMarkdown: (md) => {

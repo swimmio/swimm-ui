@@ -1,3 +1,54 @@
+<script setup lang="ts">
+import { computed } from 'vue';
+import type { PropType } from 'vue';
+import Icon from '../Icon/Icon.vue';
+import { VARIANTS, SIZES, TYPES } from './constants';
+
+defineEmits(['click']);
+const props = defineProps({
+  size: {
+    type: String as PropType<SIZES>,
+    default: SIZES.BIG,
+    validator: (value: SIZES) => Object.values(SIZES).includes(value),
+  },
+  secondary: { type: Boolean, default: false },
+  loading: { type: Boolean, default: false },
+  disabled: { type: Boolean, default: false },
+  noPadding: { type: Boolean, default: false },
+  /* The html element used for the button. */
+  type: {
+    type: String as PropType<TYPES>,
+    default: TYPES.BUTTON,
+    validator: (value: TYPES) => Object.values(TYPES).includes(value),
+  },
+  /* When setting the button’s type to a link (), use this option to give a href. */
+  href: { type: String, default: null },
+  variant: {
+    type: String as PropType<VARIANTS>,
+    default: null,
+    validator: (value: VARIANTS) => Object.values(VARIANTS).includes(value),
+  },
+  /* Any icon from Fontaweswimm library */
+  trailingIcon: { type: String, default: null },
+  buttonType: { type: String, default: 'submit' },
+});
+
+const classes = computed(() => {
+  return [
+    'button',
+    props.size,
+    props.variant,
+    {
+      'no-padding': props.noPadding,
+      disabled: props.disabled,
+      loading: props.loading,
+      secondary: props.secondary,
+      link: props.type === TYPES.LINK,
+    },
+  ];
+});
+</script>
+
 <template>
   <component
     :is="type"
@@ -15,88 +66,6 @@
     />
   </component>
 </template>
-
-<script>
-import Icon from '../Icon/Icon.vue';
-
-export const SIZES = { BIG: 'big', SMALL: 'small' };
-export const VARIANTS = { DANGER: 'danger', SUCCESS: 'success' };
-export const TYPES = { BUTTON: 'button', LINK: 'a' };
-
-/**
- * Button
- */
-export default {
-  components: { Icon },
-  emits: ['click'],
-  props: {
-    /**
-     * The size of the button. Defaults to big.
-     * @values big, small
-     */
-    size: { type: String, default: SIZES.BIG },
-    /**
-     * Flag for secondary button style
-     * @type {boolean}
-     */
-    secondary: { type: Boolean, default: false },
-    /**
-     * Flag for is button is loading
-     * @type {boolean}
-     */
-    loading: { type: Boolean, default: false },
-    /**
-     * Flag for is button is disabled
-     * @type {boolean}
-     */
-    disabled: { type: Boolean, default: false },
-    /**
-     * Flag for having no padding to the button
-     */
-    noPadding: { type: Boolean, default: false },
-    /**
-     * The html element used for the button.
-     * @values button, link
-     */
-    type: { type: String, default: TYPES.BUTTON },
-    /**
-     * When setting the button’s type to a link (), use this option to give a href.
-     */
-    href: { type: String, default: null },
-    /**
-     * Variant options
-     * @values danger, success
-     */
-    variant: { type: String, default: null },
-    /**
-     * Appended icon
-     * @values Any icon from Fontaweswimm library
-     */
-    trailingIcon: { type: String, default: null },
-    /**
-     * Button type
-     * @values type attr of the button tag
-     */
-    buttonType: { type: String, default: 'submit' },
-  },
-  computed: {
-    classes() {
-      return [
-        'button',
-        this.size,
-        this.variant,
-        {
-          'no-padding': this.noPadding,
-          disabled: this.disabled,
-          loading: this.loading,
-          secondary: this.secondary,
-          link: this.type === TYPES.LINK,
-        },
-      ];
-    },
-  },
-};
-</script>
 
 <style scoped>
 .button {

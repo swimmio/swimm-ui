@@ -1,30 +1,30 @@
-export const VARIANTS = {
-  SYSTEM_HEADLINE: 'system-headline',
-  SYSTEM_SUBTITLE: 'system-subtitle',
-  SYSTEM_BODY: 'system-body',
-  TITLE: 'title',
-  HEADLINE_1: 'headline1',
-  HEADLINE_2: 'headline2',
-  HEADLINE_3: 'headline3',
-  SUBTITLE_XL: 'subtitle-XL',
-  SUBTITLE_L: 'subtitle-L',
-  SUBTITLE_S: 'subtitle-S',
-  BODY_L: 'body-L',
-  BODY_S: 'body-S',
-  BODY_XS: 'body-XS',
-};
+export enum VARIANTS {
+  SYSTEM_HEADLINE = 'system-headline',
+  SYSTEM_SUBTITLE = 'system-subtitle',
+  SYSTEM_BODY = 'system-body',
+  TITLE = 'title',
+  HEADLINE_1 = 'headline1',
+  HEADLINE_2 = 'headline2',
+  HEADLINE_3 = 'headline3',
+  SUBTITLE_XL = 'subtitle-XL',
+  SUBTITLE_L = 'subtitle-L',
+  SUBTITLE_S = 'subtitle-S',
+  BODY_L = 'body-L',
+  BODY_S = 'body-S',
+  BODY_XS = 'body-XS',
+}
 
-export const FONT_FAMILY = {
-  MAIN: 'fontfamily-main',
-  SECONDARY: 'fontfamily-secondary',
-};
+export enum FONT_FAMILY {
+  MAIN = 'fontfamily-main',
+  SECONDARY = 'fontfamily-secondary',
+}
 
-export const WEIGHTS = {
-  LIGHT: '300',
-  REGULAR: '400',
-  BOLD: '600',
-  BOLDER: '800',
-};
+export enum WEIGHTS {
+  LIGHT = '300',
+  REGULAR = '400',
+  BOLD = '600',
+  BOLDER = '800',
+}
 
 export const variantToComponentMap = {
   [VARIANTS.SYSTEM_HEADLINE]: 'div',

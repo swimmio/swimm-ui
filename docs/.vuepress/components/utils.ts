@@ -5,10 +5,10 @@ export function getCssVariable(name) {
   return style.getPropertyValue(`--${name}`);
 }
 
-export function getSizeInPx(size) {
-  return parseFloat(size, 10);
+export function getSizeInPx(size: string) {
+  return parseFloat(size);
 }
 
-export function getSpacingSizeInEm(size) {
-  return parseFloat(size, 10) / BASE_SPACING_SIZE_IN_PX;
+export function getSpacingSizeInEm(size: string) {
+  return parseFloat(size) / BASE_SPACING_SIZE_IN_PX;
 }

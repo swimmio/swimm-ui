@@ -1,14 +1,14 @@
-<script setup>
-import { computed, onMounted, ref, toRefs } from 'vue';
+<script setup lang="ts">
+import { onMounted, ref, toRefs } from 'vue';
 import { useMutationObserver } from '@vueuse/core';
-import { getCssVariable } from './utils.js';
+import { getCssVariable } from './utils';
 
 const props = defineProps({
   name: { type: String, required: true },
 });
 const { name } = toRefs(props);
 const hex = ref('');
-const htmlElement = ref(null);
+const htmlElement = ref<HTMLElement | null>(null);
 
 onMounted(() => {
   htmlElement.value = document.querySelector('html');
@@ -18,7 +18,7 @@ onMounted(() => {
 useMutationObserver(
   htmlElement,
   (mutations) => {
-    if (mutations[0].target.dataset.theme) {
+    if ((mutations[0].target as HTMLElement).dataset.theme) {
       hex.value = getCssVariable(name.value);
     }
   },

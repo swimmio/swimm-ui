@@ -1,47 +1,32 @@
+<script setup lang="ts">
+import { computed } from 'vue';
+import type { PropType } from 'vue';
+import { SHAPE, SIZE } from './constants';
+
+const props = defineProps({
+  text: { type: String, required: true },
+  src: { type: String, default: '' },
+  size: {
+    type: String as PropType<SIZE>,
+    default: SIZE.LARGE,
+    validator: (value: SIZE) => Object.values(SIZE).includes(value),
+  },
+  shape: {
+    type: String as PropType<SHAPE>,
+    default: SHAPE.ROUND,
+    validator: (value: SHAPE) => Object.values(SHAPE).includes(value),
+  },
+});
+
+const letter = computed(() => props.text.charAt(0));
+</script>
+
 <template>
   <div :class="['wrapper', [shape], [size]]">
     <img class="image" v-if="src" :src="src" :alt="text" />
     <span v-else class="capitalize">{{ letter }}</span>
   </div>
 </template>
-
-<script>
-export const SHAPE = {
-  ROUND: 'round',
-  SQUARE: 'square',
-};
-
-export const SIZE = {
-  XSMALL: 'xsmall',
-  SMALL: 'small',
-  MEDIUM: 'medium',
-  LARGE: 'large',
-  XLARGE: 'xlarge',
-  HUGE: 'huge',
-};
-
-export default {
-  props: {
-    text: { type: String, required: true },
-    src: { type: String, default: '' },
-    size: {
-      type: String,
-      default: SIZE.LARGE,
-      validator: (value) => Object.values(SIZE).includes(value),
-    },
-    shape: {
-      type: String,
-      default: SHAPE.ROUND,
-      validator: (value) => Object.values(SHAPE).includes(value),
-    },
-  },
-  computed: {
-    letter() {
-      return this.text.charAt(0);
-    },
-  },
-};
-</script>
 
 <style scoped>
 .wrapper {

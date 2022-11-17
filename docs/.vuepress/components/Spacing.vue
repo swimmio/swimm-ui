@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue';
-import { getCssVariable, getSpacingSizeInEm, getSizeInPx } from './utils.js';
+import { getCssVariable, getSpacingSizeInEm, getSizeInPx } from './utils';
 
 const props = defineProps({
   name: { type: String, required: true },

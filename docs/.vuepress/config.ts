@@ -1,14 +1,12 @@
-const glob = require('glob');
-const globPromise = require('glob-promise');
-const { defaultTheme } = require('@vuepress/theme-default');
-const { path } = require('@vuepress/utils');
-const {
-  registerComponentsPlugin,
-} = require('@vuepress/plugin-register-components');
-const componentDemoPlugin = require('./plugins/component-demo.js');
-const docgen = require('vue-docgen-api');
+import glob from 'glob';
+import { path } from '@vuepress/utils';
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
+import componentDemoPlugin from './plugins/component-demo';
+import globPromise from 'glob-promise';
+import { parse } from 'vue-docgen-api';
+import { defaultTheme } from '@vuepress/theme-default';
 
-module.exports = {
+export default {
   title: 'Swimm UI',
   base: '/swimm-ui/',
   description: `Swimm's Design System`,
@@ -34,12 +32,12 @@ module.exports = {
     sidebar: [
       {
         text: 'Foundations',
-        collapsable: false,
+        link: '/',
         children: getSidebarGroup('/foundations'),
       },
       {
         text: 'Components',
-        collapsable: false,
+        link: '/',
         children: getSidebarGroup('/components'),
       },
     ],
@@ -56,7 +54,7 @@ module.exports = {
     repo: 'swimmio/swimm-ui',
     docsDir: 'docs',
     docsBranch: 'main',
-    editLinks: true,
+    editLink: true,
     contributors: false,
   }),
   async onPrepared(app) {
@@ -81,7 +79,7 @@ async function generateComponentsApi() {
   const componentsPaths = await globPromise.promise('src/components/**/**.vue');
   return Promise.all(
     componentsPaths.map(async (component) => {
-      return docgen.parse(path.resolve(__dirname, `../../${component}`));
+      return parse(path.resolve(__dirname, `../../${component}`));
     })
   );
 }
