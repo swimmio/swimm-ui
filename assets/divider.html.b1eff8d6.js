@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-106e46c0","path":"/components/divider.html","title":"Divider","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1666264555000},"filePathRelative":"components/divider.md"}');export{e as data};

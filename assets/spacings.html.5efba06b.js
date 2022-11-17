@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-11df7bc1","path":"/foundations/spacings.html","title":"Spacings","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1658822937000},"filePathRelative":"foundations/spacings.md"}');export{t as data};

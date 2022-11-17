@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as r,a as e,b as s}from"./app.d4d1573a.js";const c={},i=e("h1",{id:"swimm-ui",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#swimm-ui","aria-hidden":"true"},"#"),s(" Swimm UI")],-1),n=[i];function o(_,d){return t(),r("div",null,n)}var h=a(c,[["render",o],["__file","index.html.vue"]]);export{h as default};

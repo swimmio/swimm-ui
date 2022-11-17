@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7e1c095a","path":"/components/error-box.html","title":"ErrorBox","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1668429585000},"filePathRelative":"components/error-box.md"}');export{e as data};

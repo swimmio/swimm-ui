@@ -1,0 +1,1 @@
+import{_ as r,o as t,g as _,w as n,r as s,a,h as l}from"./app.d4d1573a.js";const c={},u={class:"color-group"};function d(e,p){const o=s("ClientOnly");return t(),_(o,null,{default:n(()=>[a("div",u,[l(e.$slots,"default",{},void 0,!0)])]),_:3})}var i=r(c,[["render",d],["__scopeId","data-v-57f01828"],["__file","ColorGroup.vue"]]);export{i as default};

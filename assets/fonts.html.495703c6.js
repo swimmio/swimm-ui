@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-183b12dd","path":"/foundations/fonts.html","title":"Fonts","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1645998692000},"filePathRelative":"foundations/fonts.md"}');export{t as data};

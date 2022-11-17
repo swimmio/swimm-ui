@@ -1,0 +1,1 @@
+import{_,o as t,c as o,h as s,b as n}from"./app.d4d1573a.js";const a={},r={class:"token"},c=n("$");function d(e,l){return t(),o("span",r,[c,s(e.$slots,"default",{},void 0,!0)])}var f=_(a,[["render",d],["__scopeId","data-v-04d444e6"],["__file","Token.vue"]]);export{f as default};
