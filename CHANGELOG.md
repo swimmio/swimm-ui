@@ -1,3 +1,29 @@
+# [2.11.0](https://github.com/swimmio/swimm-ui/compare/v2.10.0...v2.11.0) (2022-11-17)
+
+
+### Bug Fixes
+
+* **pnpm:** Added pnpm to test ([9c110e3](https://github.com/swimmio/swimm-ui/commit/9c110e3089a98a710a166e43585f188a64053b17))
+* **pnpm:** Fixed failing tests ([8e598c7](https://github.com/swimmio/swimm-ui/commit/8e598c72fea07c9cdc98a1707c72a03562600697))
+* **Swimm typescript:** Converted new loader to typescript ([2d3b17b](https://github.com/swimmio/swimm-ui/commit/2d3b17baf3c873ca92216d33df9a0f09c62554cc))
+* **Swimm UI Typescript:** Added noImplicitAny to tsconfig ([d73bae5](https://github.com/swimmio/swimm-ui/commit/d73bae5dd4c902816be702c527826c14be695a49))
+* **swimmUI typescript:** Moved script setup above ([4991776](https://github.com/swimmio/swimm-ui/commit/4991776c4cbf9a83b04e02610d543fbc9c3b927e))
+* **Typescript and pnpm:** Changed to pnpm ([f8f9078](https://github.com/swimmio/swimm-ui/commit/f8f907833dd6c0ded69bced51436427ee5e68053))
+* **Typescript:** Added default data and files from create vite app ([d55fb3d](https://github.com/swimmio/swimm-ui/commit/d55fb3dad20052303f3445f2109e51cb8856a52d))
+* **Typescript:** Changed consts to enums ([d285f24](https://github.com/swimmio/swimm-ui/commit/d285f2429d3da22be14dc8d65a89e5231f37d40a))
+* **Typescript:** Changed strict to true ([1ea03f9](https://github.com/swimmio/swimm-ui/commit/1ea03f912db0e08f5904617b80dbb2017fdc0245))
+* **Typescript:** Disabled  multi-word-component-names lint rule for now ([9645db7](https://github.com/swimmio/swimm-ui/commit/9645db78a2a1ac19ccabd4b669af268eb04eb015))
+* **Typescript:** Fixed Action props JSdoc, changed consts to enums and fixed prop types ([036724c](https://github.com/swimmio/swimm-ui/commit/036724c310dd47ef5ade6c5b0aa1419530888968))
+* **Typescript:** Moved pnpm action to be above node ([8ea8dec](https://github.com/swimmio/swimm-ui/commit/8ea8decc7ecfa0cb1bf83d0ab7426b0858b4f012))
+* **Typescript:** Reverted output js file ([12ec32c](https://github.com/swimmio/swimm-ui/commit/12ec32c657b63b847940222eab5d9634cd442b57))
+* **typescript:** Revived prop validators for all components that has proptype ([3b14467](https://github.com/swimmio/swimm-ui/commit/3b14467d1e6a1628d5bad9449e9fbb604030ba5d))
+* **typescript:** Switched eslint extensions order ([209953b](https://github.com/swimmio/swimm-ui/commit/209953b3637467d95b0d7850aa5f00207aca12f0))
+
+
+### Features
+
+* **Update Swimm-UI to typescript:** Updated typescript support ([c010f28](https://github.com/swimmio/swimm-ui/commit/c010f283340157c6825de87eeb8b47b98b6d668e))
+
 # [2.10.0](https://github.com/swimmio/swimm-ui/compare/v2.9.0...v2.10.0) (2022-11-17)
 
 
