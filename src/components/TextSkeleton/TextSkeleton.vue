@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import type { PropType } from 'vue';
-import type { VARIANTS } from '../Typography/constants';
+import { VARIANTS } from '../Typography/constants';
 import SwText from '../Typography/SwText.vue';
 
 defineProps({
   variant: {
     type: String as PropType<VARIANTS>,
     required: true,
+    validator: (value: VARIANTS) => Object.values(VARIANTS).includes(value),
   },
   animate: { type: Boolean, default: true },
 });

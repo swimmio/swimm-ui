@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { computed, type PropType } from 'vue';
+import { computed } from 'vue';
+import type { PropType } from 'vue';
 import {
   FONT_FAMILY,
   VARIANTS,
@@ -14,14 +15,18 @@ const props = defineProps({
   variant: {
     type: String as PropType<VARIANTS>,
     default: VARIANTS.BODY_L,
+    validator: (value: VARIANTS) => Object.values(VARIANTS).includes(value),
   },
   family: {
     type: String as PropType<FONT_FAMILY>,
     default: null,
+    validator: (value: FONT_FAMILY) =>
+      Object.values(FONT_FAMILY).includes(value),
   },
   weight: {
     type: String as PropType<WEIGHTS>,
     default: null,
+    validator: (value: WEIGHTS) => Object.values(WEIGHTS).includes(value),
   },
 });
 

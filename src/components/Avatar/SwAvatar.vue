@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { computed, type PropType } from 'vue';
+import { computed } from 'vue';
+import type { PropType } from 'vue';
 import { SHAPE, SIZE } from './constants';
 
 const props = defineProps({
@@ -8,10 +9,12 @@ const props = defineProps({
   size: {
     type: String as PropType<SIZE>,
     default: SIZE.LARGE,
+    validator: (value: SIZE) => Object.values(SIZE).includes(value),
   },
   shape: {
     type: String as PropType<SHAPE>,
     default: SHAPE.ROUND,
+    validator: (value: SHAPE) => Object.values(SHAPE).includes(value),
   },
 });
 

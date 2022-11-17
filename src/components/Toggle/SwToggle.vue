@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref, type PropType } from 'vue';
+import { ref } from 'vue';
+import type { PropType } from 'vue';
 import { SIZE } from './constants';
 
 const props = defineProps({
@@ -8,6 +9,7 @@ const props = defineProps({
   size: {
     type: String as PropType<SIZE>,
     default: SIZE.MEDIUM,
+    validator: (value: SIZE) => Object.values(SIZE).includes(value),
   },
 });
 
