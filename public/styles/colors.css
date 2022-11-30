@@ -54,11 +54,13 @@
     --success-green-100: #ebf6ee;
     --success-green: var(--success-green-500);
 
-    --warning-yellow-900: #544b2c;
+    --warning-yellow-900: #393024;
+    --warning-yellow-800: #5E411C;
     --warning-yellow-700: #AD841B;
     --warning-yellow-500: #ffd33d;
     --warning-yellow-300: #FFDE6C;
-    --warning-yellow-100: #fff9dc;
+    --warning-yellow-200: #FFEBC0;
+    --warning-yellow-100: #FFF4DB;
     --warning-yellow: var(--warning-yellow-500);
 
     --oh-no-red-900: #3b1316;
