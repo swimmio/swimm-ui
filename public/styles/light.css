@@ -11,6 +11,8 @@
     --color-error: var(--oh-no-red-100);
     --color-success: var(--success-green-100);
     --color-warning: var(--warning-yellow-100);
+    --color-status-warning: var(--warning-yellow-100);
+    --color-status-warning-hover: var(--warning-yellow-200);
     --color-autosync: var(--safe-zone);
     --color-info: var(--feet-in-the-water);
     --color-label-tag: var(--fifty-shades);
