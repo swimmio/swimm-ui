@@ -1,3 +1,10 @@
+# [2.12.0](https://github.com/swimmio/swimm-ui/compare/v2.11.0...v2.12.0) (2022-11-30)
+
+
+### Features
+
+* add warning colors to swimm-ui per UX request ([664b9e5](https://github.com/swimmio/swimm-ui/commit/664b9e5d8a34d39183ab663f4e365ed89ffa86f3))
+
 # [2.11.0](https://github.com/swimmio/swimm-ui/compare/v2.10.0...v2.11.0) (2022-11-17)
 
 
