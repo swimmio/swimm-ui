@@ -1,3 +1,10 @@
+# [2.13.0](https://github.com/swimmio/swimm-ui/compare/v2.12.0...v2.13.0) (2022-11-30)
+
+
+### Features
+
+* add sysem-label token ([43fb59f](https://github.com/swimmio/swimm-ui/commit/43fb59fcbeb8aa458637d2a530bb658e6695e498))
+
 # [2.12.0](https://github.com/swimmio/swimm-ui/compare/v2.11.0...v2.12.0) (2022-11-30)
 
 
