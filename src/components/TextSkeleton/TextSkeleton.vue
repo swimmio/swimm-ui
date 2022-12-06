@@ -25,7 +25,6 @@ defineProps({
 .skeleton {
   background: var(--color-surface);
   border-radius: 4px;
-  margin: 0;
 }
 
 .skeleton:not(h1, h2, h3, h4, h5, h6):before {
