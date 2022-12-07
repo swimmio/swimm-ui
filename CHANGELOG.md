@@ -1,3 +1,10 @@
+# [2.14.0](https://github.com/swimmio/swimm-ui/compare/v2.13.0...v2.14.0) (2022-12-07)
+
+
+### Features
+
+* **SwAvatar:** add dynamic background and color groups ([#169](https://github.com/swimmio/swimm-ui/issues/169)) ([3c7c1fe](https://github.com/swimmio/swimm-ui/commit/3c7c1fe9d1a26aa46153855315d002f09f1939f0))
+
 # [2.13.0](https://github.com/swimmio/swimm-ui/compare/v2.12.0...v2.13.0) (2022-11-30)
 
 
