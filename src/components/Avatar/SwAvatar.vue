@@ -24,7 +24,8 @@ const colorGroup = computed(() => (letter.value.charCodeAt(0) % 5) + 1);
 </script>
 
 <template>
-  <div :class="['wrapper', [`group${colorGroup}`], { shape, size, border }]">
+  <div :class="['wrapper', [shape], [size]]">
+  <div :class="['wrapper', `group${colorGroup}`, shape, size, border]">
     <img class="image" v-if="src" :src="src" :alt="text" />
     <span v-else class="capitalize">{{ letter }}</span>
   </div>
@@ -35,64 +36,110 @@ const colorGroup = computed(() => (letter.value.charCodeAt(0) % 5) + 1);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--color-brand);
+  color: var(--text-color-on-primary);
+
   overflow: hidden;
+  border: 1px solid var(--border-color-subtle);
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}
+
+.wrapper.round {
+  border-radius: 50%;
+}
+.wrapper.square {
+  border-radius: 15%;
+}
+
+.wrapper.xsmall {
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+}
+.wrapper.small {
+  font-size: 21px;
+  width: 24px;
+  height: 24px;
+}
+.wrapper.medium {
+  font-size: 24px;
+  width: 32px;
+  height: 32px;
+}
+.wrapper.large {
+  font-size: 48px;
+  width: 64px;
+  height: 64px;
+}
+.wrapper.xlarge {
+  font-size: 48px;
+  width: 72px;
+  height: 72px;
+}
+.wrapper.huge {
+  font-size: 64px;
+  width: 112px;
+  height: 112px;
   box-sizing: border-box;
+}
 
-  &.border {
-    border: 1px solid var(--border-color-subtle);
-  }
+.image {
+  width: 100%;
+  object-fit: cover;
+}
 
-  &.round {
-    border-radius: 50%;
-  }
+.capitalize {
+  text-transform: uppercase;
+}
 
-  &.square {
-    border-radius: 10px;
-  }
+.wrapper.border {
+  border: 1px solid var(--border-color-subtle);
+}
 
-  &.xsmall {
-    font-size: var(--fontsize-xxs);
-    width: 16px;
-    height: 16px;
-  }
+.wrapper.round {
+  border-radius: 50%;
+}
+.wrapper.square {
+  border-radius: 10px;
+}
 
-  &.small {
-    font-size: var(--fontsize-m);
-    width: 24px;
-    height: 24px;
-  }
-
-  &.medium {
-    font-size: var(--fontsize-ml);
-    width: 32px;
-    height: 32px;
-  }
-
-  &.large {
-    font-size: var(--fontsize-xxl);
-    width: 64px;
-    height: 64px;
-  }
-
-  &.xlarge {
-    font-size: var(--fontsize-xxl);
-    width: 72px;
-    height: 72px;
-  }
-
-  &.huge {
-    font-size: var(--fontsize-xxxl);
-    width: 112px;
-    height: 112px;
-  }
-
-  .image {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .capitalize {
-    text-transform: uppercase;
-  }
+.wrapper.xsmall {
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+}
+.wrapper.small {
+  font-size: 21px;
+  width: 24px;
+  height: 24px;
+}
+.wrapper.medium {
+  font-size: 24px;
+  width: 32px;
+  height: 32px;
+}
+.wrapper.large {
+  font-size: 48px;
+  width: 64px;
+  height: 64px;
+}
+.wrapper.xlarge {
+  font-size: 48px;
+  width: 72px;
+  height: 72px;
+}
+.wrapper.huge {
+  font-size: 64px;
+  width: 112px;
+  height: 112px;
 }
 </style>
+
