@@ -24,7 +24,7 @@ const colorGroup = computed(() => (letter.value.charCodeAt(0) % 5) + 1);
 </script>
 
 <template>
-  <div :class="['wrapper', `group${colorGroup}`, shape, size, border]">
+  <div :class="['wrapper', `color-group-${colorGroup}`, shape, size, border]">
     <img class="image" v-if="src" :src="src" :alt="text" />
     <span v-else class="capitalize">{{ letter }}</span>
   </div>
@@ -88,5 +88,30 @@ const colorGroup = computed(() => (letter.value.charCodeAt(0) % 5) + 1);
   font-size: 64px;
   width: 112px;
   height: 112px;
+}
+
+.wrapper.color-group-1 {
+  color: var(--text-color-on-light);
+  background-color: var(--color-decorative-2);
+}
+
+.wrapper.color-group-2 {
+  color: var(--text-color-on-primary);
+  background-color: var(--color-decorative-1);
+}
+
+.wrapper.color-group-3 {
+  color: var(--text-color-on-light);
+  background-color: var(--color-decorative-3);
+}
+
+.wrapper.color-group-4 {
+  color: var(--text-color-on-primary);
+  background-color: var(--color-decorative-5);
+}
+
+.wrapper.color-group-5 {
+  color: var(--text-color-on-primary);
+  background-color: var(--color-decorative-4);
 }
 </style>
