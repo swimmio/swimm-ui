@@ -65,7 +65,7 @@ const colorGroup = computed(() => (letter.value.charCodeAt(0) % 5) + 1);
   height: 16px;
 }
 .wrapper.small {
-  font-size: 21px;
+  font-size: 14px;
   width: 24px;
   height: 24px;
 }
