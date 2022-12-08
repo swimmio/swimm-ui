@@ -1,3 +1,15 @@
+# [2.15.0](https://github.com/swimmio/swimm-ui/compare/v2.14.0...v2.15.0) (2022-12-08)
+
+
+### Bug Fixes
+
+* **SwAvatar:** css selectors are wrong for inner elements ([7a7ad84](https://github.com/swimmio/swimm-ui/commit/7a7ad84a03b9c0f60197fc8631e5724a8a9e5ae4))
+
+
+### Features
+
+* **SwAvatar:** new font size according to Figma ([16cbd70](https://github.com/swimmio/swimm-ui/commit/16cbd70de59f82e7b545f75f8f510685d0ea291a))
+
 # [2.14.0](https://github.com/swimmio/swimm-ui/compare/v2.13.0...v2.14.0) (2022-12-07)
 
 
