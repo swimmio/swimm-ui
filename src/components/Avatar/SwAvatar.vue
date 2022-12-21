@@ -16,13 +16,15 @@ const props = defineProps({
     default: SHAPE.ROUND,
     validator: (value: SHAPE) => Object.values(SHAPE).includes(value),
   },
+  border: { type: Boolean, default: true },
 });
 
 const letter = computed(() => props.text.charAt(0));
+const colorGroup = computed(() => (letter.value.charCodeAt(0) % 5) + 1);
 </script>
 
 <template>
-  <div :class="['wrapper', [shape], [size]]">
+  <div :class="['wrapper', `color-group-${colorGroup}`, shape, size, border]">
     <img class="image" v-if="src" :src="src" :alt="text" />
     <span v-else class="capitalize">{{ letter }}</span>
   </div>
@@ -33,11 +35,8 @@ const letter = computed(() => props.text.charAt(0));
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-brand);
-  color: var(--text-color-on-primary);
-
   overflow: hidden;
-  border: 1px solid var(--border-color-subtle);
+  box-sizing: border-box;
 }
 
 .image {
@@ -49,11 +48,15 @@ const letter = computed(() => props.text.charAt(0));
   text-transform: uppercase;
 }
 
+.wrapper.border {
+  border: 1px solid var(--border-color-subtle);
+}
+
 .wrapper.round {
   border-radius: 50%;
 }
 .wrapper.square {
-  border-radius: 15%;
+  border-radius: 10px;
 }
 
 .wrapper.xsmall {
@@ -62,7 +65,7 @@ const letter = computed(() => props.text.charAt(0));
   height: 16px;
 }
 .wrapper.small {
-  font-size: 21px;
+  font-size: 14px;
   width: 24px;
   height: 24px;
 }
@@ -85,5 +88,30 @@ const letter = computed(() => props.text.charAt(0));
   font-size: 64px;
   width: 112px;
   height: 112px;
+}
+
+.wrapper.color-group-1 {
+  color: var(--text-color-on-light);
+  background-color: var(--color-decorative-2);
+}
+
+.wrapper.color-group-2 {
+  color: var(--text-color-on-primary);
+  background-color: var(--color-decorative-1);
+}
+
+.wrapper.color-group-3 {
+  color: var(--text-color-on-light);
+  background-color: var(--color-decorative-3);
+}
+
+.wrapper.color-group-4 {
+  color: var(--text-color-on-primary);
+  background-color: var(--color-decorative-5);
+}
+
+.wrapper.color-group-5 {
+  color: var(--text-color-on-primary);
+  background-color: var(--color-decorative-4);
 }
 </style>

@@ -1,3 +1,36 @@
+# [2.15.0](https://github.com/swimmio/swimm-ui/compare/v2.14.0...v2.15.0) (2022-12-08)
+
+
+### Bug Fixes
+
+* **SwAvatar:** css selectors are wrong for inner elements ([7a7ad84](https://github.com/swimmio/swimm-ui/commit/7a7ad84a03b9c0f60197fc8631e5724a8a9e5ae4))
+
+
+### Features
+
+* **SwAvatar:** new font size according to Figma ([16cbd70](https://github.com/swimmio/swimm-ui/commit/16cbd70de59f82e7b545f75f8f510685d0ea291a))
+
+# [2.14.0](https://github.com/swimmio/swimm-ui/compare/v2.13.0...v2.14.0) (2022-12-07)
+
+
+### Features
+
+* **SwAvatar:** add dynamic background and color groups ([#169](https://github.com/swimmio/swimm-ui/issues/169)) ([3c7c1fe](https://github.com/swimmio/swimm-ui/commit/3c7c1fe9d1a26aa46153855315d002f09f1939f0))
+
+# [2.13.0](https://github.com/swimmio/swimm-ui/compare/v2.12.0...v2.13.0) (2022-11-30)
+
+
+### Features
+
+* add sysem-label token ([43fb59f](https://github.com/swimmio/swimm-ui/commit/43fb59fcbeb8aa458637d2a530bb658e6695e498))
+
+# [2.12.0](https://github.com/swimmio/swimm-ui/compare/v2.11.0...v2.12.0) (2022-11-30)
+
+
+### Features
+
+* add warning colors to swimm-ui per UX request ([664b9e5](https://github.com/swimmio/swimm-ui/commit/664b9e5d8a34d39183ab663f4e365ed89ffa86f3))
+
 # [2.11.0](https://github.com/swimmio/swimm-ui/compare/v2.10.0...v2.11.0) (2022-11-17)
 
 

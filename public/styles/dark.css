@@ -11,6 +11,8 @@
     --color-error: var(--oh-no-red-900);
     --color-success: var(--success-green-900);
     --color-warning: var(--warning-yellow-900);
+    --color-status-warning: var(--warning-yellow-900);
+    --color-status-warning-hover: var(--warning-yellow-800);
     --color-autosync: var(--wild-ultra);
     --color-info: var(--sea-anchor);
     --color-label-tag: var(--high-tide);

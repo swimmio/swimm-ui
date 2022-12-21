@@ -48,9 +48,11 @@
   <Color name="success-green-900" />
   <Color name="warning-yellow" />
   <Color name="warning-yellow-100" />
+  <Color name="warning-yellow-200" />
   <Color name="warning-yellow-300" />
   <Color name="warning-yellow-500" />
   <Color name="warning-yellow-700" />
+  <Color name="warning-yellow-800" />
   <Color name="warning-yellow-900" />
   <Color name="oh-no-red" />
   <Color name="oh-no-red-100" />
@@ -87,6 +89,8 @@ Toggle Light/Dark button to see the colors in different themes
   <Color name="color-error" />
   <Color name="color-success" />
   <Color name="color-warning" />
+  <Color name="color-status-warning" />
+  <Color name="color-status-warning-hover" />
   <Color name="color-autosync" />
   <Color name="color-info" />
   <Color name="color-label-tag" />
