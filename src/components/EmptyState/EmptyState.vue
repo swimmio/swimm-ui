@@ -9,15 +9,16 @@ defineProps({
   title: { type: String, required: true },
   description: { type: String, required: true },
   transparent: { type: Boolean, default: false },
-  wide: { type: Boolean, default: false },
 });
 
 const isSlot = computed(() => !!slots.default);
 </script>
 
 <template>
-  <div class="empty-state" :class="{ transparent, wide }">
-    <Icon v-if="iconName" class="icon" :name="iconName" />
+  <div class="empty-state" :class="{ transparent }">
+    <slot name="icon">
+      <Icon v-if="iconName" class="icon" :name="iconName" />
+    </slot>
     <h3 v-if="title" class="title">{{ title }}</h3>
     <p v-if="description" class="description">{{ description }}</p>
     <div v-if="isSlot" class="action">
