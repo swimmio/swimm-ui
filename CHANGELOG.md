@@ -1,3 +1,10 @@
+# [2.16.0](https://github.com/swimmio/swimm-ui/compare/v2.15.0...v2.16.0) (2022-12-21)
+
+
+### Features
+
+* **EmptyState:** add an icon slot to EmptyState ([0a60659](https://github.com/swimmio/swimm-ui/commit/0a60659fb6dc8e0ca29ed7960211d51b8015c009))
+
 # [2.15.0](https://github.com/swimmio/swimm-ui/compare/v2.14.0...v2.15.0) (2022-12-08)
 
 
