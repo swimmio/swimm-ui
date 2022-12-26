@@ -1,116 +1,119 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { PropType } from 'vue';
-import { SHAPE, SIZE } from './constants';
+import { SIZE } from './constants';
 
 const props = defineProps({
   text: { type: String, required: true },
   src: { type: String, default: '' },
   size: {
     type: String as PropType<SIZE>,
-    default: SIZE.LARGE,
+    default: SIZE.SMALL,
     validator: (value: SIZE) => Object.values(SIZE).includes(value),
   },
-  shape: {
-    type: String as PropType<SHAPE>,
-    default: SHAPE.ROUND,
-    validator: (value: SHAPE) => Object.values(SHAPE).includes(value),
-  },
-  border: { type: Boolean, default: true },
+  tooltip: { type: String, default: '' },
+  hideTooltip: { type: Boolean, default: false },
+  square: { type: Boolean, default: false },
+  border: { type: Boolean, default: false },
 });
 
-const letter = computed(() => props.text.charAt(0));
+const letter = computed(() => props.text.charAt(0).toUpperCase());
 const colorGroup = computed(() => (letter.value.charCodeAt(0) % 5) + 1);
+const tooltipText = computed(() =>
+  props.hideTooltip ? '' : props.tooltip || props.text
+);
 </script>
 
 <template>
-  <div :class="['wrapper', `color-group-${colorGroup}`, shape, size, border]">
-    <img class="image" v-if="src" :src="src" :alt="text" />
-    <span v-else class="capitalize">{{ letter }}</span>
+  <div
+    :class="[
+      'avatar',
+      size,
+      { [`color-group-${colorGroup}`]: !src, square, border },
+    ]"
+    v-tooltip="tooltipText"
+  >
+    <img v-if="src" :src="src" :alt="text" class="image" />
+    <span v-else :data-name="text">{{ letter }}</span>
   </div>
 </template>
 
 <style scoped>
-.wrapper {
+.avatar {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   box-sizing: border-box;
+  border-radius: 50%;
+  cursor: default;
 }
 
 .image {
-  width: 100%;
-  object-fit: cover;
+  max-height: 100%;
+  object-fit: contain;
 }
 
-.capitalize {
-  text-transform: uppercase;
-}
-
-.wrapper.border {
+.avatar.border {
   border: 1px solid var(--border-color-subtle);
 }
 
-.wrapper.round {
-  border-radius: 50%;
-}
-.wrapper.square {
-  border-radius: 10px;
+.avatar.square {
+  border-radius: 15%;
 }
 
-.wrapper.xsmall {
+.avatar.xsmall {
   font-size: 12px;
   width: 16px;
   height: 16px;
 }
-.wrapper.small {
+.avatar.small {
   font-size: 14px;
   width: 24px;
   height: 24px;
 }
-.wrapper.medium {
+.avatar.medium {
   font-size: 24px;
   width: 32px;
   height: 32px;
 }
-.wrapper.large {
+.avatar.large {
   font-size: 48px;
   width: 64px;
   height: 64px;
 }
-.wrapper.xlarge {
+.avatar.xlarge {
   font-size: 48px;
   width: 72px;
   height: 72px;
 }
-.wrapper.huge {
+.avatar.huge {
   font-size: 64px;
   width: 112px;
   height: 112px;
 }
 
-.wrapper.color-group-1 {
+.avatar.color-group-1 {
   color: var(--text-color-on-light);
   background-color: var(--color-decorative-2);
 }
 
-.wrapper.color-group-2 {
+.avatar.color-group-2 {
   color: var(--text-color-on-primary);
   background-color: var(--color-decorative-1);
 }
 
-.wrapper.color-group-3 {
+.avatar.color-group-3 {
   color: var(--text-color-on-light);
   background-color: var(--color-decorative-3);
 }
 
-.wrapper.color-group-4 {
+.avatar.color-group-4 {
   color: var(--text-color-on-primary);
   background-color: var(--color-decorative-5);
 }
 
-.wrapper.color-group-5 {
+.avatar.color-group-5 {
   color: var(--text-color-on-primary);
   background-color: var(--color-decorative-4);
 }

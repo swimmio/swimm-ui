@@ -1,10 +1,16 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { describe, it, expect, beforeEach } from 'vitest';
 import { mount } from '@vue/test-utils';
 import SwAvatar from '@/components/Avatar/SwAvatar.vue';
-import { SIZE, SHAPE } from '@/components/Avatar/constants';
+import { SIZE } from '@/components/Avatar/constants';
 
 const TEXT = 'swimm';
 const IMAGE = 'someImage';
+const mockGlobalDirective = {
+  global: {
+    directives: { tooltip() {} },
+  },
+};
 
 describe('SwAvatar', () => {
   describe('prop validator', () => {
@@ -19,30 +25,20 @@ describe('SwAvatar', () => {
       const validator = SwAvatar.props.size.validator;
       expect(validator('swimm')).toBeFalsy();
     });
-
-    it('should show options from SHAPE are valid', () => {
-      const validator = SwAvatar.props.shape.validator;
-      Object.values(SHAPE).forEach((optionalValidShape) =>
-        expect(validator(optionalValidShape)).toBeTruthy()
-      );
-    });
-
-    it('should show option which is not on SHAPE as invalid', () => {
-      const validator = SwAvatar.props.shape.validator;
-      expect(validator('swimm')).toBeFalsy();
-    });
   });
 
   describe('text render', () => {
     let wrapper;
     beforeEach(() => {
-      wrapper = mount(SwAvatar, { propsData: { text: TEXT } });
+      wrapper = mount(SwAvatar, {
+        propsData: { text: TEXT },
+        ...mockGlobalDirective,
+      });
     });
 
     it('should render only the first letter of text and as capitalize', () => {
       expect(wrapper.text()).toHaveLength(1);
-      expect(wrapper.text()).toEqual(TEXT.charAt(0));
-      expect(wrapper.find('span.capitalize').exists()).toBeTruthy();
+      expect(wrapper.text()).toEqual(TEXT.toUpperCase().charAt(0));
     });
 
     it('should not render an img', () => {
@@ -50,15 +46,18 @@ describe('SwAvatar', () => {
     });
 
     it('should get default values of size and shape', () => {
-      expect(wrapper.find('.wrapper.large').exists()).toBeTruthy();
-      expect(wrapper.find('.wrapper.round').exists()).toBeTruthy();
+      expect(wrapper.find('.avatar.small').exists()).toBeTruthy();
+      expect(wrapper.find('.avatar.square').exists()).toBeFalsy();
     });
   });
 
   describe('image render', () => {
     let wrapper;
     beforeEach(() => {
-      wrapper = mount(SwAvatar, { propsData: { text: TEXT, src: IMAGE } });
+      wrapper = mount(SwAvatar, {
+        propsData: { text: TEXT, src: IMAGE },
+        ...mockGlobalDirective,
+      });
     });
 
     it('should render the image', () => {
@@ -72,8 +71,8 @@ describe('SwAvatar', () => {
     });
 
     it('should get default values of size and shape', () => {
-      expect(wrapper.find('.wrapper.large').exists()).toBeTruthy();
-      expect(wrapper.find('.wrapper.round').exists()).toBeTruthy();
+      expect(wrapper.find('.avatar.small').exists()).toBeTruthy();
+      expect(wrapper.find('.avatar.square').exists()).toBeFalsy();
     });
   });
 
@@ -85,19 +84,15 @@ describe('SwAvatar', () => {
           text: TEXT,
           src: IMAGE,
           size: SIZE.HUGE,
-          shape: SHAPE.SQUARE,
+          square: true,
         },
+        ...mockGlobalDirective,
       });
     });
 
     it('should have classes of size and shape from props', () => {
-      expect(wrapper.find('.wrapper.huge').exists()).toBeTruthy();
-      expect(wrapper.find('.wrapper.square').exists()).toBeTruthy();
-    });
-
-    it('should show image', () => {
-      expect(wrapper.find('img').exists()).toBeTruthy();
-      expect(wrapper.text()).toBeFalsy();
+      expect(wrapper.find('.avatar.huge').exists()).toBeTruthy();
+      expect(wrapper.find('.avatar.square').exists()).toBeTruthy();
     });
   });
 });

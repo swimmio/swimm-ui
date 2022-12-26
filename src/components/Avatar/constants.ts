@@ -1,8 +1,3 @@
-export enum SHAPE {
-  ROUND = 'round',
-  SQUARE = 'square',
-}
-
 export enum SIZE {
   XSMALL = 'xsmall',
   SMALL = 'small',
