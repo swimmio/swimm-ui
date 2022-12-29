@@ -32,14 +32,14 @@ defineProps({
 }
 
 .skeleton.animate {
-  animation: loading 1s linear infinite alternate;
+  animation: skeleton 0.7s linear infinite alternate;
 }
 
-@keyframes loading {
-  0% {
+@keyframes skeleton {
+  from {
     background-color: var(--color-surface);
   }
-  100% {
+  to {
     background-color: var(--color-hover);
   }
 }
