@@ -1,3 +1,10 @@
+# [2.18.0](https://github.com/swimmio/swimm-ui/compare/v2.17.0...v2.18.0) (2022-12-29)
+
+
+### Features
+
+* **TextSkeleton:** change animation to be 0.7s instead of 1s ([#194](https://github.com/swimmio/swimm-ui/issues/194)) ([c6d50fb](https://github.com/swimmio/swimm-ui/commit/c6d50fb029ee838bb52a67b404b50f51a55b3afc))
+
 # [2.17.0](https://github.com/swimmio/swimm-ui/compare/v2.16.0...v2.17.0) (2022-12-26)
 
 
