@@ -1,3 +1,10 @@
+## [2.18.2](https://github.com/swimmio/swimm-ui/compare/v2.18.1...v2.18.2) (2023-01-03)
+
+
+### Bug Fixes
+
+* **build:** build esm ([42d5c04](https://github.com/swimmio/swimm-ui/commit/42d5c046d479db31118d24c732ef73df45bb6daf))
+
 ## [2.18.1](https://github.com/swimmio/swimm-ui/compare/v2.18.0...v2.18.1) (2023-01-03)
 
 
