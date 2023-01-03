@@ -1,3 +1,11 @@
+## [2.18.1](https://github.com/swimmio/swimm-ui/compare/v2.18.0...v2.18.1) (2023-01-03)
+
+
+### Bug Fixes
+
+* **dependencies:** pin vue version and bump deps ([4bb6452](https://github.com/swimmio/swimm-ui/commit/4bb64529e09298f4d1bf80a979c884895cafe073))
+* **toggle:** fix document and export ([6475f63](https://github.com/swimmio/swimm-ui/commit/6475f63833a9f4855e4d53a89c20a0dd4c767abd))
+
 # [2.18.0](https://github.com/swimmio/swimm-ui/compare/v2.17.0...v2.18.0) (2022-12-29)
 
 
