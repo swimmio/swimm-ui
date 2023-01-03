@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
@@ -24,8 +25,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'Swimm UI',
-      fileName: (format) => `swimm-ui.${format}.js`,
+      name: 'SwimmUI',
+      fileName: 'swimm-ui',
     },
     rollupOptions: {
       external: ['vue'],
