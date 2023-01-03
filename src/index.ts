@@ -2,6 +2,7 @@ export { default as Action } from './components/Action/Action.vue';
 export { TYPES, SIZES, VARIANTS } from './components/Action/constants';
 export { default as SwAvatar } from './components/Avatar/SwAvatar.vue';
 export { SIZE as AVATAR_SIZE } from './components/Avatar/constants';
+export { SIZE as TOGGLE_SIZE } from './components/Toggle/constants';
 export { default as Breadcrumbs } from './components/Breadcrumbs/Breadcrumbs.vue';
 export { default as EmptyState } from './components/EmptyState/EmptyState.vue';
 export { default as Icon } from './components/Icon/Icon.vue';
