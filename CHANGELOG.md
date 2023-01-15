@@ -1,3 +1,10 @@
+## [2.18.3](https://github.com/swimmio/swimm-ui/compare/v2.18.2...v2.18.3) (2023-01-15)
+
+
+### Bug Fixes
+
+* Export CSS from the package ([#203](https://github.com/swimmio/swimm-ui/issues/203)) ([1153d51](https://github.com/swimmio/swimm-ui/commit/1153d51a344c1b6762a7c5225ca961da0f3db1d2))
+
 ## [2.18.2](https://github.com/swimmio/swimm-ui/compare/v2.18.1...v2.18.2) (2023-01-03)
 
 
