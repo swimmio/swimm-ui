@@ -1,5 +1,5 @@
-<script setup>
-import { Action, TYPES, SIZES, VARIANTS } from '@swimm/ui';
+<script setup lang="ts">
+import { Action } from '@swimm/ui';
 </script>
 
 # Action
@@ -37,13 +37,13 @@ import { Action, TYPES, SIZES, VARIANTS } from '@swimm/ui';
 ## Link
 
 ::: demo
-<Action :type="TYPES.LINK" href="#">Link Default</Action>
+<Action type="a" href="#">Link Default</Action>
 :::
 
 ### Link disabled
 
 ::: demo
-<Action :type="TYPES.LINK" :disabled="true">Link Disabled</Action>
+<Action type="a" :disabled="true">Link Disabled</Action>
 :::
 
 ## Variants
@@ -51,39 +51,39 @@ import { Action, TYPES, SIZES, VARIANTS } from '@swimm/ui';
 ### Danger
 
 ::: demo
-<Action :variant="VARIANTS.DANGER" secondary>Primary Danger</Action>
+<Action variant="danger" secondary>Primary Danger</Action>
 :::
 
 ### Success
 
 ::: demo
-<Action :variant="VARIANTS.SUCCESS">Primary Success</Action>
+<Action variant="success">Primary Success</Action>
 :::
 
 ## Small
 
 :::demo
-<Action :size="SIZES.SMALL">Small Default</Action>
+<Action size="small">Small Default</Action>
 :::
 
 ::: demo
-<Action :size="SIZES.SMALL" :disabled="true">Small Disabled</Action>
+<Action size="small" :disabled="true">Small Disabled</Action>
 :::
 
 ::: demo
-<Action :size="SIZES.SMALL" secondary>Secondary Default</Action>
+<Action size="small" secondary>Secondary Default</Action>
 :::
 
 ::: demo
-<Action :size="SIZES.SMALL" secondary :disabled="true">Secondary Disabled</Action>
+<Action size="small" secondary :disabled="true">Secondary Disabled</Action>
 :::
 
 ::: demo
-<Action :size="SIZES.SMALL" :type="TYPES.LINK" href="#">Link Default</Action>
+<Action size="small" type="a" href="#">Link Default</Action>
 :::
 
 ::: demo
-<Action :size="SIZES.SMALL" :type="TYPES.LINK" :disabled="true">Link Disabled</Action>
+<Action size="small" type="a" :disabled="true">Link Disabled</Action>
 :::
 
 ## API

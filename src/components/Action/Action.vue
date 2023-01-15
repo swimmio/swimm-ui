@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import { computed } from 'vue';
 import type { PropType } from 'vue';
+import { computed } from 'vue';
 import Icon from '../Icon/Icon.vue';
-import { VARIANTS, SIZES, TYPES } from './constants';
 
-defineEmits(['click']);
 const props = defineProps({
   size: {
-    type: String as PropType<SIZES>,
-    default: SIZES.BIG,
-    validator: (value: SIZES) => Object.values(SIZES).includes(value),
+    type: String as PropType<ActionSizes>,
+    default: 'big',
+    validator: (value: ActionSizes) =>
+      Object.values(ActionSizesValues).includes(value),
   },
   secondary: { type: Boolean, default: false },
   loading: { type: Boolean, default: false },
@@ -17,21 +16,24 @@ const props = defineProps({
   noPadding: { type: Boolean, default: false },
   /* The html element used for the button. */
   type: {
-    type: String as PropType<TYPES>,
-    default: TYPES.BUTTON,
-    validator: (value: TYPES) => Object.values(TYPES).includes(value),
+    type: String as PropType<ActionTypes>,
+    default: 'button',
+    validator: (value: ActionTypes) =>
+      Object.values(ActionTypesValues).includes(value),
   },
   /* When setting the button’s type to a link (), use this option to give a href. */
   href: { type: String, default: null },
   variant: {
-    type: String as PropType<VARIANTS>,
+    type: String as PropType<ActionVariants>,
     default: null,
-    validator: (value: VARIANTS) => Object.values(VARIANTS).includes(value),
+    validator: (value: ActionVariants) =>
+      Object.values(ActionVariantsValues).includes(value),
   },
   /* Any icon from Fontaweswimm library */
   trailingIcon: { type: String, default: null },
   buttonType: { type: String, default: 'submit' },
 });
+defineEmits(['click']);
 
 const classes = computed(() => {
   return [
@@ -43,7 +45,7 @@ const classes = computed(() => {
       disabled: props.disabled,
       loading: props.loading,
       secondary: props.secondary,
-      link: props.type === TYPES.LINK,
+      link: props.type === 'a',
     },
   ];
 });
@@ -66,6 +68,17 @@ const classes = computed(() => {
     />
   </component>
 </template>
+
+<script lang="ts">
+const ActionSizesValues = ['big', 'small'] as const;
+export type ActionSizes = typeof ActionSizesValues[number];
+
+const ActionTypesValues = ['button', 'a'] as const;
+export type ActionTypes = typeof ActionTypesValues[number];
+
+const ActionVariantsValues = ['danger', 'success'] as const;
+export type ActionVariants = typeof ActionVariantsValues[number];
+</script>
 
 <style scoped>
 .button {

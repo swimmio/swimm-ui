@@ -1,5 +1,5 @@
-<script setup>
-import { SwToggle, TOGGLE_SIZE } from '@swimm/ui';
+<script setup lang="ts">
+import { SwToggle } from '@swimm/ui';
 </script>
 
 # Toggle
@@ -39,10 +39,10 @@ Toggle can get props that will define the appearance and behavior of the compone
 ::: demo
 
 <div style="display: flex; justify-content: space-between; align-items: center" >
-    <sw-toggle :value="true" :size="TOGGLE_SIZE.LARGE" />
-    <sw-toggle :value="true" :size="TOGGLE_SIZE.MEDIUM" />
-    <sw-toggle :value="true" :size="TOGGLE_SIZE.SMALL" />
-    <sw-toggle :value="true" :size="TOGGLE_SIZE.XSMALL" />
+    <sw-toggle :value="true" size="large" />
+    <sw-toggle :value="true" size="medium" />
+    <sw-toggle :value="true" size="small" />
+    <sw-toggle :value="true" size="xsmall" />
 </div>
 :::
 

@@ -1,8 +1,8 @@
-<script setup>
-import { SwText, FONT_FAMILY, FONT_WEIGHTS, FONT_VARIANTS } from '@swimm/ui';
+<script setup lang="ts">
+import { SwText } from '@swimm/ui';
 </script>
 
-<style scoped>   
+<style scoped>
 .theme-default-content h1,
 .theme-default-content h2,
 .theme-default-content h3,
@@ -27,48 +27,48 @@ Typography can get props that will change its appearance.
 ### Basic
 
 ::: demo
- <SwText :variant="FONT_VARIANTS.SYSTEM_HEADLINE">{{ FONT_VARIANTS.SYSTEM_HEADLINE }}</SwText>
- <SwText :variant="FONT_VARIANTS.SYSTEM_SUBTITLE">{{ FONT_VARIANTS.SYSTEM_SUBTITLE }}</SwText>
- <SwText :variant="FONT_VARIANTS.SYSTEM_BODY">{{ FONT_VARIANTS.SYSTEM_BODY }}</SwText>
- <SwText :variant="FONT_VARIANTS.TITLE">{{ FONT_VARIANTS.TITLE }}</SwText>
- <SwText :variant="FONT_VARIANTS.HEADLINE_1">{{ FONT_VARIANTS.HEADLINE_1 }}</SwText>
- <SwText :variant="FONT_VARIANTS.HEADLINE_2">{{ FONT_VARIANTS.HEADLINE_2 }}</SwText>
- <SwText :variant="FONT_VARIANTS.HEADLINE_3">{{ FONT_VARIANTS.HEADLINE_3 }}</SwText>
- <SwText :variant="FONT_VARIANTS.SUBTITLE_XL">{{ FONT_VARIANTS.SUBTITLE_XL }}</SwText>
- <SwText :variant="FONT_VARIANTS.SUBTITLE_L">{{ FONT_VARIANTS.SUBTITLE_L }}</SwText>
- <SwText :variant="FONT_VARIANTS.SUBTITLE_S">{{ FONT_VARIANTS.SUBTITLE_S }}</SwText>
- <SwText :variant="FONT_VARIANTS.BODY_L">{{ FONT_VARIANTS.BODY_L }}</SwText>
- <SwText :variant="FONT_VARIANTS.BODY_S">{{ FONT_VARIANTS.BODY_S }}</SwText>
- <SwText :variant="FONT_VARIANTS.BODY_XS">{{ FONT_VARIANTS.BODY_XS }}</SwText>
+ <SwText variant="system-headline">system-headline</SwText>
+ <SwText variant="system-subtitle">system-subtitle</SwText>
+ <SwText variant="system-body">system-body</SwText>
+ <SwText variant="title">title</SwText>
+ <SwText variant="headline1">headline1</SwText>
+ <SwText variant="headline2">headline2</SwText>
+ <SwText variant="headline3">headline3</SwText>
+ <SwText variant="subtitle-XL">subtitle-XL</SwText>
+ <SwText variant="subtitle-L">subtitle-L</SwText>
+ <SwText variant="subtitle-S">subtitle-S</SwText>
+ <SwText variant="body-L">body-L</SwText>
+ <SwText variant="body-S">body-S</SwText>
+ <SwText variant="body-XS">body-XS</SwText>
 :::
 
 ## Props deafult
 
 ### Font Family
 ::: demo
-<SwText :variant="FONT_VARIANTS.SYSTEM_SUBTITLE">Secondary font family</SwText>
+<SwText variant="system-subtitle">Secondary font family</SwText>
 
-<SwText :variant="FONT_VARIANTS.HEADLINE_3">Primary font family</SwText>
+<SwText variant="headline3">Primary font family</SwText>
 
-<SwText :variant="FONT_VARIANTS.HEADLINE_3" :family="FONT_FAMILY.SECONDARY">Force Secondary</SwText>
+<SwText variant="headline3" :family="fontfamily-secondary">Force Secondary</SwText>
 
 :::
 ### Font Weights
 ::: demo
-<SwText :variant="FONT_VARIANTS.SUBTITLE_XL">Bold by default</SwText>
+<SwText variant="subtitle-XL">Bold by default</SwText>
 
-<SwText :variant="FONT_VARIANTS.BODY_L">Regular by default</SwText>
+<SwText variant="body-L">Regular by default</SwText>
 
-<SwText :variant="FONT_VARIANTS.SUBTITLE_XL" :weight="FONT_WEIGHTS.REGULAR">Force regular weight</SwText>
+<SwText variant="subtitle-XL" weight="regular">Force regular weight</SwText>
 :::
 
 ### Component
 ::: demo
-<SwText :variant="FONT_VARIANTS.SUBTITLE_XL">h4 by default</SwText>
+<SwText variant="subtitle-XL">h4 by default</SwText>
 
-<SwText :variant="FONT_VARIANTS.BODY_L">div by default</SwText>
+<SwText variant="body-L">div by default</SwText>
 
-<SwText :variant="FONT_VARIANTS.SUBTITLE_XL" component="div">
+<SwText variant="subtitle-XL" component="div">
     Force div <small><small>(But keep size)</small></small>
 </SwText>
 
