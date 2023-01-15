@@ -6,10 +6,10 @@ const props = defineProps({
   text: { type: String, required: true },
   src: { type: String, default: '' },
   size: {
-    type: String as PropType<AvatarSize>,
+    type: String as PropType<SwAvatarSize>,
     default: 'small',
-    validator: (value: AvatarSize) =>
-      Object.values(AvatarSizeValues).includes(value),
+    validator: (value: SwAvatarSize) =>
+      Object.values(SwAvatarSizeValues).includes(value),
   },
   tooltip: { type: String, default: '' },
   hideTooltip: { type: Boolean, default: false },
@@ -39,7 +39,7 @@ const tooltipText = computed(() =>
 </template>
 
 <script lang="ts">
-const AvatarSizeValues = [
+export const SwAvatarSizeValues = [
   'xsmall',
   'small',
   'medium',
@@ -47,7 +47,7 @@ const AvatarSizeValues = [
   'xlarge',
   'huge',
 ] as const;
-export type AvatarSize = typeof AvatarSizeValues[number];
+export type SwAvatarSize = typeof SwAvatarSizeValues[number];
 </script>
 
 <style scoped>

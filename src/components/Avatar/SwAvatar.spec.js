@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { describe, it, expect, beforeEach } from 'vitest';
 import { mount } from '@vue/test-utils';
-import SwAvatar from '@/components/Avatar/SwAvatar.vue';
-import { SIZE } from '@/components/Avatar/constants';
+import SwAvatar, { SwAvatarSizeValues } from '@/components/Avatar/SwAvatar.vue';
 
 const TEXT = 'swimm';
 const IMAGE = 'someImage';
@@ -16,7 +15,7 @@ describe('SwAvatar', () => {
   describe('prop validator', () => {
     it('should show options from SIZE are valid', () => {
       const validator = SwAvatar.props.size.validator;
-      Object.values(SIZE).forEach((optionalValidSize) =>
+      Object.values(SwAvatarSizeValues).forEach((optionalValidSize) =>
         expect(validator(optionalValidSize)).toBeTruthy()
       );
     });
@@ -83,7 +82,7 @@ describe('SwAvatar', () => {
         propsData: {
           text: TEXT,
           src: IMAGE,
-          size: SIZE.HUGE,
+          size: 'huge',
           square: true,
         },
         ...mockGlobalDirective,
