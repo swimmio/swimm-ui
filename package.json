@@ -18,10 +18,12 @@
   "files": [
     "dist"
   ],
+  "types": "./dist/swimm-ui.d.ts",
   "main": "./dist/swimm-ui.umd.cjs",
   "module": "./dist/swimm-ui.js",
   "exports": {
     ".": {
+      "types": "./dist/swimm-ui.d.ts",
       "import": "./dist/swimm-ui.js",
       "require": "./dist/swimm-ui.umd.cjs"
     }

@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { PropType } from 'vue';
-import { SIZE } from './constants';
 
 const props = defineProps({
   text: { type: String, required: true },
   src: { type: String, default: '' },
   size: {
-    type: String as PropType<SIZE>,
-    default: SIZE.SMALL,
-    validator: (value: SIZE) => Object.values(SIZE).includes(value),
+    type: String as PropType<AvatarSize>,
+    default: 'small',
+    validator: (value: AvatarSize) =>
+      Object.values(AvatarSizeValues).includes(value),
   },
   tooltip: { type: String, default: '' },
   hideTooltip: { type: Boolean, default: false },
@@ -37,6 +37,18 @@ const tooltipText = computed(() =>
     <span v-else :data-name="text">{{ letter }}</span>
   </div>
 </template>
+
+<script lang="ts">
+const AvatarSizeValues = [
+  'xsmall',
+  'small',
+  'medium',
+  'large',
+  'xlarge',
+  'huge',
+] as const;
+export type AvatarSize = typeof AvatarSizeValues[number];
+</script>
 
 <style scoped>
 .avatar {

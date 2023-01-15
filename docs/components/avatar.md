@@ -1,5 +1,5 @@
-<script setup>
-import { SwAvatar, AVATAR_SIZE } from '@swimm/ui';
+<script setup lang="ts">
+import { SwAvatar } from '@swimm/ui';
 const img = 'https://www.w3schools.com/howto/img_avatar2.png';
 </script>
 
@@ -19,12 +19,12 @@ Avatar can get props that will define the appearance and behavior of the compone
 
 ::: demo
 <div style="display: flex; justify-content: space-between; align-items: center" >
-    <sw-avatar text="Swimm" :size="AVATAR_SIZE.HUGE" />
-    <sw-avatar text="Swimm" :size="AVATAR_SIZE.XLARGE" />
-    <sw-avatar text="Swimm" :size="AVATAR_SIZE.LARGE" />
-    <sw-avatar text="Swimm" :size="AVATAR_SIZE.MEDIUM"/>
-    <sw-avatar text="Swimm" :size="AVATAR_SIZE.SMALL" />
-    <sw-avatar text="Swimm" :size="AVATAR_SIZE.XSMALL" />
+    <sw-avatar text="Swimm" size="huge" />
+    <sw-avatar text="Swimm" size="xlarge" />
+    <sw-avatar text="Swimm" size="large" />
+    <sw-avatar text="Swimm" size="medium"/>
+    <sw-avatar text="Swimm" size="small" />
+    <sw-avatar text="Swimm" size="xsmall" />
 </div>
 :::
 
@@ -32,12 +32,12 @@ Avatar can get props that will define the appearance and behavior of the compone
 
 ::: demo
 <div style="display: flex; justify-content: space-between; align-items: center" >
-	<sw-avatar text="Swimm" :size="AVATAR_SIZE.HUGE" square />
-	<sw-avatar text="Swimm" :size="AVATAR_SIZE.XLARGE" square />
-	<sw-avatar text="Swimm" :size="AVATAR_SIZE.LARGE" square />
-	<sw-avatar text="Swimm" :size="AVATAR_SIZE.MEDIUM" square />
-	<sw-avatar text="Swimm" :size="AVATAR_SIZE.SMALL" square />
-	<sw-avatar text="Swimm" :size="AVATAR_SIZE.XSMALL" square />
+	<sw-avatar text="Swimm" size="huge" square />
+	<sw-avatar text="Swimm" size="xlarge" square />
+	<sw-avatar text="Swimm" size="large" square />
+	<sw-avatar text="Swimm" size="medium" square />
+	<sw-avatar text="Swimm" size="small" square />
+	<sw-avatar text="Swimm" size="xsmall" square />
 </div>
 :::
 
@@ -46,12 +46,12 @@ Avatar can get props that will define the appearance and behavior of the compone
 ::: demo
 
 <div style="display: flex; justify-content: space-between; align-items: center" >
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.HUGE" />
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.XLARGE" />
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.LARGE" />
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.MEDIUM"/>
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.SMALL" />
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.XSMALL" />
+	<sw-avatar text="Swimm" :src="img" size="huge" />
+	<sw-avatar text="Swimm" :src="img" size="xlarge" />
+	<sw-avatar text="Swimm" :src="img" size="large" />
+	<sw-avatar text="Swimm" :src="img" size="medium"/>
+	<sw-avatar text="Swimm" :src="img" size="small" />
+	<sw-avatar text="Swimm" :src="img" size="xsmall" />
 </div>
 :::
 
@@ -60,12 +60,12 @@ Avatar can get props that will define the appearance and behavior of the compone
 ::: demo
 
 <div style="display: flex; justify-content: space-between; align-items: center" >
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.HUGE" square />
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.XLARGE" square />
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.LARGE" square />
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.MEDIUM" square />
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.SMALL" square />
-	<sw-avatar text="Swimm" :src="img" :size="AVATAR_SIZE.XSMALL" square />
+	<sw-avatar text="Swimm" :src="img" size="huge" square />
+	<sw-avatar text="Swimm" :src="img" size="xlarge" square />
+	<sw-avatar text="Swimm" :src="img" size="large" square />
+	<sw-avatar text="Swimm" :src="img" size="medium" square />
+	<sw-avatar text="Swimm" :src="img" size="small" square />
+	<sw-avatar text="Swimm" :src="img" size="xsmall" square />
 </div>
 :::
 

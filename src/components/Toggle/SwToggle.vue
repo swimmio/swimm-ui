@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import type { PropType } from 'vue';
-import { SIZE } from './constants';
 
 const props = defineProps({
   value: { type: Boolean, required: true },
   disabled: { type: Boolean, default: false },
   size: {
-    type: String as PropType<SIZE>,
-    default: SIZE.MEDIUM,
-    validator: (value: SIZE) => Object.values(SIZE).includes(value),
+    type: String as PropType<ToggleSize>,
+    default: 'medium',
+    validator: (value: ToggleSize) =>
+      Object.values(ToggleSizeValues).includes(value),
   },
 });
 
@@ -19,6 +19,11 @@ const emit = defineEmits(['change']);
 function onChange(event: Event) {
   !props.disabled && emit('change', (event.target as HTMLInputElement).checked);
 }
+</script>
+
+<script lang="ts">
+const ToggleSizeValues = ['xsmall', 'small', 'medium', 'large'] as const;
+export type ToggleSize = typeof ToggleSizeValues[number];
 </script>
 
 <template>
