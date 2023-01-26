@@ -22,7 +22,7 @@ onMounted(() => {
 <style scoped>
 .loader {
   --loader-size: 150px;
-  background-image: url('/img/loading.gif');
+  background-image: url('@/assets/loading.gif');
   background-size: var(--loader-size);
   background-repeat: no-repeat;
   background-position: center;
@@ -32,7 +32,7 @@ onMounted(() => {
 }
 .loader.secondary {
   --loader-size: 70px;
-  background-image: url('/img/secondary-loading.gif');
+  background-image: url('@/assets/secondary-loading.gif');
 }
 .loader.hide {
   visibility: hidden;

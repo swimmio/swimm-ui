@@ -186,7 +186,7 @@ export type ActionVariants = typeof ActionVariantsValues[number];
 }
 
 .button.loading {
-  background-image: url(/img/secondary-loading.gif);
+  background-image: url(@/assets/secondary-loading.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
