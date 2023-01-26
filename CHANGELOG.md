@@ -1,3 +1,10 @@
+# [2.19.0](https://github.com/swimmio/swimm-ui/compare/v2.18.3...v2.19.0) (2023-01-26)
+
+
+### Features
+
+* **css:** move to src assets and remove from public ([24b12f2](https://github.com/swimmio/swimm-ui/commit/24b12f213951a0d2f374446f2b2ccb4f9a8029b4))
+
 ## [2.18.3](https://github.com/swimmio/swimm-ui/compare/v2.18.2...v2.18.3) (2023-01-15)
 
 
