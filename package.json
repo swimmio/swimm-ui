@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "floating-vue": "^2.0.0-beta.20",
-    "fontaweswimm": "github:swimmio/fontaweswimm#1.147"
+    "fontaweswimm": "github:swimmio/fontaweswimm#2.0.8"
   },
   "packageManager": "pnpm@7.14.2",
   "engines": {
