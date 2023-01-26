@@ -1,3 +1,10 @@
+# [2.20.0](https://github.com/swimmio/swimm-ui/compare/v2.19.0...v2.20.0) (2023-01-26)
+
+
+### Features
+
+* **Loader:** add small variant ([a041cf0](https://github.com/swimmio/swimm-ui/commit/a041cf03cf1a208e1a81e4fb34859e9e4f6258a8))
+
 # [2.19.0](https://github.com/swimmio/swimm-ui/compare/v2.18.3...v2.19.0) (2023-01-26)
 
 
