@@ -16,8 +16,7 @@ const props = defineProps({
   square: { type: Boolean, default: false },
   border: { type: Boolean, default: false },
 });
-
-const letter = computed(() => props.text.charAt(0).toUpperCase());
+const letter = computed(() => (props.text || ' ').charAt(0).toUpperCase());
 const colorGroup = computed(() => (letter.value.charCodeAt(0) % 5) + 1);
 const tooltipText = computed(() =>
   props.hideTooltip ? '' : props.tooltip || props.text
