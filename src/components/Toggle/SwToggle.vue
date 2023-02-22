@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import type { PropType } from 'vue';
 
 const props = defineProps({
@@ -13,7 +12,6 @@ const props = defineProps({
   },
 });
 
-const modelValue = ref(props.value);
 const emit = defineEmits(['change']);
 
 function onChange(event: Event) {
@@ -30,7 +28,7 @@ export type ToggleSize = typeof ToggleSizeValues[number];
   <label :class="['wrapper', [size], { disabled }]">
     <input
       class="input"
-      v-model="modelValue"
+      :checked="value"
       :disabled="disabled"
       type="checkbox"
       @change="onChange"
@@ -73,6 +71,7 @@ export type ToggleSize = typeof ToggleSizeValues[number];
 
 .wrapper.disabled {
   opacity: 0.3;
+  cursor: not-allowed;
 }
 
 .input {
