@@ -1,3 +1,10 @@
+## [2.20.1](https://github.com/swimmio/swimm-ui/compare/v2.20.0...v2.20.1) (2023-02-22)
+
+
+### Bug Fixes
+
+* swToggle ([61dbb66](https://github.com/swimmio/swimm-ui/commit/61dbb66182b9b878c5cd23c9e5d52d964f0e4b0b))
+
 # [2.20.0](https://github.com/swimmio/swimm-ui/compare/v2.19.0...v2.20.0) (2023-01-26)
 
 
